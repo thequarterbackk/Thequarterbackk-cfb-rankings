@@ -4,7 +4,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parent
 DATA_PATH=ROOT/'data.json'
 STATE_PATH=ROOT/'automation_state.json'
 TEAM_CACHE=ROOT/'team_meta.json'
