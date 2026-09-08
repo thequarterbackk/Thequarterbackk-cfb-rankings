@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynamic CFB Rankings</title>
+<meta name="description" content="A transparent college football ranking model driven by wins, scoring, defense, and dynamically validated opponent strength.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">2026 COLLEGE FOOTBALL</div>
+    <h1>Dynamic CFB Rankings</h1>
+    <p class="lede">No preseason bias. No poll reputation. Rankings are driven by wins, scoring, defense, and opponent strength that is validated by what teams do next.</p>
+    <div class="formula">Base = 100×Wins + PF − 1.5×PA &nbsp; • &nbsp; Opponent Value = 60% when played + 40% later validation</div>
+  </div>
+</header>
+
+<nav class="tabs wrap" aria-label="Site sections">
+  <button class="tab active" data-tab="rankings">Rankings</button>
+  <button class="tab" data-tab="picks">Upcoming Picks</button>
+  <button class="tab" data-tab="matrix">Results Heatmap</button>
+  <button class="tab" data-tab="method">How It Works</button>
+</nav>
+
+<main class="wrap">
+  <section id="rankings" class="panel active">
+    <div class="section-head">
+      <div>
+        <h2>Current Rankings</h2>
+        <p>Week 1 dynamic-validation rankings. Search or sort the table.</p>
+      </div>
+      <input id="rankSearch" class="search" placeholder="Search team…" aria-label="Search rankings">
+    </div>
+    <div class="table-wrap">
+      <table id="rankTable">
+        <thead><tr>
+          <th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th>
+          <th data-key="Final Rating">Rating</th><th data-key="Base Rating">Base</th>
+          <th data-key="Dynamic Validation">Validation</th><th data-key="Rank Change">Move</th>
+          <th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="picks" class="panel">
+    <div class="section-head">
+      <div>
+        <h2>Upcoming Picks</h2>
+        <p>The model's 20 highest-confidence straight-up winners. These are model confidence rankings, not guarantees or sportsbook probabilities.</p>
+      </div>
+    </div>
+    <div id="pickCards" class="cards"></div>
+  </section>
+
+  <section id="matrix" class="panel">
+    <div class="section-head">
+      <div>
+        <h2>Results Heatmap</h2>
+        <p>Each row is the team's perspective. Green is a win, red is a loss, and the number is point differential with week in parentheses.</p>
+      </div>
+      <input id="matrixSearch" class="search" placeholder="Filter team rows…" aria-label="Filter heatmap rows">
+    </div>
+    <div class="matrix-wrap">
+      <table id="matrixTable"></table>
+    </div>
+  </section>
+
+  <section id="method" class="panel prose">
+    <h2>How the model works</h2>
+    <h3>1. Core performance</h3>
+    <p><strong>Base Rating = (Wins × 100) + Points For − (Points Allowed × 1.5)</strong>. The model rewards winning and scoring while explicitly punishing teams for giving up points. There is no margin cap.</p>
+
+    <h3>2. Dynamic Win Validation</h3>
+    <p>An opponent's value does not remain permanently frozen and does not decay merely because time passes. Instead, the model asks whether that opponent's later performances validate how strong they appeared when the game was played.</p>
+    <div class="formula-block">Effective Opponent Strength = 60% × Strength When Played + 40% × Later Validated Strength</div>
+
+    <h3>3. Quality adjustment</h3>
+    <p>Wins receive positive opponent-quality value. Losses are penalized more severely when they come against weaker opponents. A highly ranked opponent that continues to perform well preserves the value of an earlier win; an opponent that collapses can reduce that value. An opponent that was underrated and later proves strong can increase the value of the earlier result.</p>
+
+    <h3>4. Week-to-week memory</h3>
+    <p>The rankings entering a week are part of the historical record. Later performance informs how much that original result should be trusted, but the model does not simply rewrite history based on today's ranking.</p>
+
+    <h3>5. Upcoming picks</h3>
+    <p>The picks page compares current dynamic ratings and applies a small site adjustment. It is intended as a model-confidence view of likely winners, separate from sportsbook pricing.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">Dynamic CFB Rankings • 2026 season • Model-driven and updated weekly</div></footer>
+<script src="app.js"></script>
+</body>
+</html>
