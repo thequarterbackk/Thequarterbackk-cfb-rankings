@@ -1,0 +1,67 @@
+name: Update rankings and maps
+
+on:
+
+  workflow_dispatch:
+
+  schedule:
+
+    - cron: "*/30 * * * 6"
+
+    - cron: "0 * * * 0,1,4,5"
+
+    - cron: "0 */6 * * * 2,3"
+
+permissions:
+
+  contents: write
+
+jobs:
+
+  update:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check out repository
+
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+
+        uses: actions/setup-python@v5
+
+        with:
+
+          python-version: "3.12"
+
+      - name: Update rankings
+
+        env:
+
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+
+        run: python update_rankings.py
+
+      - name: Commit updated data
+
+        run: |
+
+          git config user.name "CFB Rankings Bot"
+
+          git config user.email "actions@github.com"
+
+          git add data.json
+
+          if git diff --cached --quiet; then
+
+            echo "No data changes."
+
+          else
+
+            git commit -m "Auto-update CFB rankings"
+
+            git push
+
+          f
