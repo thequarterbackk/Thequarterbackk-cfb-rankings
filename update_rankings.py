@@ -92,18 +92,17 @@ def result_for(team,g):
     else: pf,pa=g['awayPoints'],g['homePoints']
     return ('W' if pf>pa else 'L' if pf<pa else 'T'),pf,pa
 
-def direct_quality_opponent(team,opp,fbs_set):
-    # Only FBS-involving matchups use the named opponent directly. Non-FBS vs non-FBS is neutral placeholder.
-    return opp if (team in fbs_set or opp in fbs_set) else None
-
 def compute_rankings(completed, fbs_names):
     fbs_set=set(fbs_names)
-    named_non=set()
+    hidden_non_fbs=set()
     for g in completed:
-        if g['homeClassification']=='fbs' and g['awayTeam'] not in fbs_set: named_non.add(g['awayTeam'])
-        if g['awayClassification']=='fbs' and g['homeTeam'] not in fbs_set: named_non.add(g['homeTeam'])
-    participants=set(fbs_set)|named_non
-    relevant=[g for g in completed if g['homeTeam'] in participants or g['awayTeam'] in participants]
+        if g['homeTeam'] in fbs_set and g['awayTeam'] not in fbs_set: hidden_non_fbs.add(g['awayTeam'])
+        if g['awayTeam'] in fbs_set and g['homeTeam'] not in fbs_set: hidden_non_fbs.add(g['homeTeam'])
+    participants=set(fbs_set)|hidden_non_fbs
+    # FCS and other non-FBS teams are hidden benchmark opponents. Their strength is
+    # calculated only from games directly against FBS teams; their other games do
+    # not enter the model or any public output.
+    relevant=[g for g in completed if g['homeTeam'] in fbs_set or g['awayTeam'] in fbs_set]
     weeks=sorted({g['week'] for g in relevant})
     original={}
     prev_final={};prev_rank={};current={}
@@ -111,6 +110,20 @@ def compute_rankings(completed, fbs_names):
     for g in relevant:
         if g['homeTeam'] in participants: games_by_team[g['homeTeam']].append(g)
         if g['awayTeam'] in participants: games_by_team[g['awayTeam']].append(g)
+
+    # A hidden non-FBS opponent is scored only by its on-field performance in
+    # direct games against FBS teams. Including the game being evaluated means a
+    # one-game FCS opponent is measured rather than silently assigned neutral 50.
+    hidden_direct={}
+    for cutoff in weeks:
+        raw={}
+        for t in hidden_non_fbs:
+            vals=[]
+            for g in games_by_team[t]:
+                if g['week']<=cutoff:
+                    res,pf,pa=result_for(t,g);vals.append(perf(pf,pa,res))
+            if vals: raw[t]=sum(vals)/len(vals)
+        hidden_direct[cutoff]=normalize_scores(raw)
 
     for w in weeks:
         prior_games={t:[g for g in games_by_team[t] if g['week']<w] for t in participants}
@@ -120,8 +133,7 @@ def compute_rankings(completed, fbs_names):
         for g in [x for x in relevant if x['week']==w]:
             for team,opp in ((g['homeTeam'],g['awayTeam']),(g['awayTeam'],g['homeTeam'])):
                 if team not in participants: continue
-                qopp=direct_quality_opponent(team,opp,fbs_set)
-                original[(g['id'],team)]=50.0 if not qopp else entered.get(qopp,50.0)
+                original[(g['id'],team)]=hidden_direct[w].get(opp,entered.get(opp,50.0))
 
         # later validation score maps for every earlier cutoff
         later_norm={}
@@ -144,10 +156,11 @@ def compute_rankings(completed, fbs_names):
                 res,tfp,tpa=result_for(t,g);pf+=tfp;pa+=tpa
                 wins+=res=='W';losses+=res=='L';ties+=res=='T'
                 opp=g['awayTeam'] if t==g['homeTeam'] else g['homeTeam']
-                qopp=direct_quality_opponent(t,opp,fbs_set)
                 orig=original.get((g['id'],t),50.0)
-                if qopp and g['week']<w:
-                    val=later_norm.get(g['week'],{}).get(qopp,orig)
+                if opp in hidden_non_fbs:
+                    val=hidden_direct[w].get(opp,orig)
+                elif g['week']<w:
+                    val=later_norm.get(g['week'],{}).get(opp,orig)
                 else: val=orig
                 eff=.60*orig+.40*val
                 if res=='W':quality+=.75*eff
@@ -168,16 +181,17 @@ def compute_rankings(completed, fbs_names):
         prior_rows,_,_=compute_rankings(prior_completed,fbs_names)
         prior_ranks={r['Team']:r['Rank'] for r in prior_rows}
 
-    ordered=sorted(current,key=lambda t:(-current[t]['final'],-current[t]['wins'],current[t]['losses'],t)) if current else sorted(participants)
+    ordered=sorted(fbs_set,key=lambda t:(-current[t]['final'],-current[t]['wins'],current[t]['losses'],t)) if current else sorted(fbs_set)
     rows=[]
     for i,t in enumerate(ordered,1):
         r=current.get(t,{'wins':0,'losses':0,'ties':0,'games':0,'pf':0,'pa':0,'base':0,'quality':0,'final':0})
         record=f"{r['wins']}-{r['losses']}"+(f"-{r['ties']}" if r['ties'] else '')
         pr=prior_ranks.get(t,i);rows.append({'Rank':i,'Team':t,'Record':record,'Games':r['games'],'Points For':r['pf'],'Points Allowed':r['pa'],'Point Diff':r['pf']-r['pa'],'Base Rating':round(r['base'],4),'Dynamic Validation':round(r['quality'],4),'Final Rating':round(r['final'],4),'Prior Rank':pr,'Rank Change':pr-i,'Model Logic':'60/40 dynamic opponent validation'})
-    return rows,named_non,relevant
+    hidden_strength={t:round(v,4) for t,v in hidden_direct.get(latest,{}).items()}
+    return rows,hidden_strength,relevant
 
-def build_matrix(completed, fbs_names, named_non):
-    fbs=sorted(fbs_names);non=sorted(named_non);teams=fbs+non+['NON-FBS'];idx={t:i for i,t in enumerate(teams)}
+def build_matrix(completed, fbs_names):
+    fbs=sorted(fbs_names);teams=fbs;idx={t:i for i,t in enumerate(teams)}
     cells=[[[] for _ in teams] for __ in teams]
     for i in range(len(teams)): cells[i][i]=['—']
     def put(a,b,val):
@@ -185,15 +199,12 @@ def build_matrix(completed, fbs_names, named_non):
             target=cells[idx[a]][idx[b]]
             if target==['—']:return
             target.append(val)
-    fbs_set=set(fbs);non_set=set(non)
+    fbs_set=set(fbs)
     for g in completed:
         h,a=g['homeTeam'],g['awayTeam'];hp,ap=g['homePoints'],g['awayPoints'];w=g['week']
         def sval(diff):return ('+' if diff>0 else '')+str(diff)+f' ({w})'
-        if h in fbs_set and a in (fbs_set|non_set): put(h,a,sval(hp-ap));put(a,h,sval(ap-hp))
-        elif a in fbs_set and h in non_set: put(h,a,sval(hp-ap));put(a,h,sval(ap-hp))
-        else:
-            if h in non_set: put(h,'NON-FBS',sval(hp-ap));put('NON-FBS',h,sval(ap-hp))
-            if a in non_set: put(a,'NON-FBS',sval(ap-hp));put('NON-FBS',a,sval(hp-ap))
+        if h in fbs_set and a in fbs_set:
+            put(h,a,sval(hp-ap));put(a,h,sval(ap-hp))
     rows=[]
     for i,t in enumerate(teams):
         row=[t]
@@ -203,13 +214,14 @@ def build_matrix(completed, fbs_names, named_non):
         rows.append(row)
     return {'headers':['Team']+teams,'rows':rows}
 
-def build_picks(all_games, rankings):
+def build_picks(all_games, rankings, fbs_names):
     now=datetime.now(timezone.utc);future=[]
+    fbs_set=set(fbs_names)
     for g in all_games:
         if is_final(g):continue
         try:dt=datetime.fromisoformat(g['startDate'].replace('Z','+00:00')) if g['startDate'] else now+timedelta(days=365)
         except:dt=now+timedelta(days=365)
-        if dt>=now-timedelta(hours=5) and (g['homeClassification']=='fbs' or g['awayClassification']=='fbs'):future.append((g,dt))
+        if dt>=now-timedelta(hours=5) and g['homeTeam'] in fbs_set and g['awayTeam'] in fbs_set:future.append((g,dt))
     if not future:return []
     minweek=min(g['week'] for g,dt in future);future=[x for x in future if x[0]['week']==minweek]
     rating={r['Team']:r['Final Rating'] for r in rankings};rank={r['Team']:r['Rank'] for r in rankings};record={r['Team']:r['Record'] for r in rankings}
@@ -248,14 +260,14 @@ def main():
     raw_games=api_get('/games',{'year':SEASON,'seasonType':'regular'})
     all_games=[normalize_game(g) for g in raw_games]
     completed=[g for g in all_games if is_final(g)]
-    rankings,named_non,relevant=compute_rankings(completed,fbs_names)
-    matrix=build_matrix(completed,fbs_names,named_non)
-    picks=build_picks(all_games,rankings)
+    rankings,hidden_non_fbs_strength,relevant=compute_rankings(completed,fbs_names)
+    matrix=build_matrix(completed,fbs_names)
+    picks=build_picks(all_games,rankings,fbs_names)
     eastern=datetime.now(ZoneInfo('America/New_York')).isoformat(timespec='seconds')
-    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Dynamic Validation 60/40 v2'},'rankings':rankings,'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':[g for g in completed]}
+    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'FBS Rankings + Hidden Direct-FBS Opponent Validation v3'},'rankings':rankings,'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))
-    print(f'Updated: {len(completed)} completed games, {len(rankings)} ranked teams, {len(picks)} picks, {len(named_non)} named non-FBS teams.')
+    print(f'Updated: {len(completed)} completed games, {len(rankings)} FBS teams, {len(picks)} FBS-only picks, {len(hidden_non_fbs_strength)} hidden non-FBS opponent ratings.')
 
 if __name__=='__main__':main()

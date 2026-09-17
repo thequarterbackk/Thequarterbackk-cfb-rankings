@@ -37,6 +37,8 @@ Loss quality = −0.75 × (100 − effective opponent strength)
 
 No margin cap.
 
+Only FBS teams appear in public rankings, picks, heatmaps, and the ownership map. When an FBS team plays an FCS or other non-FBS opponent, that opponent remains hidden but is evaluated from its games directly against FBS teams. FCS-vs-FCS results do not affect the model. The hidden opponent score feeds Dynamic Validation so an FBS result against a strong FCS performance is valued differently from a result against a weak one.
+
 ## Install on the existing repo
 Replace the root website files with the files in this package:
 - `index.html`
