@@ -4,6 +4,16 @@ on:
 
   workflow_dispatch:
 
+  push:
+
+    branches: ["main"]
+
+    paths:
+
+      - "update_rankings.py"
+
+      - ".github/workflows/update-rankings.yml"
+
   schedule:
 
     - cron: "17 * * * *"
