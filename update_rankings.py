@@ -51,6 +51,7 @@ def load_team_meta():
     out=[]
     for t in raw:
         loc=t.get('location') or {}
+        logos=getv(t,'logos') or []
         lat=getv(loc,'latitude','lat') or getv(t,'latitude','lat')
         lon=getv(loc,'longitude','lon','lng') or getv(t,'longitude','lon','lng')
         school=name(getv(t,'school','team','name'))
@@ -61,7 +62,8 @@ def load_team_meta():
             'city':getv(loc,'city') or getv(t,'city'),'latitude':float(lat) if lat is not None else None,
             'longitude':float(lon) if lon is not None else None,
             'color':('#'+str(getv(t,'color')).lstrip('#')) if getv(t,'color') else None,
-            'altColor':('#'+str(getv(t,'alt_color','altColor')).lstrip('#')) if getv(t,'alt_color','altColor') else None
+            'altColor':('#'+str(getv(t,'alt_color','altColor')).lstrip('#')) if getv(t,'alt_color','altColor') else None,
+            'logo':logos[0] if isinstance(logos,list) and logos else None
         })
     TEAM_CACHE.write_text(json.dumps(out,indent=2))
     return out

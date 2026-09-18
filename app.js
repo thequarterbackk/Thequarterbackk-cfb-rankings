@@ -1,6 +1,6 @@
 let DATA=null, sortKey='Rank', sortAsc=true;
 let heatZoom={scale:1,x:0,y:0};
-let ownershipState={svg:null,g:null,zoom:null,countyUnits:null,countyFeatures:null,ownersByCounty:null,colorByTeam:{},teamMeta:[]};
+let ownershipState={svg:null,g:null,zoom:null,countyUnits:null,countyFeatures:null,ownersByCounty:null,colorByTeam:{},logoByTeam:{},teamMeta:[]};
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=v=>typeof v==='number'?v:Number(v);
@@ -95,7 +95,7 @@ async function renderOwnershipMap(){
   const holder=document.getElementById('ownershipMap'),status=document.getElementById('ownershipStatus');
   const meta=(DATA.teamMeta||[]).filter(t=>Number.isFinite(+t.latitude)&&Number.isFinite(+t.longitude));
   if(!meta.length){status.textContent='Ownership geography will appear after the first GitHub Action refresh builds team-location data.';holder.innerHTML='<div style="padding:24px;color:#9fb0c7">Run the Update rankings & maps workflow once after uploading this package.</div>';return;}
-  status.textContent='Building county ownership…';ownershipState.teamMeta=meta;ownershipState.colorByTeam={};meta.forEach(t=>ownershipState.colorByTeam[t.team]=t.color||hashColor(t.team));
+  status.textContent='Building county ownership…';ownershipState.teamMeta=meta;ownershipState.colorByTeam={};ownershipState.logoByTeam={};meta.forEach(t=>{ownershipState.colorByTeam[t.team]=t.color||hashColor(t.team);if(t.logo)ownershipState.logoByTeam[t.team]=t.logo;});
   const us=await fetch('https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json').then(r=>r.json());
   const counties=topojson.feature(us,us.objects.counties).features;const states=topojson.mesh(us,us.objects.states,(a,b)=>a!==b);
   const width=1100,height=700,svg=d3.select(holder).html('').append('svg').attr('viewBox',`0 0 ${width} ${height}`);const g=svg.append('g');
@@ -118,14 +118,24 @@ async function renderOwnershipMap(){
   const cur={};units.forEach(u=>(cur[u.county]??=[]).push(u.owner));Object.keys(cur).forEach(k=>cur[k]=[...new Set(cur[k])]);ownershipState.ownersByCounty=cur;ownershipState.countyUnits=units;ownershipState.countyFeatures=countyFeatures;
   const defs=svg.append('defs');
   function fillFor(fid){const owners=cur[fid]||[];if(owners.length<=1)return owners[0]?teamColor(owners[0]):'#1b2635';const id='p'+fid;const p=defs.append('pattern').attr('id',id).attr('width',12).attr('height',12).attr('patternUnits','userSpaceOnUse').attr('patternTransform','rotate(35)');const w=12/owners.length;owners.forEach((o,i)=>p.append('rect').attr('x',i*w).attr('width',w).attr('height',12).attr('fill',teamColor(o)));return `url(#${id})`;}
+  const logoPatterns=new Map();
+  function logoFill(fid){
+    const owners=(cur[fid]||[]).filter(o=>ownershipState.logoByTeam[o]);if(!owners.length)return 'none';
+    const key=owners.slice().sort().join('|');if(logoPatterns.has(key))return logoPatterns.get(key);
+    const id=`logo-${logoPatterns.size}`,size=44,p=defs.append('pattern').attr('id',id).attr('width',size).attr('height',size).attr('patternUnits','userSpaceOnUse');
+    if(owners.length===1)p.append('image').attr('href',ownershipState.logoByTeam[owners[0]]).attr('x',7).attr('y',7).attr('width',30).attr('height',30).attr('preserveAspectRatio','xMidYMid meet').attr('opacity',.18);
+    else owners.slice(0,3).forEach((o,i)=>p.append('image').attr('href',ownershipState.logoByTeam[o]).attr('x',3+i*14).attr('y',12).attr('width',18).attr('height',18).attr('preserveAspectRatio','xMidYMid meet').attr('opacity',.16));
+    const value=`url(#${id})`;logoPatterns.set(key,value);return value;
+  }
   g.selectAll('path.county').data(counties).join('path').attr('class','county').attr('d',path).attr('fill',d=>fillFor(String(d.id).padStart(5,'0'))).on('click',(e,d)=>showCounty(String(d.id).padStart(5,'0')));
+  g.selectAll('path.county-logo').data(counties).join('path').attr('class','county-logo').attr('d',path).attr('fill',d=>logoFill(String(d.id).padStart(5,'0')));
   g.append('path').datum(states).attr('class','state-border').attr('d',path);
   const zoom=d3.zoom().scaleExtent([1,18]).on('zoom',e=>g.attr('transform',e.transform));svg.call(zoom);ownershipState.svg=svg;ownershipState.g=g;ownershipState.zoom=zoom;
   const distinctOwners=[...new Set(units.map(u=>u.owner))];status.textContent=`${units.length.toLocaleString()} territory units • ${distinctOwners.length} current landholders • pinch to zoom`;
 }
 
 function showCounty(fid){const owners=ownershipState.ownersByCounty?.[fid]||[];document.getElementById('ownerName').textContent=owners.length?owners.join(' / '):'Unassigned';const counts=owners.map(o=>({o,n:ownershipState.countyUnits.filter(u=>u.owner===o).length}));document.getElementById('ownerTerritory').textContent=counts.map(x=>`${x.o}: ${x.n} territory unit${x.n===1?'':'s'}`).join(' • ')||'No territory owner';document.getElementById('ownerSwatches').innerHTML=owners.map(o=>`<span class="swatch" title="${esc(o)}" style="background:${teamColor(o)}"></span>`).join('');}
-function findOwner(){const q=document.getElementById('ownerSearch').value.trim().toLowerCase();if(!q||!ownershipState.svg)return;const team=[...new Set(ownershipState.countyUnits.map(u=>u.owner))].find(x=>x.toLowerCase().includes(q));if(!team)return;const county=ownershipState.countyUnits.find(u=>u.owner===team)?.county;if(!county)return;showCounty(county);ownershipState.g.selectAll('path.county').attr('opacity',d=>{const fid=String(d.id).padStart(5,'0');return (ownershipState.ownersByCounty[fid]||[]).includes(team)?1:.16;});setTimeout(()=>ownershipState.g.selectAll('path.county').attr('opacity',1),1800);}
+function findOwner(){const q=document.getElementById('ownerSearch').value.trim().toLowerCase();if(!q||!ownershipState.svg)return;const team=[...new Set(ownershipState.countyUnits.map(u=>u.owner))].find(x=>x.toLowerCase().includes(q));if(!team)return;const county=ownershipState.countyUnits.find(u=>u.owner===team)?.county;if(!county)return;showCounty(county);ownershipState.g.selectAll('path.county,path.county-logo').attr('opacity',d=>{const fid=String(d.id).padStart(5,'0');return (ownershipState.ownersByCounty[fid]||[]).includes(team)?1:.16;});setTimeout(()=>ownershipState.g.selectAll('path.county,path.county-logo').attr('opacity',1),1800);}
 
 function activateTab(id){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active',x.id===id));if(id==='matrixImage')setTimeout(()=>{drawHeatmapImage();resetHeatZoom();},30);if(id==='ownership'&&!ownershipState.svg)setTimeout(renderOwnershipMap,30);}
 
