@@ -23,6 +23,7 @@
 <nav class="tabs wrap" aria-label="Site sections">
   <button class="tab active" data-tab="rankings">Rankings</button>
   <button class="tab" data-tab="picks">Upcoming Picks</button>
+  <button class="tab" data-tab="strength">Conference Strength</button>
   <button class="tab" data-tab="matrix">Results Heatmap</button>
   <button class="tab" data-tab="matrixImage">Heatmap Image</button>
   <button class="tab" data-tab="ownership">CFP Ownership Map</button>
@@ -59,6 +60,16 @@
     <div class="ownership-detail"><div><strong id="ownerName">Tap a county</strong><span id="ownerTerritory">Pinch to zoom and drag to pan.</span></div><div id="ownerSwatches" class="swatches"></div></div>
   </section>
 
+  <section id="strength" class="panel">
+    <div class="section-head"><div><div class="eyebrow">THEQUARTERBACKK MODEL</div><h2>Conference Strength Ladder</h2><p>Every FBS team placed by the model's Final Rating. Higher is better. Each horizontal bar is the conference's arithmetic mean; columns run from highest average to lowest. Independents are grouped separately.</p><div class="page-stamp" data-update-stamp></div></div><span id="ladderWeek" class="ladder-week"></span></div>
+    <p class="map-status">Ratings use the model's own cumulative scale, not a projected point spread. Swipe horizontally to see all conferences. Tap a team for its rating and record.</p>
+    <div id="ladderChart" class="ladder-scroll" tabindex="0" role="region" aria-label="Conference strength chart, scroll horizontally"></div>
+    <div id="ladderDetail" class="ownership-detail" aria-live="polite">Select a team logo to see its model rating.</div>
+    <h3>Conference averages</h3>
+    <div class="table-wrap"><table id="ladderSummary"><thead><tr><th scope="col">Group</th><th scope="col">Teams</th><th scope="col">Mean rating</th><th scope="col">Highest rated</th><th scope="col">Lowest rated</th></tr></thead><tbody></tbody></table></div>
+    <details class="ladder-team-list"><summary>All team ratings (accessible table)</summary><div class="table-wrap"><table id="ladderTeams"><thead><tr><th scope="col">Team</th><th scope="col">Conference / group</th><th scope="col">Rank</th><th scope="col">Record</th><th scope="col">Final Rating</th></tr></thead><tbody></tbody></table></div></details>
+  </section>
+
   <section id="method" class="panel prose">
     <h2>How the model works</h2><div class="page-stamp" data-update-stamp></div>
     <h3>1. Core performance</h3><p><strong>Base Rating = (Wins × 100) + Points For − (Points Allowed × 1.5)</strong>. The model rewards winning and scoring while explicitly punishing teams for giving up points. There is no margin cap.</p>
@@ -72,6 +83,7 @@
 </main>
 
 <footer><div class="wrap">Dynamic CFB Rankings • 2026 season • Automated final-score updates</div></footer>
+<script src="ladder.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
