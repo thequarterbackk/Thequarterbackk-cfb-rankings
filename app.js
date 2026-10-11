@@ -1,4 +1,17 @@
-function renderModelLines(){const body=document.getElementById('linesBody');if(!body)return;const rows=DATA.modelLines||[];const a=DATA.modelAccuracy||{};const info=document.getElementById('lineAccuracy');if(info)info.textContent=a.evaluatedGames?('Archived predictions: '+a.archivedPredictions+' • Evaluated: '+a.evaluatedGames+' • Mean absolute error: '+a.meanAbsoluteError+' points'):'Historical accuracy will appear once archived pregame predictions have completed.';body.innerHTML=rows.length?rows.map(r=>{const d=new Date(r.startDate);const time=Number.isNaN(d.getTime())?'TBD':d.toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});return '<tr><td>'+esc(time)+'</td><td>'+esc(r.awayTeam)+' @ '+esc(r.homeTeam)+'</td><td>'+esc(r.favorite)+'</td><td>'+esc(r.spread===0?'PK':r.spread.toFixed(1))+'</td></tr>';}).join(''):'<tr><td colspan="4">No upcoming FBS games in the current data.</td></tr>';}
+function renderModelLines(){
+ const body=document.getElementById('linesBody');if(!body)return;
+ const rows=DATA.modelLines||[],a=DATA.modelAccuracy||{},weekly=DATA.marketStats?.weekly||{};
+ const info=document.getElementById('lineAccuracy');
+ if(info)info.textContent=a.evaluatedGames?('Archived predictions: '+a.archivedPredictions+' • Evaluated: '+a.evaluatedGames+' • Mean absolute error: '+a.meanAbsoluteError+' points'):'Accuracy appears after archived predictions have completed.';
+ const stats=document.getElementById('weeklyVegasBody');
+ if(stats)stats.innerHTML=Object.keys(weekly).sort((a,b)=>Number(b)-Number(a)).map(w=>{const s=weekly[w];return '<tr><td>'+esc(w)+'</td><td>'+s.wins+'</td><td>'+s.losses+'</td><td>'+s.pushes+'</td><td>'+esc(s.winRate===null?'N/A':s.winRate+'%')+'</td><td>'+s.meanAbsoluteError+'</td></tr>';}).join('')||'<tr><td colspan="6">No completed games with both archived model and market lines yet.</td></tr>';
+ body.innerHTML=rows.length?rows.map(r=>{
+ const d=new Date(r.startDate),time=Number.isNaN(d.getTime())?'TBD':d.toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+ const market=r.vegasHomeSpread===null||r.vegasHomeSpread===undefined?'N/A':(r.vegasHomeSpread===0?'PK':r.vegasHomeSpread.toFixed(1)+' home');
+ const edge=r.modelVsVegasEdge===null||r.modelVsVegasEdge===undefined?'N/A':(r.modelVsVegasEdge>0?r.homeTeam:r.awayTeam)+' '+Math.abs(r.modelVsVegasEdge).toFixed(1);
+ return '<tr><td>'+esc(time)+'</td><td>'+esc(r.awayTeam)+' @ '+esc(r.homeTeam)+'</td><td>'+esc(r.favorite)+'</td><td>'+esc(r.spread===0?'PK':r.spread.toFixed(1))+'</td><td>'+esc(market)+'</td><td>'+esc(edge)+'</td></tr>';
+ }).join(''):'<tr><td colspan="6">No upcoming FBS matchups in the current data.</td></tr>';
+}
 let DATA=null, sortKey='Rank', sortAsc=true;
 let heatZoom={scale:1,x:0,y:0};
 let ownershipState={svg:null,g:null,zoom:null,countyUnits:null,countyFeatures:null,ownersByCounty:null,colorByTeam:{},logoByTeam:{},teamMeta:[]};
