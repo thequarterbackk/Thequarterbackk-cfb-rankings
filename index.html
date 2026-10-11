@@ -22,7 +22,7 @@
 
 <nav class="tabs wrap" aria-label="Site sections">
   <button class="tab active" data-tab="rankings">Rankings</button>
-  <button class="tab" data-tab="picks">Upcoming Picks</button>
+  <button class="tab" data-tab="picks">Upcoming Picks</button><button class="tab" data-tab="lines">Weekly Model Lines</button>
   <button class="tab" data-tab="strength">Conference Strength</button>
   <button class="tab" data-tab="matrix">Results Heatmap</button>
   <button class="tab" data-tab="matrixImage">Heatmap Image</button>
@@ -33,7 +33,7 @@
 <main class="wrap">
   <section id="rankings" class="panel active">
     <div class="section-head"><div><h2>Current Rankings</h2><p>FBS-only dynamic-validation rankings. Search or sort the table.</p><div class="page-stamp" data-update-stamp></div></div><input id="rankSearch" class="search" placeholder="Search team…" aria-label="Search rankings"></div>
-    <div class="table-wrap"><table id="rankTable"><thead><tr><th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th><th data-key="Final Rating">Rating</th><th data-key="Base Rating">Base</th><th data-key="Dynamic Validation">Validation</th><th data-key="Rank Change">Move</th><th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th></tr></thead><tbody></tbody></table></div>
+    <div class="table-wrap"><table id="rankTable"><thead><tr><th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th><th data-key="Final Rating">Rating</th><th data-key="Power Rating">Power</th><th data-key="Base Rating">Base</th><th data-key="Dynamic Validation">Validation</th><th data-key="Rank Change">Move</th><th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section id="picks" class="panel">
@@ -41,6 +41,7 @@
     <div id="pickCards" class="cards"></div>
   </section>
 
+  <section id="lines" class="panel"><h2>Weekly Model Lines</h2><p>Opponent-adjusted projections, independent of sportsbook lines. FBS games only.</p><div class="page-stamp" data-update-stamp></div><div class="table-wrap"><table><thead><tr><th>Kickoff (ET)</th><th>Matchup</th><th>Favorite</th><th>Model spread</th></tr></thead><tbody id="linesBody"></tbody></table></div></section>
   <section id="matrix" class="panel">
     <div class="section-head"><div><h2>Results Heatmap</h2><p>FBS-vs-FBS results only. Each row is the team's perspective; green is a win, red is a loss, and the number is point differential with week in parentheses.</p><div class="page-stamp" data-update-stamp></div></div><input id="matrixSearch" class="search" placeholder="Filter team rows…" aria-label="Filter heatmap rows"></div>
     <div class="matrix-wrap"><table id="matrixTable"></table></div>
@@ -78,7 +79,7 @@
     <h3>4. Quality adjustment</h3><p>Wins receive positive opponent-quality value. Losses are penalized more severely when they come against weaker opponents. A highly rated opponent that continues to perform well preserves the value of an earlier win; an opponent that collapses can reduce that value. An underrated opponent that later proves strong can increase the value of the earlier result.</p>
     <h3>5. Week-to-week memory</h3><p>The rating entering each week is frozen as that week's original opponent strength. Later games validate that historical value instead of simply replacing it with today's ranking.</p>
     <h3>6. Live results</h3><p>The public site never receives the private CFBD API key. A GitHub Action checks for newly completed games, recalculates the model after finals, rewrites the public data file, and GitHub Pages republishes it automatically.</p>
-    <h3>7. CFP Ownership Map</h3><p>The map begins with county-level territory based on geographic proximity. A team's empire is made of the territory units it currently owns. FBS-vs-FBS results transfer every territory unit owned by the losing landholder to the winner. Split starting counties are shown with multiple colors until those shares consolidate through game results.</p>
+    <h3>7. Opponent-adjusted power and model lines</h3><p>Iterative opponent-adjusted scoring margins with sample-size shrinkage and recent-form weighting provide power ratings in point units. Rankings include a modest 0.30 times power adjustment. Weekly lines compare power ratings with a provisional 2-point home advantage. No sportsbook information enters the model.</p><h3>8. CFP Ownership Map</h3><p>The map begins with county-level territory based on geographic proximity. A team's empire is made of the territory units it currently owns. FBS-vs-FBS results transfer every territory unit owned by the losing landholder to the winner. Split starting counties are shown with multiple colors until those shares consolidate through game results.</p>
   </section>
 </main>
 
