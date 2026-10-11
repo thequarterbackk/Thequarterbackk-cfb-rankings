@@ -58,7 +58,7 @@ jobs:
 
           git config user.email "actions@github.com"
 
-          git add data.json model_predictions.json
+          git add data.json model_predictions.json market_closing_lines.json
 
           if git diff --cached --quiet; then
 
