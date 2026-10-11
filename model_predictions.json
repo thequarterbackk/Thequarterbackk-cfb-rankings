@@ -1610,7 +1610,8 @@
     "week": 7
   },
   "401907295": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.91,
+    "actualHomeMargin": 11,
     "awayTeam": "Savannah State",
     "homeTeam": "Morehouse",
     "id": 401907295,
