@@ -324,7 +324,7 @@ def main():
     score_final_ids={str(getv(x,'id')) for x in scoreboard if str(getv(x,'status') or '').lower()=='completed'}
     new_finals=score_final_ids-seen
     if not new_finals and not need_full:
-        print('No new finals and full refresh not due. Nothing to do.')
+        print('No new finals; retaining existing rankings until the next full refresh.')
         return
 
     raw_games=api_get('/games',{'year':SEASON,'seasonType':'regular'})
