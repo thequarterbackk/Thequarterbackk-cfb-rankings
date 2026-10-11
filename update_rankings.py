@@ -7,6 +7,7 @@ from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parent
 DATA_PATH=ROOT/'data.json'
 STATE_PATH=ROOT/'automation_state.json'
+PREDICTIONS_PATH=ROOT/'model_predictions.json'
 TEAM_CACHE=ROOT/'team_meta.json'
 SEASON=2026
 API='https://api.collegefootballdata.com'
@@ -192,6 +193,81 @@ def compute_rankings(completed, fbs_names):
     hidden_strength={t:round(v,4) for t,v in hidden_direct.get(latest,{}).items()}
     return rows,hidden_strength,relevant
 
+
+def power_ratings(completed, names):
+    """Current-season results only. FBS/FCS opponents enter the same connected game graph."""
+    import math
+    teams=set(names)
+    games=[g for g in completed if g['homeTeam'] and g['awayTeam']]
+    for g in games:
+        teams.add(g['homeTeam']);teams.add(g['awayTeam'])
+    ratings={t:0.0 for t in teams}
+    if not games:return ratings,0.0
+    latest=max(g['week'] for g in games)
+    # Empirical home edge from completed games; shrink toward zero with limited evidence.
+    neutral_free=[g for g in games if not g['neutralSite']]
+    home_edge=(sum(g['homePoints']-g['awayPoints'] for g in neutral_free)/
+               (len(neutral_free)+100)) if neutral_free else 0.0
+    home_edge=max(-5.0,min(5.0,home_edge))
+    for _ in range(100):
+        sums={t:0.0 for t in teams};counts={t:0.0 for t in teams}
+        for g in games:
+            h,a=g['homeTeam'],g['awayTeam']
+            margin=35*math.asinh((g['homePoints']-g['awayPoints'])/35)
+            edge=0.0 if g['neutralSite'] else home_edge
+            weight=0.96**max(0,latest-g['week'])
+            sums[h]+=weight*(margin+ratings[a]-edge)
+            sums[a]+=weight*(-margin+ratings[h]+edge)
+            counts[h]+=weight;counts[a]+=weight
+        new={t:sums[t]/(counts[t]+2.0) if counts[t] else 0.0 for t in teams}
+        center=sum(new.values())/len(new)
+        updated={t:new[t]-center for t in teams}
+        delta=max(abs(updated[t]-ratings[t]) for t in teams)
+        ratings=updated
+        if delta<0.0001:break
+    return ratings,home_edge
+
+def weekly_lines(games, completed, names, ratings, home_edge):
+    now=datetime.now(timezone.utc)
+    future=[]
+    for g in games:
+        if is_final(g) or g['homeTeam'] not in ratings or g['awayTeam'] not in ratings:continue
+        try: dt=datetime.fromisoformat(g['startDate'].replace('Z','+00:00'))
+        except (AttributeError,ValueError):continue
+        if dt>=now:future.append(g)
+    if not future:return []
+    week=min(g['week'] for g in future)
+    output=[]
+    for g in future:
+        if g['week']!=week:continue
+        h,a=g['homeTeam'],g['awayTeam']
+        margin=ratings[h]-ratings[a]+(0 if g['neutralSite'] else home_edge)
+        output.append({'id':g['id'],'homeAdvantage':round(0 if g['neutralSite'] else home_edge,3),'projectedHomeMargin':round(margin,3),'week':week,'startDate':g['startDate'],'homeTeam':h,'awayTeam':a,'favorite':h if margin>=0 else a,'spread':-round(abs(margin)*2)/2,'homePower':round(ratings[h],2),'awayPower':round(ratings[a],2)})
+    return sorted(output,key=lambda x:x['startDate'] or '')
+
+
+def update_prediction_archive(all_games, lines):
+    archive=read_json(PREDICTIONS_PATH,{})
+    if not isinstance(archive,dict):archive={}
+    by_id={str(g['id']):g for g in all_games if g['id'] is not None}
+    for key,row in archive.items():
+        g=by_id.get(key)
+        if g and is_final(g) and row.get('actualHomeMargin') is None:
+            row['actualHomeMargin']=g['homePoints']-g['awayPoints']
+            row['absoluteError']=round(abs(row['projectedHomeMargin']-row['actualHomeMargin']),2)
+    timestamp=datetime.now(timezone.utc).isoformat()
+    for row in lines:
+        key=str(row['id'])
+        if key not in archive and row['id'] is not None:
+            archive[key]={'id':row['id'],'week':row['week'],'homeTeam':row['homeTeam'],
+                          'awayTeam':row['awayTeam'],'startDate':row['startDate'],
+                          'projectedHomeMargin':row['projectedHomeMargin'],
+                          'recordedAt':timestamp,'actualHomeMargin':None}
+    PREDICTIONS_PATH.write_text(json.dumps(archive,indent=2,sort_keys=True))
+    scored=[r for r in archive.values() if r.get('absoluteError') is not None]
+    return {'archivedPredictions':len(archive),'evaluatedGames':len(scored),
+            'meanAbsoluteError':round(sum(r['absoluteError'] for r in scored)/len(scored),2) if scored else None}
+
 def build_matrix(completed, fbs_names):
     fbs=sorted(fbs_names);teams=fbs;idx={t:i for i,t in enumerate(teams)}
     cells=[[[] for _ in teams] for __ in teams]
@@ -256,17 +332,23 @@ def main():
     score_final_ids={str(getv(x,'id')) for x in scoreboard if str(getv(x,'status') or '').lower()=='completed'}
     new_finals=score_final_ids-seen
     if not new_finals and not need_full:
-        print('No new finals and full refresh not due. Nothing to do.')
+        print('No new finals; retaining existing rankings until the next full refresh.')
         return
 
     raw_games=api_get('/games',{'year':SEASON,'seasonType':'regular'})
     all_games=[normalize_game(g) for g in raw_games]
     completed=[g for g in all_games if is_final(g)]
     rankings,hidden_non_fbs_strength,relevant=compute_rankings(completed,fbs_names)
+    power,home_edge=power_ratings(completed,fbs_names)
+    for row in rankings:
+        row['Power Rating']=round(power[row['Team']],3)
+        row['Performance Adjustment']=0.0
+    lines=weekly_lines(all_games,completed,fbs_names,power,home_edge)
+    accuracy=update_prediction_archive(all_games,lines)
     matrix=build_matrix(completed,fbs_names)
     picks=build_picks(all_games,rankings,fbs_names)
     eastern=datetime.now(ZoneInfo('America/New_York')).isoformat(timespec='seconds')
-    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'FBS Rankings + Hidden Direct-FBS Opponent Validation v3'},'rankings':rankings,'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
+    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Dynamic Validation + Power Ratings v4'},'rankings':rankings,'modelLines':lines,'modelAccuracy':accuracy,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))
