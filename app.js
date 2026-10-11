@@ -1,3 +1,4 @@
+function renderModelLines(){const body=document.getElementById('linesBody');if(!body)return;const rows=DATA.modelLines||[];body.innerHTML=rows.length?rows.map(r=>{const d=new Date(r.startDate);const time=Number.isNaN(d.getTime())?'TBD':d.toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});return '<tr><td>'+esc(time)+'</td><td>'+esc(r.awayTeam)+' @ '+esc(r.homeTeam)+'</td><td>'+esc(r.favorite)+'</td><td>'+esc(r.spread===0?'PK':r.spread.toFixed(1))+'</td></tr>';}).join(''):'<tr><td colspan="4">No upcoming FBS games in the current data.</td></tr>';}
 let DATA=null, sortKey='Rank', sortAsc=true;
 let heatZoom={scale:1,x:0,y:0};
 let ownershipState={svg:null,g:null,zoom:null,countyUnits:null,countyFeatures:null,ownersByCounty:null,colorByTeam:{},logoByTeam:{},teamMeta:[]};
@@ -29,7 +30,7 @@ function renderRankings(){
   });
   document.querySelector('#rankTable tbody').innerHTML=rows.map(r=>{
     const mv=num(r['Rank Change']);const move=mv>0?`▲ ${mv}`:mv<0?`▼ ${Math.abs(mv)}`:'—';const mclass=mv>0?'move-up':mv<0?'move-down':'move-flat';
-    return `<tr class="${num(r.Rank)<=25?'top25':''}"><td class="rank-num">#${esc(r.Rank)}</td><td><strong>${esc(r.Team)}</strong></td><td>${esc(r.Record)}</td><td><strong>${fmt(r['Final Rating'])}</strong></td><td>${fmt(r['Base Rating'])}</td><td>${fmt(r['Dynamic Validation'])}</td><td class="${mclass}">${move}</td><td>${esc(r['Points For'])}</td><td>${esc(r['Points Allowed'])}</td><td>${esc(r['Point Diff'])}</td></tr>`;
+    return `<tr class="${num(r.Rank)<=25?'top25':''}"><td class="rank-num">#${esc(r.Rank)}</td><td><strong>${esc(r.Team)}</strong></td><td>${esc(r.Record)}</td><td><strong>${fmt(r['Final Rating'])}</strong></td><td>${fmt(r['Power Rating'])}</td><td>${fmt(r['Base Rating'])}</td><td>${fmt(r['Dynamic Validation'])}</td><td class="${mclass}">${move}</td><td>${esc(r['Points For'])}</td><td>${esc(r['Points Allowed'])}</td><td>${esc(r['Point Diff'])}</td></tr>`;
   }).join('');
 }
 
