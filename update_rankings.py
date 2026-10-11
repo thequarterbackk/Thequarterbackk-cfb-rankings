@@ -192,6 +192,46 @@ def compute_rankings(completed, fbs_names):
     hidden_strength={t:round(v,4) for t,v in hidden_direct.get(latest,{}).items()}
     return rows,hidden_strength,relevant
 
+
+def power_ratings(completed, names):
+    import math
+    teams=set(names)
+    games=[g for g in completed if g['homeTeam'] in teams and g['awayTeam'] in teams]
+    ratings={t:0.0 for t in teams}
+    if not games:return ratings
+    latest=max(g['week'] for g in games)
+    for _ in range(20):
+        sums={t:0.0 for t in teams}; counts={t:0.0 for t in teams}
+        for g in games:
+            h,a=g['homeTeam'],g['awayTeam']
+            diff=35*math.asinh((g['homePoints']-g['awayPoints'])/35)
+            w=0.96**(latest-g['week'])
+            sums[h]+=w*(diff+ratings[a]-2)
+            sums[a]+=w*(-diff+ratings[h]+2)
+            counts[h]+=w;counts[a]+=w
+        new={t:sums[t]/(counts[t]+2) if counts[t] else 0 for t in teams}
+        center=sum(new.values())/len(new)
+        ratings={t:new[t]-center for t in teams}
+    return ratings
+
+def weekly_lines(games, completed, names, ratings):
+    now=datetime.now(timezone.utc)
+    future=[]
+    for g in games:
+        if is_final(g) or g['homeTeam'] not in ratings or g['awayTeam'] not in ratings:continue
+        try: dt=datetime.fromisoformat(g['startDate'].replace('Z','+00:00'))
+        except (AttributeError,ValueError):continue
+        if dt>=now-timedelta(hours=5):future.append(g)
+    if not future:return []
+    week=min(g['week'] for g in future)
+    output=[]
+    for g in future:
+        if g['week']!=week:continue
+        h,a=g['homeTeam'],g['awayTeam']
+        margin=ratings[h]-ratings[a]+(0 if g['neutralSite'] else 2)
+        output.append({'week':week,'startDate':g['startDate'],'homeTeam':h,'awayTeam':a,'favorite':h if margin>=0 else a,'spread':-round(abs(margin)*2)/2,'homePower':round(ratings[h],2),'awayPower':round(ratings[a],2)})
+    return sorted(output,key=lambda x:x['startDate'] or '')
+
 def build_matrix(completed, fbs_names):
     fbs=sorted(fbs_names);teams=fbs;idx={t:i for i,t in enumerate(teams)}
     cells=[[[] for _ in teams] for __ in teams]
@@ -263,10 +303,20 @@ def main():
     all_games=[normalize_game(g) for g in raw_games]
     completed=[g for g in all_games if is_final(g)]
     rankings,hidden_non_fbs_strength,relevant=compute_rankings(completed,fbs_names)
+    power=power_ratings(completed,fbs_names)
+    for row in rankings:
+        row['Power Rating']=round(power[row['Team']],3)
+        row['Performance Adjustment']=round(0.30*power[row['Team']],3)
+        row['Final Rating']=round(row['Final Rating']+row['Performance Adjustment'],4)
+    rankings.sort(key=lambda r:-r['Final Rating'])
+    for i,row in enumerate(rankings,1):
+        row['Rank']=i
+        row['Rank Change']=row['Prior Rank']-i
+    lines=weekly_lines(all_games,completed,fbs_names,power)
     matrix=build_matrix(completed,fbs_names)
     picks=build_picks(all_games,rankings,fbs_names)
     eastern=datetime.now(ZoneInfo('America/New_York')).isoformat(timespec='seconds')
-    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'FBS Rankings + Hidden Direct-FBS Opponent Validation v3'},'rankings':rankings,'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
+    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'FBS Rankings + Hidden Direct-FBS Opponent Validation v3'},'rankings':rankings,'modelLines':lines,'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))
