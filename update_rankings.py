@@ -8,6 +8,7 @@ ROOT=Path(__file__).resolve().parent
 DATA_PATH=ROOT/'data.json'
 STATE_PATH=ROOT/'automation_state.json'
 PREDICTIONS_PATH=ROOT/'model_predictions.json'
+MARKET_PATH=ROOT/'market_closing_lines.json'
 TEAM_CACHE=ROOT/'team_meta.json'
 SEASON=2026
 API='https://api.collegefootballdata.com'
@@ -268,6 +269,98 @@ def update_prediction_archive(all_games, lines):
     return {'archivedPredictions':len(archive),'evaluatedGames':len(scored),
             'meanAbsoluteError':round(sum(r['absoluteError'] for r in scored)/len(scored),2) if scored else None}
 
+
+def fetch_market_lines(all_games):
+    """Read market data separately. Never pass these values into ranking or power functions."""
+    now=datetime.now(timezone.utc)
+    weeks=set()
+    for g in all_games:
+        try: dt=datetime.fromisoformat((g['startDate'] or '').replace('Z','+00:00'))
+        except ValueError:continue
+        if not is_final(g) and now<=dt<=now+timedelta(days=15):weeks.add(g['week'])
+    result={}
+    for week in sorted(weeks):
+        try: market_games=api_get('/lines',{'year':SEASON,'week':week,'seasonType':'regular'})
+        except Exception as exc:
+            print('Market lines unavailable for week',week,exc)
+            continue
+        for g in market_games:
+            game_id=getv(g,'id')
+            providers=getv(g,'lines') or []
+            # Stable provider preference; never average incompatible snapshots.
+            preferred=next((x for x in providers if str(x.get('provider','')).lower()=='consensus'),None)
+            if preferred is None:preferred=next((x for x in providers if x.get('spread') is not None),None)
+            if preferred is None:continue
+            try:spread=float(preferred['spread'])
+            except (ValueError,TypeError,KeyError):continue
+            result[str(game_id)]={'homeSpread':spread,'provider':preferred.get('provider','Unknown')}
+    return result
+
+def update_market_archive(all_games, model_lines, latest_market):
+    archive=read_json(MARKET_PATH,{})
+    if not isinstance(archive,dict):archive={}
+    now=datetime.now(timezone.utc)
+    by_id={str(g['id']):g for g in all_games if g.get('id') is not None}
+    for game_id,quote in latest_market.items():
+        game=by_id.get(game_id)
+        if not game or is_final(game):continue
+        try:kickoff=datetime.fromisoformat(game['startDate'].replace('Z','+00:00'))
+        except (ValueError,AttributeError):continue
+        if now>=kickoff:continue
+        entry=archive.setdefault(game_id,{'gameId':game_id,'week':game['week'],
+            'homeTeam':game['homeTeam'],'awayTeam':game['awayTeam'],'kickoff':game['startDate']})
+        # Most recent successfully observed pre-kickoff quote is our closing-line proxy.
+        entry.update({'homeSpread':quote['homeSpread'],'provider':quote['provider'],
+                      'observedAt':now.isoformat()})
+    MARKET_PATH.write_text(json.dumps(archive,indent=2,sort_keys=True))
+    model_archive=read_json(PREDICTIONS_PATH,{})
+    for game_id,entry in archive.items():
+        game=by_id.get(game_id)
+        if game and is_final(game):
+            entry['actualHomeMargin']=game['homePoints']-game['awayPoints']
+        prediction=model_archive.get(game_id)
+        if prediction and prediction.get('projectedHomeMargin') is not None:
+            entry['modelHomeMargin']=prediction['projectedHomeMargin']
+    MARKET_PATH.write_text(json.dumps(archive,indent=2,sort_keys=True))
+    rows=[]
+    for game_id,entry in archive.items():
+        actual=entry.get('actualHomeMargin')
+        model=entry.get('modelHomeMargin')
+        market=entry.get('homeSpread')
+        if actual is None or model is None or market is None:continue
+        # Bet against the closing market only if frozen model margin differs.
+        edge=model+market
+        outcome=actual+market
+        result='push' if abs(outcome)<1e-8 else ('win' if edge*outcome>0 else 'loss')
+        if abs(edge)<1e-8:result='no edge'
+        rows.append({'week':entry['week'],'gameId':game_id,'result':result,
+                     'absoluteError':abs(model-actual)})
+    weeks={}
+    for row in rows:
+        week=str(row['week'])
+        stats=weeks.setdefault(week,{'wins':0,'losses':0,'pushes':0,'noEdge':0,'games':0,'absoluteErrorTotal':0})
+        stats['games']+=1
+        stats['absoluteErrorTotal']+=row['absoluteError']
+        if row['result']=='win':stats['wins']+=1
+        elif row['result']=='loss':stats['losses']+=1
+        elif row['result']=='push':stats['pushes']+=1
+        else:stats['noEdge']+=1
+    for stats in weeks.values():
+        stats['meanAbsoluteError']=round(stats.pop('absoluteErrorTotal')/stats['games'],2)
+        decisions=stats['wins']+stats['losses']
+        stats['winRate']=round(100*stats['wins']/decisions,1) if decisions else None
+    current=[]
+    for row in model_lines:
+        entry=archive.get(str(row.get('id')),{})
+        market=entry.get('homeSpread')
+        enriched=dict(row)
+        enriched['vegasHomeSpread']=market
+        enriched['vegasProvider']=entry.get('provider')
+        enriched['vegasObservedAt']=entry.get('observedAt')
+        enriched['modelVsVegasEdge']=round(row['projectedHomeMargin']+market,2) if market is not None else None
+        current.append(enriched)
+    return current,{'weekly':weeks,'totalArchivedMarketGames':len(archive)}
+
 def build_matrix(completed, fbs_names):
     fbs=sorted(fbs_names);teams=fbs;idx={t:i for i,t in enumerate(teams)}
     cells=[[[] for _ in teams] for __ in teams]
@@ -331,9 +424,7 @@ def main():
     seen=set(str(x) for x in state.get('seen_completed_ids',[]))
     score_final_ids={str(getv(x,'id')) for x in scoreboard if str(getv(x,'status') or '').lower()=='completed'}
     new_finals=score_final_ids-seen
-    if not new_finals and not need_full:
-        print('No new finals; retaining existing rankings until the next full refresh.')
-        return
+    # Refresh market snapshots hourly, even when no games have finished.
 
     raw_games=api_get('/games',{'year':SEASON,'seasonType':'regular'})
     all_games=[normalize_game(g) for g in raw_games]
@@ -345,10 +436,12 @@ def main():
         row['Performance Adjustment']=0.0
     lines=weekly_lines(all_games,completed,fbs_names,power,home_edge)
     accuracy=update_prediction_archive(all_games,lines)
+    market=fetch_market_lines(all_games)
+    lines,market_stats=update_market_archive(all_games,lines,market)
     matrix=build_matrix(completed,fbs_names)
     picks=build_picks(all_games,rankings,fbs_names)
     eastern=datetime.now(ZoneInfo('America/New_York')).isoformat(timespec='seconds')
-    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Dynamic Validation + Power Ratings v4'},'rankings':rankings,'modelLines':lines,'modelAccuracy':accuracy,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
+    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Dynamic Validation + Power Ratings + Market Comparison v5'},'rankings':rankings,'modelLines':lines,'marketStats':market_stats,'modelAccuracy':accuracy,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))
