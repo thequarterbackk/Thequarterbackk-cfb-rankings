@@ -361,6 +361,65 @@ def update_market_archive(all_games, model_lines, latest_market):
         current.append(enriched)
     return current,{'weekly':weeks,'totalArchivedMarketGames':len(archive)}
 
+def probability_home(margin, sigma):
+    """Normal-error estimate; sigma is estimated from prior archived residuals."""
+    import math
+    return 0.5 * (1.0 + math.erf(margin / (max(1.0, sigma) * math.sqrt(2.0))))
+
+def prediction_sigma(archive):
+    errors=[float(r['projectedHomeMargin'])-float(r['actualHomeMargin'])
+            for r in archive.values() if isinstance(r,dict)
+            and r.get('actualHomeMargin') is not None and r.get('projectedHomeMargin') is not None]
+    # Conservative until at least 30 genuine pregame observations exist.
+    if len(errors)<30:return 17.0,len(errors),False
+    import math
+    mean=sum(errors)/len(errors)
+    sd=math.sqrt(sum((e-mean)**2 for e in errors)/len(errors))
+    return max(10.0,min(30.0,sd)),len(errors),True
+
+def enrich_probabilities(lines, archive):
+    sigma,n,calibrated=prediction_sigma(archive)
+    for row in lines:
+        margin=row['projectedHomeMargin']
+        row['homeWinProbability']=round(100*probability_home(margin,sigma),1)
+        row['winnerConfidence']=round(max(row['homeWinProbability'],100-row['homeWinProbability']),1)
+        market=row.get('vegasHomeSpread')
+        if market is not None:
+            row['homeCoverProbability']=round(100*probability_home(margin+market,sigma),1)
+            row['coverPick']=row['homeTeam'] if row['homeCoverProbability']>=50 else row['awayTeam']
+            row['coverConfidence']=round(max(row['homeCoverProbability'],100-row['homeCoverProbability']),1)
+        else:
+            row['homeCoverProbability']=None
+            row['coverPick']=None
+            row['coverConfidence']=None
+        row['uncertaintyPoints']=round(sigma,2)
+        row['probabilityCalibrated']=calibrated
+    return {'sampleSize':n,'sigma':round(sigma,2),'empiricallyCalibrated':calibrated}
+
+def predictive_picks(lines, rankings, fbs_names):
+    allowed=set(fbs_names)
+    ranks={r['Team']:r for r in rankings}
+    out=[]
+    for row in lines:
+        h,a=row['homeTeam'],row['awayTeam']
+        if h not in allowed or a not in allowed:continue
+        favorite=row['favorite'];opp=a if favorite==h else h
+        p=row['winnerConfidence']
+        out.append({'Team':favorite,'Opponent':opp,'Site':'Neutral' if row['homeAdvantage']==0 else ('Home' if favorite==h else 'Away'),
+                    'Dynamic Rank':ranks.get(favorite,{}).get('Rank','N/A'),
+                    'Record':ranks.get(favorite,{}).get('Record','0-0'),
+                    'Final Rating':ranks.get(favorite,{}).get('Final Rating',0),
+                    'Opponent Rank':ranks.get(opp,{}).get('Rank','N/A'),
+                    'Opponent Rating':ranks.get(opp,{}).get('Final Rating',0),
+                    'Model Edge':round(abs(row['projectedHomeMargin']),2),
+                    'Confidence':('High' if p>=75 else 'Moderate' if p>=60 else 'Low'),
+                    'Win Probability':p,'Model Spread':row['spread'],
+                    'Cover Pick':row.get('coverPick'),'Cover Confidence':row.get('coverConfidence'),
+                    'startDate':row['startDate']})
+    out.sort(key=lambda r:-r['Win Probability'])
+    for i,row in enumerate(out[:20],1):row['Pick Rank']=i
+    return out[:20]
+
 def build_matrix(completed, fbs_names):
     fbs=sorted(fbs_names);teams=fbs;idx={t:i for i,t in enumerate(teams)}
     cells=[[[] for _ in teams] for __ in teams]
@@ -438,10 +497,11 @@ def main():
     accuracy=update_prediction_archive(all_games,lines)
     market=fetch_market_lines(all_games)
     lines,market_stats=update_market_archive(all_games,lines,market)
+    probability_meta=enrich_probabilities(lines,read_json(PREDICTIONS_PATH,{}))
     matrix=build_matrix(completed,fbs_names)
-    picks=build_picks(all_games,rankings,fbs_names)
+    picks=predictive_picks(lines,rankings,fbs_names)
     eastern=datetime.now(ZoneInfo('America/New_York')).isoformat(timespec='seconds')
-    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Dynamic Validation + Power Ratings + Market Comparison v5'},'rankings':rankings,'modelLines':lines,'marketStats':market_stats,'modelAccuracy':accuracy,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
+    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Independent predictive picks + uncertainty estimates v6'},'rankings':rankings,'modelLines':lines,'marketStats':market_stats,'modelAccuracy':accuracy,'probabilityMeta':probability_meta,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))
