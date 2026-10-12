@@ -10,7 +10,7 @@ function renderModelLines(){
  const market=r.vegasHomeSpread===null||r.vegasHomeSpread===undefined?'N/A':(r.vegasHomeSpread===0?'PK':r.vegasHomeSpread.toFixed(1)+' home');
  const edge=r.modelVsVegasEdge===null||r.modelVsVegasEdge===undefined?'N/A':(r.modelVsVegasEdge>0?r.homeTeam:r.awayTeam)+' '+Math.abs(r.modelVsVegasEdge).toFixed(1);
  return '<tr><td>'+esc(time)+'</td><td>'+esc(r.awayTeam)+' @ '+esc(r.homeTeam)+'</td><td>'+esc(r.favorite)+'</td><td>'+esc(r.spread===0?'PK':r.spread.toFixed(1))+'</td><td>'+esc(market)+'</td><td>'+esc(edge)+'</td></tr>';
- }).join(''):'<tr><td colspan="6">No upcoming FBS matchups in the current data.</td></tr>';
+ }).join(''):'<tr><td colspan="9">No upcoming FBS matchups in the current data.</td></tr>';
 }
 let DATA=null, sortKey='Rank', sortAsc=true;
 let heatZoom={scale:1,x:0,y:0};
@@ -51,7 +51,7 @@ function renderPicks(){
   document.getElementById('pickCards').innerHTML=(DATA.picks||[]).map(r=>{
     const conf=String(r.Confidence||'').replaceAll(' ','-');
     const siteLabel=r.Site==='Home'?'Home vs.':r.Site==='Away'?'Away at':'Neutral vs.';
-    return `<article class="card"><div class="pickrank">PICK #${esc(r['Pick Rank'])}</div><h3>${esc(r.Team)}</h3><div class="versus">${siteLabel} ${esc(r.Opponent)}</div><div class="metrics"><div class="metric"><b>#${esc(r['Dynamic Rank'])}</b><span>Current rank</span></div><div class="metric"><b>${fmt(r['Final Rating'])}</b><span>Rating</span></div><div class="metric"><b>${fmt(r['Model Edge'])}</b><span>Model edge</span></div><div class="metric"><b>${esc(r.Record)}</b><span>Record</span></div></div><span class="conf ${conf}">${esc(r.Confidence)}</span></article>`;
+    return `<article class="card"><div class="pickrank">PICK #${esc(r['Pick Rank'])}</div><h3>${esc(r.Team)}</h3><p>Win probability: <strong>${esc(r['Win Probability']??'N/A')}%</strong> · Model spread: <strong>${esc(r['Model Spread']??'N/A')}</strong> · Cover: <strong>${esc(r['Cover Pick']??'N/A')}</strong> (${esc(r['Cover Confidence']??'N/A')}%)</p><div class="versus">${siteLabel} ${esc(r.Opponent)}</div><div class="metrics"><div class="metric"><b>#${esc(r['Dynamic Rank'])}</b><span>Current rank</span></div><div class="metric"><b>${fmt(r['Final Rating'])}</b><span>Rating</span></div><div class="metric"><b>${fmt(r['Model Edge'])}</b><span>Model edge</span></div><div class="metric"><b>${esc(r.Record)}</b><span>Record</span></div></div><span class="conf ${conf}">${esc(r.Confidence)}</span></article>`;
   }).join('');
 }
 
