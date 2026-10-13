@@ -9,7 +9,7 @@ function renderModelLines(){
  const d=new Date(r.startDate),time=Number.isNaN(d.getTime())?'TBD':d.toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
  const market=r.vegasHomeSpread===null||r.vegasHomeSpread===undefined?'N/A':(r.vegasHomeSpread===0?'PK':r.vegasHomeSpread.toFixed(1)+' home');
  const edge=r.modelVsVegasEdge===null||r.modelVsVegasEdge===undefined?'N/A':(r.modelVsVegasEdge>0?r.homeTeam:r.awayTeam)+' '+Math.abs(r.modelVsVegasEdge).toFixed(1);
- return '<tr><td>'+esc(time)+'</td><td>'+esc(r.awayTeam)+' @ '+esc(r.homeTeam)+'</td><td>'+esc(r.favorite)+'</td><td>'+esc(r.spread===0?'PK':r.spread.toFixed(1))+'</td><td>'+esc(market)+'</td><td>'+esc(edge)+'</td></tr>';
+ return '<tr><td>'+esc(time)+'</td><td>'+esc(r.awayTeam)+' @ '+esc(r.homeTeam)+'</td><td>'+esc(r.favorite)+'</td><td>'+esc(r.spread===0?'PK':r.spread.toFixed(1))+'</td><td>'+esc(market)+'</td><td>'+esc(edge)+'</td><td>'+esc(r.winnerConfidence==null?'N/A':r.winnerConfidence+'%')+'</td><td>'+esc(r.coverPick??'N/A')+'</td><td>'+esc(r.coverConfidence==null?'N/A':r.coverConfidence+'%')+'</td></tr>';
  }).join(''):'<tr><td colspan="9">No upcoming FBS matchups in the current data.</td></tr>';
 }
 let DATA=null, sortKey='Rank', sortAsc=true;
