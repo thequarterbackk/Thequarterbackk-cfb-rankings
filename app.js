@@ -67,7 +67,7 @@ function renderMatrix(){
 function drawHeatmapImage(){
   const canvas=document.getElementById('heatmapCanvas');
   const headers=DATA.matrix?.headers||[]; const rows=DATA.matrix?.rows||[];
-  if(!headers.length||!rows.length)return;
+  if(!headers.length||!rows.length){canvas.setAttribute('aria-label','No heatmap data available');return;}
   const cell=24,rowLabel=220,headerH=220;
   canvas.width=rowLabel+(headers.length-1)*cell;
   canvas.height=headerH+rows.length*cell;
@@ -83,7 +83,7 @@ function drawHeatmapImage(){
       const v=r[ci],x=rowLabel+(ci-1)*cell;
       if(v==='—')ctx.fillStyle='#1a2431'; else if(typeof v==='string'&&v.startsWith('+'))ctx.fillStyle='#173d2a'; else if(typeof v==='string'&&v.startsWith('-'))ctx.fillStyle='#492020'; else ctx.fillStyle='#0b1626';
       ctx.fillRect(x,y,cell-1,cell-1);
-      if(v&&v!=='—'){ctx.fillStyle=v.startsWith('+')?'#8fe5b5':'#ffaaaa';ctx.font='7px system-ui';ctx.fillText(String(v).split(' ')[0],x+2,y+cell/2);ctx.font='10px system-ui';}
+      if(v&&v!=='—'){ctx.fillStyle=String(v).startsWith('+')?'#8fe5b5':'#ffaaaa';ctx.font='7px system-ui';ctx.fillText(String(v).split(' ')[0],x+2,y+cell/2);ctx.font='10px system-ui';}
     }
   });
   resetHeatZoom();
@@ -92,13 +92,13 @@ function drawHeatmapImage(){
 function applyHeatZoom(){document.getElementById('heatImageSurface').style.transform=`translate(${heatZoom.x}px,${heatZoom.y}px) scale(${heatZoom.scale})`;}
 function resetHeatZoom(){
   const vp=document.getElementById('heatImageViewport'), canvas=document.getElementById('heatmapCanvas');
-  if(!canvas.width)return; heatZoom.scale=Math.min(vp.clientWidth/canvas.width,vp.clientHeight/canvas.height); heatZoom.x=(vp.clientWidth-canvas.width*heatZoom.scale)/2;heatZoom.y=(vp.clientHeight-canvas.height*heatZoom.scale)/2;applyHeatZoom();
+  if(!canvas.width)return; heatZoom.scale=Math.min(1,Math.max(0.01,(vp.clientWidth-12)/canvas.width)); heatZoom.x=(vp.clientWidth-canvas.width*heatZoom.scale)/2;heatZoom.y=(vp.clientHeight-canvas.height*heatZoom.scale)/2;applyHeatZoom();
 }
-function zoomHeat(factor){const vp=document.getElementById('heatImageViewport');const cx=vp.clientWidth/2,cy=vp.clientHeight/2;const old=heatZoom.scale;const next=Math.max(.05,Math.min(6,old*factor));heatZoom.x=cx-(cx-heatZoom.x)*(next/old);heatZoom.y=cy-(cy-heatZoom.y)*(next/old);heatZoom.scale=next;applyHeatZoom();}
+function zoomHeat(factor){const vp=document.getElementById('heatImageViewport');const cx=vp.clientWidth/2,cy=vp.clientHeight/2;const old=heatZoom.scale;const next=Math.max(0.01,Math.min(6,old*factor));heatZoom.x=cx-(cx-heatZoom.x)*(next/old);heatZoom.y=cy-(cy-heatZoom.y)*(next/old);heatZoom.scale=next;applyHeatZoom();}
 function initHeatGestures(){
   const vp=document.getElementById('heatImageViewport');let touches=[],lastDist=0,lastMid=null;
   vp.addEventListener('touchstart',e=>{touches=[...e.touches];if(touches.length===2){lastDist=Math.hypot(touches[0].clientX-touches[1].clientX,touches[0].clientY-touches[1].clientY);lastMid={x:(touches[0].clientX+touches[1].clientX)/2,y:(touches[0].clientY+touches[1].clientY)/2};}else if(touches.length===1){lastMid={x:touches[0].clientX,y:touches[0].clientY};}},{passive:true});
-  vp.addEventListener('touchmove',e=>{if(!e.touches.length)return;if(e.touches.length===2){const a=e.touches[0],b=e.touches[1],dist=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY),mid={x:(a.clientX+b.clientX)/2,y:(a.clientY+b.clientY)/2};const rect=vp.getBoundingClientRect(),mx=mid.x-rect.left,my=mid.y-rect.top;const old=heatZoom.scale,next=Math.max(.05,Math.min(6,old*(dist/lastDist)));heatZoom.x=mx-(mx-heatZoom.x)*(next/old)+(mid.x-lastMid.x);heatZoom.y=my-(my-heatZoom.y)*(next/old)+(mid.y-lastMid.y);heatZoom.scale=next;lastDist=dist;lastMid=mid;}else{const t=e.touches[0];heatZoom.x+=t.clientX-lastMid.x;heatZoom.y+=t.clientY-lastMid.y;lastMid={x:t.clientX,y:t.clientY};}applyHeatZoom();},{passive:true});
+  vp.addEventListener('touchmove',e=>{if(!e.touches.length)return;if(e.touches.length===2){const a=e.touches[0],b=e.touches[1],dist=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY),mid={x:(a.clientX+b.clientX)/2,y:(a.clientY+b.clientY)/2};const rect=vp.getBoundingClientRect(),mx=mid.x-rect.left,my=mid.y-rect.top;const old=heatZoom.scale,next=Math.max(0.01,Math.min(6,old*(dist/lastDist)));heatZoom.x=mx-(mx-heatZoom.x)*(next/old)+(mid.x-lastMid.x);heatZoom.y=my-(my-heatZoom.y)*(next/old)+(mid.y-lastMid.y);heatZoom.scale=next;lastDist=dist;lastMid=mid;}else{const t=e.touches[0];heatZoom.x+=t.clientX-lastMid.x;heatZoom.y+=t.clientY-lastMid.y;lastMid={x:t.clientX,y:t.clientY};}applyHeatZoom();},{passive:true});
 }
 
 function hashColor(name){let h=0;for(let i=0;i<name.length;i++)h=(h*31+name.charCodeAt(i))>>>0;return `hsl(${h%360} 62% 48%)`;}
