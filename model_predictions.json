@@ -1120,7 +1120,8 @@
     "week": 7
   },
   "401871053": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.61,
+    "actualHomeMargin": 3,
     "awayTeam": "Florida International",
     "homeTeam": "Jacksonville State",
     "id": 401871053,
@@ -1140,7 +1141,8 @@
     "week": 7
   },
   "401871067": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.06,
+    "actualHomeMargin": 3,
     "awayTeam": "Delaware",
     "homeTeam": "Middle Tennessee",
     "id": 401871067,
