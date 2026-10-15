@@ -1131,7 +1131,8 @@
     "week": 7
   },
   "401871054": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.39,
+    "actualHomeMargin": 3,
     "awayTeam": "Kennesaw State",
     "homeTeam": "Missouri State",
     "id": 401871054,
@@ -1152,7 +1153,8 @@
     "week": 7
   },
   "401871068": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.06,
+    "actualHomeMargin": -13,
     "awayTeam": "Western Kentucky",
     "homeTeam": "Sam Houston",
     "id": 401871068,
