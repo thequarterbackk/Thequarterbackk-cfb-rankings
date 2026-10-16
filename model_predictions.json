@@ -330,7 +330,8 @@
     "week": 7
   },
   "401860923": {
-    "actualHomeMargin": null,
+    "absoluteError": 29.75,
+    "actualHomeMargin": 39,
     "awayTeam": "Colorado State",
     "homeTeam": "Texas State",
     "id": 401860923,
@@ -340,7 +341,8 @@
     "week": 7
   },
   "401862800": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.46,
+    "actualHomeMargin": 13,
     "awayTeam": "East Carolina",
     "homeTeam": "UAB",
     "id": 401862800,
@@ -1090,7 +1092,8 @@
     "week": 7
   },
   "401869950": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.04,
+    "actualHomeMargin": -8,
     "awayTeam": "Georgia Southern",
     "homeTeam": "Old Dominion",
     "id": 401869950,
@@ -1314,7 +1317,8 @@
     "week": 7
   },
   "401906540": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.28,
+    "actualHomeMargin": -7,
     "awayTeam": "East Central",
     "homeTeam": "Oklahoma Baptist",
     "id": 401906540,
@@ -2615,7 +2619,8 @@
     "week": 7
   },
   "401908708": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.84,
+    "actualHomeMargin": 24,
     "awayTeam": "Albion",
     "homeTeam": "Trine",
     "id": 401908708,
