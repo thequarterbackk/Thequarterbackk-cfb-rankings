@@ -290,7 +290,8 @@
     "week": 7
   },
   "401858493": {
-    "actualHomeMargin": null,
+    "absoluteError": 21.57,
+    "actualHomeMargin": -12,
     "awayTeam": "Washington",
     "homeTeam": "Purdue",
     "id": 401858493,
@@ -352,7 +353,8 @@
     "week": 7
   },
   "401862801": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.59,
+    "actualHomeMargin": 14,
     "awayTeam": "Memphis",
     "homeTeam": "Tulane",
     "id": 401862801,
@@ -602,7 +604,8 @@
     "week": 7
   },
   "401867821": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.46,
+    "actualHomeMargin": -1,
     "awayTeam": "Columbia",
     "homeTeam": "Pennsylvania",
     "id": 401867821,
@@ -1072,7 +1075,8 @@
     "week": 7
   },
   "401869844": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.3,
+    "actualHomeMargin": -3,
     "awayTeam": "Appalachian State",
     "homeTeam": "Coastal Carolina",
     "id": 401869844,
