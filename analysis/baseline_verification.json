@@ -1,0 +1,12 @@
+{
+  "totalGames": 510,
+  "fbsFcsGames": 122,
+  "publishedSnapshot": {
+    "season": 2026,
+    "lastUpdated": "2026-10-18T07:19:20-04:00",
+    "updateMode": "Automatic final-score refresh via CFBD + GitHub Actions",
+    "modelVersion": "Independent predictive picks + uncertainty estimates v6"
+  },
+  "publishedMismatches": [],
+  "hiddenOpponents": 98
+}
