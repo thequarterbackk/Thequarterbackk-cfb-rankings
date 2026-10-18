@@ -1,0 +1,62 @@
+name: Isolated SOS comparison
+on:
+  push:
+    branches: ["analysis/sos-weight-test-20261018"]
+    paths: [".github/workflows/sos-comparison.yml"]
+permissions:
+  contents: write
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch complete current-season input and verify baseline
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json, shutil
+          from pathlib import Path
+          import update_rankings as m
+          folder=Path('analysis')
+          raw=m.api_get('/games',{'year':m.SEASON,'seasonType':'regular'})
+          games=[m.normalize_game(g) for g in raw]
+          games=[g for g in games if m.is_final(g)]
+          data=json.loads(Path('data.json').read_text())
+          names=[r['Team'] for r in data['rankings']]
+          games=[g for g in games if g['homeTeam'] in names or g['awayTeam'] in names]
+          (folder/'all_completed_games.json').write_text(json.dumps(games))
+          shutil.copy('data.json',folder/'data.json')
+          shutil.copy('update_rankings.py',folder/'update_rankings.py')
+          rows,hidden,_=m.compute_rankings(games,names)
+          expected={r['Team']:r for r in data['rankings']}
+          mismatches=[r['Team'] for r in rows if any(r[k]!=expected[r['Team']][k] for k in ['Rank','Final Rating','Points For','Points Allowed','Record'])]
+          (folder/'baseline_verification.json').write_text(json.dumps({'totalGames':len(games),'fbsFcsGames':sum(g['homeTeam'] not in names or g['awayTeam'] not in names for g in games),'publishedSnapshot':data['meta'],'publishedMismatches':mismatches,'hiddenOpponents':len(hidden)},indent=2))
+          print('Full-input games:',len(games),'published mismatches:',mismatches)
+          if mismatches: raise SystemExit('Inputs do not reproduce published rankings; do not compare candidates yet.')
+          PY
+      - name: Run chronological comparison
+        run: |
+          python analysis/test_sos.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('analysis/data.json').read_text())
+          r=json.loads(Path('analysis/sos_results.json').read_text())
+          baseline=next(x for x in r['anchor_results'] if x['anchor']==.6)
+          assert baseline['ranks']=={x['Team']:x['Rank'] for x in d['rankings']}, 'Candidate baseline differs from published rankings'
+          print('Candidate baseline exactly reproduces all published ranks.')
+          PY
+      - name: Save analysis only to test branch
+        if: always()
+        run: |
+          git config user.name "CFB Rankings Bot"
+          git config user.email "actions@github.com"
+          git add analysis/
+          if ! git diff --cached --quiet; then
+            git commit -m "Save complete-input SOS comparison and baseline checks"
+            git push origin HEAD:analysis/sos-weight-test-20261018
+          fi
