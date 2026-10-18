@@ -2764,7 +2764,8 @@
     "week": 8
   },
   "401906581": {
-    "actualHomeMargin": null,
+    "absoluteError": 17.22,
+    "actualHomeMargin": 0,
     "awayTeam": "Southern Nazarene",
     "homeTeam": "Southwestern Oklahoma State",
     "id": 401906581,
@@ -2806,7 +2807,8 @@
     "week": 7
   },
   "401906626": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.49,
+    "actualHomeMargin": -4,
     "awayTeam": "Tiffin",
     "homeTeam": "Walsh",
     "id": 401906626,
@@ -2983,7 +2985,8 @@
     "week": 8
   },
   "401906933": {
-    "actualHomeMargin": null,
+    "absoluteError": 39.4,
+    "actualHomeMargin": -38,
     "awayTeam": "Davenport",
     "homeTeam": "Roosevelt",
     "id": 401906933,
@@ -3003,7 +3006,8 @@
     "week": 8
   },
   "401906940": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.34,
+    "actualHomeMargin": 21,
     "awayTeam": "Edward Waters",
     "homeTeam": "Benedict",
     "id": 401906940,
@@ -3401,7 +3405,8 @@
     "week": 8
   },
   "401907327": {
-    "actualHomeMargin": null,
+    "absoluteError": 13.34,
+    "actualHomeMargin": -7,
     "awayTeam": "Western New Mexico",
     "homeTeam": "Sul Ross State",
     "id": 401907327,
@@ -4217,7 +4222,8 @@
     "week": 8
   },
   "401907867": {
-    "actualHomeMargin": null,
+    "absoluteError": 23.38,
+    "actualHomeMargin": -38,
     "awayTeam": "SUNY Cortland",
     "homeTeam": "Alfred",
     "id": 401907867,
@@ -4991,7 +4997,8 @@
     "week": 8
   },
   "401908451": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.7,
+    "actualHomeMargin": 39,
     "awayTeam": "Whittier",
     "homeTeam": "Claremont Mudd Scripps",
     "id": 401908451,
@@ -5001,7 +5008,8 @@
     "week": 7
   },
   "401908457": {
-    "actualHomeMargin": null,
+    "absoluteError": 45.36,
+    "actualHomeMargin": 48,
     "awayTeam": "La Verne",
     "homeTeam": "Redlands",
     "id": 401908457,
@@ -5220,7 +5228,8 @@
     "week": 8
   },
   "401908572": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.27,
+    "actualHomeMargin": -28,
     "awayTeam": "Mass Maritime",
     "homeTeam": "Fitchburg State",
     "id": 401908572,
@@ -5230,7 +5239,8 @@
     "week": 7
   },
   "401908583": {
-    "actualHomeMargin": null,
+    "absoluteError": 21.64,
+    "actualHomeMargin": -37,
     "awayTeam": "Bridgewater State",
     "homeTeam": "Dean",
     "id": 401908583,
@@ -5260,7 +5270,8 @@
     "week": 8
   },
   "401908595": {
-    "actualHomeMargin": null,
+    "absoluteError": 4.76,
+    "actualHomeMargin": 3,
     "awayTeam": "Framingham State",
     "homeTeam": "Westfield State",
     "id": 401908595,
@@ -5290,7 +5301,8 @@
     "week": 8
   },
   "401908607": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.35,
+    "actualHomeMargin": -9,
     "awayTeam": "UMass Dartmouth",
     "homeTeam": "Worcester State",
     "id": 401908607,
@@ -5374,7 +5386,8 @@
     "week": 7
   },
   "401908657": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.08,
+    "actualHomeMargin": -24,
     "awayTeam": "Baldwin Wallace",
     "homeTeam": "Marietta",
     "id": 401908657,
@@ -5824,7 +5837,8 @@
     "week": 8
   },
   "401908869": {
-    "actualHomeMargin": null,
+    "absoluteError": 25.9,
+    "actualHomeMargin": -19,
     "awayTeam": "Hamilton",
     "homeTeam": "Bowdoin",
     "id": 401908869,
@@ -5897,7 +5911,8 @@
     "week": 7
   },
   "401908894": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.42,
+    "actualHomeMargin": 7,
     "awayTeam": "Salve Regina",
     "homeTeam": "Merchant Marine",
     "id": 401908894,
@@ -6189,7 +6204,8 @@
     "week": 8
   },
   "401909043": {
-    "actualHomeMargin": null,
+    "absoluteError": 30.38,
+    "actualHomeMargin": 45,
     "awayTeam": "Hiram",
     "homeTeam": "Grove City",
     "id": 401909043,
