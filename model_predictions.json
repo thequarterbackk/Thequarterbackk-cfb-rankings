@@ -43,7 +43,8 @@
     "week": 7
   },
   "401856723": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.29,
+    "actualHomeMargin": 16,
     "awayTeam": "Alabama",
     "homeTeam": "Tennessee",
     "id": 401856723,
@@ -95,7 +96,8 @@
     "week": 7
   },
   "401856828": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.73,
+    "actualHomeMargin": 28,
     "awayTeam": "Arizona State",
     "homeTeam": "Texas Tech",
     "id": 401856828,
@@ -209,7 +211,8 @@
     "week": 7
   },
   "401858266": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.07,
+    "actualHomeMargin": -4,
     "awayTeam": "North Carolina",
     "homeTeam": "Duke",
     "id": 401858266,
@@ -273,7 +276,8 @@
     "week": 7
   },
   "401858490": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.33,
+    "actualHomeMargin": 3,
     "awayTeam": "Penn State",
     "homeTeam": "Michigan",
     "id": 401858490,
@@ -410,7 +414,8 @@
     "week": 7
   },
   "401862805": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.72,
+    "actualHomeMargin": -21,
     "awayTeam": "Tulsa",
     "homeTeam": "Rice",
     "id": 401862805,
@@ -515,7 +520,8 @@
     "week": 7
   },
   "401866444": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.73,
+    "actualHomeMargin": -20,
     "awayTeam": "Toledo",
     "homeTeam": "Eastern Michigan",
     "id": 401866444,
@@ -689,7 +695,8 @@
     "week": 7
   },
   "401867870": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.43,
+    "actualHomeMargin": -28,
     "awayTeam": "South Dakota",
     "homeTeam": "Murray State",
     "id": 401867870,
@@ -731,7 +738,8 @@
     "week": 7
   },
   "401867912": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.23,
+    "actualHomeMargin": -5,
     "awayTeam": "Long Island University",
     "homeTeam": "Wagner",
     "id": 401867912,
@@ -1008,7 +1016,8 @@
     "week": 7
   },
   "401868289": {
-    "actualHomeMargin": null,
+    "absoluteError": 29.44,
+    "actualHomeMargin": 25,
     "awayTeam": "Valparaiso",
     "homeTeam": "San Diego",
     "id": 401868289,
@@ -1029,7 +1038,8 @@
     "week": 7
   },
   "401868310": {
-    "actualHomeMargin": null,
+    "absoluteError": 34.09,
+    "actualHomeMargin": -56,
     "awayTeam": "Stephen F. Austin",
     "homeTeam": "Nicholls",
     "id": 401868310,
@@ -1039,7 +1049,8 @@
     "week": 7
   },
   "401868319": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.2,
+    "actualHomeMargin": 3,
     "awayTeam": "Lamar",
     "homeTeam": "SE Louisiana",
     "id": 401868319,
@@ -1178,7 +1189,8 @@
     "week": 7
   },
   "401869966": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.85,
+    "actualHomeMargin": 27,
     "awayTeam": "Troy",
     "homeTeam": "Louisiana",
     "id": 401869966,
@@ -1514,7 +1526,8 @@
     "week": 7
   },
   "401906885": {
-    "actualHomeMargin": null,
+    "absoluteError": 31.71,
+    "actualHomeMargin": -46,
     "awayTeam": "Saginaw Valley State",
     "homeTeam": "Wayne State (MI)",
     "id": 401906885,
@@ -1706,7 +1719,8 @@
     "week": 7
   },
   "401907289": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.88,
+    "actualHomeMargin": -14,
     "awayTeam": "West Texas",
     "homeTeam": "Eastern New Mexico",
     "id": 401907289,
@@ -2053,7 +2067,8 @@
     "week": 7
   },
   "401907626": {
-    "actualHomeMargin": null,
+    "absoluteError": 29.66,
+    "actualHomeMargin": 52,
     "awayTeam": "Lackawanna",
     "homeTeam": "West Chester",
     "id": 401907626,
@@ -2499,7 +2514,8 @@
     "week": 7
   },
   "401908397": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.61,
+    "actualHomeMargin": 14,
     "awayTeam": "George Fox",
     "homeTeam": "Lewis & Clark",
     "id": 401908397,
@@ -2927,7 +2943,8 @@
     "week": 7
   },
   "401908842": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.97,
+    "actualHomeMargin": 7,
     "awayTeam": "Muskingum",
     "homeTeam": "Wilmington (OH)",
     "id": 401908842,
