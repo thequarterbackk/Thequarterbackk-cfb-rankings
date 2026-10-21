@@ -2294,7 +2294,8 @@
     "week": 7
   },
   "401871055": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.46,
+    "actualHomeMargin": -3,
     "awayTeam": "Middle Tennessee",
     "homeTeam": "Florida International",
     "id": 401871055,
@@ -2336,7 +2337,8 @@
     "week": 7
   },
   "401871069": {
-    "actualHomeMargin": null,
+    "absoluteError": 15.86,
+    "actualHomeMargin": 23,
     "awayTeam": "Missouri State",
     "homeTeam": "Delaware",
     "id": 401871069,
@@ -2367,7 +2369,8 @@
     "week": 7
   },
   "401871092": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.14,
+    "actualHomeMargin": 7,
     "awayTeam": "South Alabama",
     "homeTeam": "Marshall",
     "id": 401871092,
