@@ -2348,7 +2348,8 @@
     "week": 8
   },
   "401871070": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.13,
+    "actualHomeMargin": -6,
     "awayTeam": "New Mexico State",
     "homeTeam": "Sam Houston",
     "id": 401871070,
