@@ -72,6 +72,32 @@ def load_team_meta():
     TEAM_CACHE.write_text(json.dumps(out,indent=2))
     return out
 
+def cache_team_logos(metadata):
+    """Serve exact provider PNGs from our origin for reliable chart exports."""
+    import hashlib
+    from concurrent.futures import ThreadPoolExecutor
+    folder=ROOT/'team_logos';folder.mkdir(exist_ok=True)
+    def cache(team):
+        filename=hashlib.sha256(team['team'].encode()).hexdigest()[:16]+'.png'
+        path=folder/filename
+        if not path.exists():
+            url=team.get('logo')
+            if not url or not str(url).startswith('https://cdn.collegefootballdata.com/'):
+                return
+            try:
+                with urllib.request.urlopen(url,timeout=12) as response:
+                    content=response.read(1_000_001)
+                if len(content)>1_000_000 or not content.startswith(b'\x89PNG\r\n\x1a\n'):
+                    return
+                path.write_bytes(content)
+            except Exception as exc:
+                print('Logo unavailable for',team['team'],type(exc).__name__)
+                return
+        team['logo']='team_logos/'+filename
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(cache,metadata))
+    return metadata
+
 def normalize_game(g):
     return {
       'id':getv(g,'id'),'season':getv(g,'season'),'week':int(getv(g,'week') or 0),'seasonType':getv(g,'seasonType','season_type') or 'regular',
@@ -406,7 +432,7 @@ def build_picks(all_games, rankings, fbs_names):
 def main():
     global CURRENT_FORECAST_ENGINE
     state=read_json(STATE_PATH,{})
-    team_meta=load_team_meta();fbs_names=[t['team'] for t in team_meta]
+    team_meta=cache_team_logos(load_team_meta());fbs_names=[t['team'] for t in team_meta]
     now=datetime.now(timezone.utc)
     need_full=not state.get('last_full_refresh')
     if not need_full:

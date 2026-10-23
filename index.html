@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 <title>Dynamic CFB Rankings</title>
 <meta name="description" content="A transparent college football ranking model driven by wins, scoring, defense, and dynamically validated opponent strength.">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=8.1">
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 </head>
@@ -14,7 +14,7 @@
   <div class="wrap">
     <div class="eyebrow">2026 COLLEGE FOOTBALL</div>
     <h1>Dynamic CFB Rankings</h1>
-    <p class="lede">No preseason bias. No poll reputation. Rankings are driven by wins, scoring, defense, and opponent strength that is validated by what teams do next.</p>
+    <p class="lede">No preseason bias. No poll reputation. Rankings use current-season results, schedule strength, bounded scoring margins, and frozen game-time loss penalties.</p>
     <div class="formula">Schedule-adjusted résumé + bounded opponent-adjusted scoring − frozen game-time loss penalties</div>
     <div class="live-line"><span class="live-dot"></span><span id="globalStamp">Loading update status…</span></div>
   </div>
@@ -85,10 +85,10 @@
 </main>
 
 <footer><div class="wrap">Dynamic CFB Rankings • 2026 season • Automated final-score updates</div></footer>
-<script src="ladder.js?v=8"></script>
-<script src="heatmap_image.js?v=8"></script>
-<script src="app.js?v=8"></script>
-<script src="chart_exports.js?v=8"></script>
+<script src="ladder.js?v=8.1"></script>
+<script src="heatmap_image.js?v=8.1"></script>
+<script src="app.js?v=8.1"></script>
+<script src="chart_exports.js?v=8.1"></script>
 </body>
 </html>
 

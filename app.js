@@ -67,7 +67,7 @@ function renderMatrix(){
 function applyHeatZoom(){document.getElementById('heatImageSurface').style.transform=`translate(${heatZoom.x}px,${heatZoom.y}px) scale(${heatZoom.scale})`;}
 function resetHeatZoom(){
   const vp=document.getElementById('heatImageViewport'), canvas=document.getElementById('heatmapCanvas');
-  if(!canvas.width)return; heatZoom.scale=Math.min(1,Math.max(0.01,(vp.clientWidth-12)/canvas.width)); heatZoom.x=(vp.clientWidth-canvas.width*heatZoom.scale)/2;heatZoom.y=(vp.clientHeight-canvas.height*heatZoom.scale)/2;applyHeatZoom();
+  if(!canvas.width)return; heatZoom.scale=Math.min(1,Math.max(0.01,Math.min((vp.clientWidth-12)/canvas.width,(vp.clientHeight-12)/canvas.height))); heatZoom.x=(vp.clientWidth-canvas.width*heatZoom.scale)/2;heatZoom.y=(vp.clientHeight-canvas.height*heatZoom.scale)/2;applyHeatZoom();
 }
 function zoomHeat(factor){const vp=document.getElementById('heatImageViewport');const cx=vp.clientWidth/2,cy=vp.clientHeight/2;const old=heatZoom.scale;const next=Math.max(0.01,Math.min(6,old*factor));heatZoom.x=cx-(cx-heatZoom.x)*(next/old);heatZoom.y=cy-(cy-heatZoom.y)*(next/old);heatZoom.scale=next;applyHeatZoom();}
 function initHeatGestures(){

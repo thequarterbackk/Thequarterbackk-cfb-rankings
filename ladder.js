@@ -72,7 +72,7 @@ function renderStrengthLadder(data){
       mark.append(fallback);
       if(team.meta.logo){
         // Only load web image URLs, never markup supplied by metadata.
-        let url;try{url=new URL(team.meta.logo);}catch{}
+        let url;try{url=new URL(team.meta.logo,document.baseURI);}catch{}
         if(url&&['https:','http:'].includes(url.protocol)){
           const img=el('image',{href:url.href,x:-13,y:-13,width:26,height:26,preserveAspectRatio:'xMidYMid meet'});
           img.addEventListener('load',()=>fallback.setAttribute('visibility','hidden'));
@@ -94,3 +94,4 @@ function renderStrengthLadder(data){
   const week=weeks.length?Math.max(...weeks):null;
   document.getElementById('ladderWeek').textContent=`${data.meta?.season||''}${week!==null?` • Results through Week ${week}`:' • Awaiting results'}`;
 }
+
