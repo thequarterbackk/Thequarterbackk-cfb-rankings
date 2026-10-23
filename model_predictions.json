@@ -761,7 +761,8 @@
     "week": 7
   },
   "401862807": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.04,
+    "actualHomeMargin": 7,
     "awayTeam": "East Carolina",
     "homeTeam": "Memphis",
     "id": 401862807,
@@ -2188,7 +2189,8 @@
     "week": 7
   },
   "401869845": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.73,
+    "actualHomeMargin": 3,
     "awayTeam": "James Madison",
     "homeTeam": "Appalachian State",
     "id": 401869845,
@@ -2305,7 +2307,8 @@
     "week": 8
   },
   "401871056": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.69,
+    "actualHomeMargin": -28,
     "awayTeam": "Liberty",
     "homeTeam": "Kennesaw State",
     "id": 401871056,
