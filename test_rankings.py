@@ -1,11 +1,12 @@
 """Offline checks for historical-rank penalties; no API credentials or calls."""
 import ast
 import unittest
+from model_core import resume_rankings
 from pathlib import Path
 
 tree = ast.parse(Path(__file__).with_name('update_rankings.py').read_text())
 functions = ast.Module(body=[n for n in tree.body if isinstance(n, ast.FunctionDef)], type_ignores=[])
-model = {}
+model = {"resume_rankings":resume_rankings}
 exec(compile(functions, 'update_rankings.py', 'exec'), model)
 compute = model['compute_rankings']
 penalty = model['loss_penalty']
@@ -51,3 +52,4 @@ class RankPenaltyTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

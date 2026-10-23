@@ -1,66 +1,41 @@
-# Dynamic CFB Rankings — live update package
+# Thequarterbackk CFB Rankings
 
-This is the GitHub Pages site plus automatic final-score updates and two new visual tabs.
+GitHub Pages dashboard with hourly final-score refreshes via CFBD + GitHub Actions.
+The API key stays in the repository secret `CFBD_API_KEY`.
 
-## Existing tabs kept
-- Rankings
-- Upcoming Picks
-- Results Heatmap
-- How It Works
+## Ranking model v8
 
-## New tabs
-- **Heatmap Image** — full matrix rendered as a large zoomable canvas. Pinch/drag on mobile.
-- **CFP Ownership Map** — county-level U.S. ownership map. FBS teams start with geographic territory. Counties with multiple FBS teams begin split. When a current landholder loses, the winner takes every territory unit owned by the loser.
+Only current-season completed scores and home/neutral status enter the model.
+No polls, preseason seeds, prior seasons, conference bonuses, budgets, recruiting or market lines.
+Conference metadata groups charts only.
 
-## Live update design
-The CFBD API key stays in the GitHub repository secret `CFBD_API_KEY`. It is never sent to the browser.
+Final Rating = 1000 × Colley résumé + 10 × robust scoring power − frozen game-time loss penalties.
 
-The GitHub Action checks for completed FBS games on a schedule. Saturday checks run every 30 minutes; Thu/Fri/Sun/Mon run hourly; Tue/Wed get a maintenance run. The updater also performs a full season refresh at least every 12 hours so non-FBS follow-up games are captured for Dynamic Win Validation and ownership transfers.
+- Résumé: solve the Colley equations, `(2+n_i)r_i − sum(r_opponent) = 1+(wins−losses)/2`. Equal 0.5 priors; opponent strength is solved through the game network. No raw cumulative win-point banking. Source: https://www.colleyrankings.com/matrate.pdf
+- Scoring: regularized least squares with identical ridge 2 for all teams; transform margins with `35*tanh(margin/35)` to bound blowout influence. Jointly estimate home advantage, shrunk toward zero (100-game prior) and bounded to ±5. Source principles: https://masseyratings.com/theory/ls.htm
+- Loss penalty: `50 + 2*max(0, opponent rank − team rank) + 2*losing margin`. Ranks are the model’s ratings entering the game week, frozen before all games that week. Tied ratings receive shared entering ranks. No gap term when prior evidence is missing. Non-FBS opponents use FBS count+1.
+- The season is replayed under one version. Historical ranks may differ from older published versions. Loss Details exposes every frozen rank and deduction.
+- Only FBS teams are public. Non-FBS opponents are hidden and measured through direct FBS matchups, consistent with the previous model; FCS-vs-FCS games do not enter the résumé model.
+- `Base Rating` is now the Colley component. `Margin Adjustment` is the scoring component; `Dynamic Validation` is its compatibility alias. The old 60/40 and raw scoring formula are retired.
+- Weights 1000/10 and penalty coefficients are declared policy choices, not statistically fitted probabilities or proof of a correct résumé order.
 
-When new finals are found it rebuilds:
-1. Rankings
-2. Dynamic opponent validation
-3. Upcoming picks
-4. Results heatmap
-5. Heatmap image data
-6. CFP Ownership Map game history
-7. Last-updated stamps
+## Forecast validation
 
-## Model
-Base Rating = (Wins × 100) + Points For − (Points Allowed × 1.5)
+Forecasting is separate from résumé rankings. `modelBacktest` reports a retrospective walk-forward comparison against the exact v7 forecast engine. Each test week trains on earlier weeks only. Grid: ridge [1,2,4] × margin bound [21,35,49]. Settings for a test week are selected from earlier validation weeks only, with a 30-game selection minimum.
 
-Effective Opponent Strength = 60% × strength when played + 40% × later validated strength
+Promote a candidate only after ≥100 held-out FBS games, ≥1% relative reduction in margin MAE, and a positive lower bound on the approximate paired 95% improvement interval. The interval is a simple paired-error approximation, not a season-clustered uncertainty estimate. Otherwise retain v7 forecasts. This one-season test does not establish national superiority. Rank-blend and loss-policy weights are not tuned using JMU’s position.
 
-Win quality = +0.75 × effective opponent strength
+True pregame predictions remain frozen in `model_predictions.json`; retrospective backtests are labeled separately. Forecast-engine labels prevent mixing residuals from different engines when estimating uncertainty. Market data is display/evaluation only and never a ranking input.
 
-Loss quality = −0.75 × (100 − effective opponent strength)
+## Visuals
 
-Additional loss penalty = 50 + 2 × max(0, opponent rank − team rank) + 2 × losing margin
+- Conference Strength: Explore chart or Image (all conferences); open full SVG image or download a 2× PNG. Logos are inlined; unavailable logos use initials. Bars are exact arithmetic means of published Final Ratings.
+- Heatmap Image: corrected column alignment, ranked order, signed margins, teal/orange intensity, team/opponent focus, conference filtering, mouse/pinch zoom/pan, cell inspection and PNG export. A conference-only filter shows within-conference games; team focus includes that team’s FBS opponents.
+- Results table and all-team ladder table provide accessible exact values.
+- Ownership transfers use actual final FBS results, independent of model rank.
 
-Final Rating = Base Rating + Dynamic Validation − Additional Loss Penalties
+## Verification and updates
 
-Both ranks are this model's FBS ranks entering the week, frozen before any game in that week. Later results cannot rewrite a past penalty. Opening games without prior rank evidence have a zero rank-gap term. Hidden non-FBS opponents use FBS count + 1. These policy weights use the existing 100-points-per-win scale; they are not statistically calibrated. Every team uses the same rule. Season history is replayed under this version, so historical ranks may differ from previously published versions. Loss Details in data.json records the frozen ranks and per-game deductions.
-
-No margin cap. Scoring and dynamic opponent validation continue separately.
-
-Only FBS teams appear in public rankings, picks, heatmaps, and the ownership map. When an FBS team plays an FCS or other non-FBS opponent, that opponent remains hidden but is evaluated from its games directly against FBS teams. FCS-vs-FCS results do not affect the model. The hidden opponent score feeds Dynamic Validation so an FBS result against a strong FCS performance is valued differently from a result against a weak one.
-
-## Install on the existing repo
-Replace the root website files with the files in this package:
-- `index.html`
-- `styles.css`
-- `app.js`
-- `data.json`
-- `update_rankings.py`
-- `README.md`
-
-Then create this one workflow file in GitHub:
-`.github/workflows/update-rankings.yml`
-
-The exact workflow file is included inside this ZIP under `.github/workflows/`.
-
-After uploading, open **Actions → Update rankings and maps → Run workflow**. The first run creates `team_meta.json` and `automation_state.json`, pulls the latest completed games, recalculates everything, and commits the results. GitHub Pages will then republish automatically.
-
-### Important
-GitHub Pages is still static hosting. The automatic behavior comes from GitHub Actions rebuilding `data.json` after final scores. The rankings do not swing during a game; they update after a game is marked completed by CFBD.
-
+Run `python -m unittest -v test_rankings.py test_model_core.py`.
+GitHub Actions runs the same checks before updating. Pushes to `update_rankings.py`, `model_core.py`, tests, or the workflow trigger a rebuild. Scheduled refresh: minute 17 of every hour.
+All 138 public rows, score accounting, penalty audits, name/label invariance, frozen history, margin saturation and no-lookahead selection are checked. No national-best claim is made.

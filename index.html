@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 <title>Dynamic CFB Rankings</title>
 <meta name="description" content="A transparent college football ranking model driven by wins, scoring, defense, and dynamically validated opponent strength.">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=8">
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 </head>
@@ -15,7 +15,7 @@
     <div class="eyebrow">2026 COLLEGE FOOTBALL</div>
     <h1>Dynamic CFB Rankings</h1>
     <p class="lede">No preseason bias. No poll reputation. Rankings are driven by wins, scoring, defense, and opponent strength that is validated by what teams do next.</p>
-    <div class="formula">Base = 100×Wins + PF − 1.5×PA &nbsp; • &nbsp; Opponent Value = 60% when played + 40% later validation &nbsp; • &nbsp; Subtract game-time rank loss penalties</div>
+    <div class="formula">Schedule-adjusted résumé + bounded opponent-adjusted scoring − frozen game-time loss penalties</div>
     <div class="live-line"><span class="live-dot"></span><span id="globalStamp">Loading update status…</span></div>
   </div>
 </header>
@@ -32,8 +32,8 @@
 
 <main class="wrap">
   <section id="rankings" class="panel active">
-    <div class="section-head"><div><h2>Current Rankings</h2><p>FBS-only dynamic-validation rankings. Search or sort the table.</p><div class="page-stamp" data-update-stamp></div></div><input id="rankSearch" class="search" placeholder="Search team…" aria-label="Search rankings"></div>
-    <div class="table-wrap"><table id="rankTable"><thead><tr><th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th><th data-key="Final Rating">Rating</th><th data-key="Power Rating">Power</th><th data-key="Base Rating">Base</th><th data-key="Dynamic Validation">Validation</th><th data-key="Loss Penalty">Loss penalty</th><th data-key="Rank Change">Move</th><th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th></tr></thead><tbody></tbody></table></div>
+    <div class="section-head"><div><h2>Current Rankings</h2><p>Current-season schedule-adjusted rankings. Search or sort the table.</p><div class="page-stamp" data-update-stamp></div></div><input id="rankSearch" class="search" placeholder="Search team…" aria-label="Search rankings"></div>
+    <div class="table-wrap"><table id="rankTable"><thead><tr><th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th><th data-key="Final Rating">Rating</th><th data-key="Power Rating">Power</th><th data-key="Base Rating">Résumé</th><th data-key="Margin Adjustment">Scoring</th><th data-key="Loss Penalty">Loss penalty</th><th data-key="Rank Change">Move</th><th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section id="picks" class="panel">
@@ -48,9 +48,9 @@
   </section>
 
   <section id="matrixImage" class="panel">
-    <div class="section-head"><div><h2>Heatmap Image</h2><p>A zoomed-out image of the FBS-only results matrix. Pinch with two fingers or use the + / − controls to zoom in and pan around.</p><div class="page-stamp" data-update-stamp></div></div></div>
-    <div class="zoom-toolbar"><button id="heatZoomOut" aria-label="Zoom out">−</button><button id="heatZoomReset">Reset</button><button id="heatZoomIn" aria-label="Zoom in">+</button></div>
-    <div id="heatImageViewport" class="image-viewport"><div id="heatImageSurface"><canvas id="heatmapCanvas"></canvas></div></div>
+    <div class="section-head"><div><h2>Heatmap Image</h2><p>A full-resolution results image, sorted by current model rank. Filter a conference or team, tap a cell for the score, and download a PNG.</p><div class="page-stamp" data-update-stamp></div></div></div>
+    <div class="zoom-toolbar"><select id="heatConference" aria-label="Heatmap conference"><option value="">All conferences</option></select><input id="heatFocus" class="search" placeholder="Team and its opponents…" aria-label="Focus heatmap on a team"><button id="heatDownload">Download PNG</button><button id="heatZoomOut" aria-label="Zoom out">−</button><button id="heatZoomReset">Reset</button><button id="heatZoomIn" aria-label="Zoom in">+</button></div>
+    <p id="heatCellDetail" class="map-status" aria-live="polite">Teal + = win • orange − = loss • dark = no game • gray = same team. Intensity shows margin.</p><div id="heatImageViewport" class="image-viewport"><div id="heatImageSurface"><canvas id="heatmapCanvas"></canvas></div></div>
   </section>
 
   <section id="ownership" class="panel">
@@ -63,8 +63,8 @@
 
   <section id="strength" class="panel">
     <div class="section-head"><div><div class="eyebrow">THEQUARTERBACKK MODEL</div><h2>Conference Strength Ladder</h2><p>Every FBS team placed by the model's Final Rating. Higher is better. Each horizontal bar is the conference's arithmetic mean; columns run from highest average to lowest. Independents are grouped separately.</p><div class="page-stamp" data-update-stamp></div></div><span id="ladderWeek" class="ladder-week"></span></div>
-    <p class="map-status">Ratings use the model's own cumulative scale, not a projected point spread. Swipe horizontally to see all conferences. Tap a team for its rating and record.</p>
-    <div id="ladderChart" class="ladder-scroll" tabindex="0" role="region" aria-label="Conference strength chart, scroll horizontally"></div>
+    <p class="map-status">Ratings combine schedule-adjusted résumé, robust scoring performance, and frozen game-time loss penalties. Swipe horizontally to see all conferences. Tap a team for its rating and record.</p>
+    <div class="zoom-toolbar"><button id="ladderViewChart" aria-pressed="true">Explore chart</button><button id="ladderViewImage" aria-pressed="false">Image · all conferences</button><button id="ladderImageDownload" disabled>Download PNG</button><a id="ladderImageOpen" target="_blank" rel="noopener" hidden>Open full image ↗</a></div><div id="ladderImageView" hidden><p id="ladderImageStatus" class="map-status" aria-live="polite"></p><img id="ladderImage" alt="Conference strength ladder with all FBS teams and conference average ratings"></div><div id="ladderChart" class="ladder-scroll" tabindex="0" role="region" aria-label="Conference strength chart, scroll horizontally"></div>
     <div id="ladderDetail" class="ownership-detail" aria-live="polite">Select a team logo to see its model rating.</div>
     <h3>Conference averages</h3>
     <div class="table-wrap"><table id="ladderSummary"><thead><tr><th scope="col">Group</th><th scope="col">Teams</th><th scope="col">Mean rating</th><th scope="col">Highest rated</th><th scope="col">Lowest rated</th></tr></thead><tbody></tbody></table></div>
@@ -73,19 +73,23 @@
 
   <section id="method" class="panel prose">
     <h2>How the model works</h2><div class="page-stamp" data-update-stamp></div>
-    <h3>1. Core performance</h3><p><strong>Base Rating = (Wins × 100) + Points For − (Points Allowed × 1.5)</strong>. The model rewards winning and scoring while explicitly punishing teams for giving up points. There is no margin cap.</p>
-    <h3>2. Dynamic Win Validation</h3><p>An opponent's value does not remain permanently frozen and does not decay merely because time passes. Instead, the model asks whether that opponent's later performances validate how strong they appeared when the game was played.</p><div class="formula-block">Effective Opponent Strength = 60% × Strength When Played + 40% × Later Validated Strength</div>
-    <h3>3. Hidden non-FBS opponent strength</h3><p>FCS and other non-FBS teams never appear in public rankings, picks, heatmaps, or ownership results. When they play an FBS team, their hidden strength is measured only from their direct performances against FBS opponents. FCS-vs-FCS games do not affect the model.</p>
-    <h3>4. Quality adjustment</h3><p>Wins receive positive opponent-quality value. Losses are penalized more severely when they come against weaker opponents. A highly rated opponent that continues to perform well preserves the value of an earlier win; an opponent that collapses can reduce that value. An underrated opponent that later proves strong can increase the value of the earlier result.</p>
-    <h3>Game-time rank loss penalty</h3><p>Each loss costs an extra <strong>50 + 2 × max(0, opponent rank − team rank) + 2 × losing margin</strong> points. Both ranks are the model’s FBS ranks entering the game week, frozen before any results that week. Later results never rewrite this penalty. If either team has no prior games, the rank-gap term is zero. Hidden non-FBS opponents use rank 139 (FBS count + 1). These are explicit model weights, not statistically fitted values. Final Rating = Base + Validation − Loss Penalty. The same rule applies to every team.</p><h3>5. Week-to-week memory</h3><p>The rating entering each week is frozen as that week's original opponent strength. Later games validate that historical value instead of simply replacing it with today's ranking.</p>
-    <h3>6. Live results</h3><p>The public site never receives the private CFBD API key. A GitHub Action checks for newly completed games, recalculates the model after finals, rewrites the public data file, and GitHub Pages republishes it automatically.</p>
-    <h3>7. Opponent-adjusted power and model lines</h3><p>Iterative opponent-adjusted scoring margins with sample-size shrinkage and recent-form weighting provide power ratings in point units. Power ratings are a separate forecasting measure; the game-time rank loss penalty affects résumé rankings. FBS and FCS opponents participate in the same current-season game network. Weekly lines compare power ratings using a home-field estimate inferred from current-season results and shrunk toward zero. No sportsbook information enters the model.</p><h3>8. CFP Ownership Map</h3><p>The map begins with county-level territory based on geographic proximity. A team's empire is made of the territory units it currently owns. FBS-vs-FBS results transfer every territory unit owned by the losing landholder to the winner. Split starting counties are shown with multiple colors until those shares consolidate through game results.</p>
+    <h3>1. Results, not reputation</h3><p>Only this season’s completed scores enter the model. No polls, recruiting rankings, budgets, conference bonuses, sportsbook lines, or prior-season ratings. Every team begins with the same prior. Conference labels are used only to group the visuals.</p>
+    <h3>2. Schedule-adjusted résumé</h3><p>The <a href="https://www.colleyrankings.com/matrate.pdf" target="_blank" rel="noopener">Colley matrix</a> solves wins, losses and opponent strength together across the game network. This avoids banking 100 points for every extra game. Its score ignores scoring margin, so running up a score cannot inflate this component.</p>
+    <h3>3. Opponent-adjusted scoring</h3><p>A regularized least-squares model measures scoring margins against the strength of each opponent. Margins use 35 × tanh(margin / 35), so blowout credit approaches a limit of 35. Home advantage is estimated jointly from current-season results and shrunk toward zero. All teams receive identical regularization. FCS opponents stay hidden and are measured through direct FBS games.</p>
+    <h3>4. Game-time rank penalties</h3><p>Every loss costs <strong>50 + 2 × max(0, opponent rank − team rank) + 2 × losing margin</strong>. Both model ranks are frozen before that week’s games; tied ratings share the same entering rank. Later results do not rewrite a penalty. Games without prior ranking evidence have no rank-gap term. Hidden non-FBS opponents use FBS count + 1.</p>
+    <div class="formula-block">Final Rating = 1000 × Colley résumé + 10 × robust scoring power − frozen loss penalties</div><p>These blend and penalty weights are explicit policy choices, not fitted probabilities. The entire season is replayed under this version. Historical ranks can differ from earlier model versions. There is no team-specific adjustment.</p>
+    <h3>5. Prediction validation</h3><p>Forecasts are separate from résumé rankings. A fixed grid of shrinkage and margin limits is tested sequentially: each week trains on earlier weeks only, and settings are chosen using only earlier validation results. A candidate replaces the previous forecasting engine only after at least 100 held-out FBS matchups and at least 1% lower walk-forward mean absolute error, with a positive lower bound on an approximate paired 95% improvement interval. The last week’s outcomes cannot select its own settings. This is a retrospective backtest, distinct from predictions archived before kickoff.</p><div id="modelValidation" class="validation-card" aria-live="polite">Waiting for validation results.</div>
+    <h3>6. Honest limits</h3><p>No model is free of assumptions. A one-season backtest does not establish national superiority, and forecast accuracy does not prove a résumé ranking is correct. Sparse schedules, disconnected groups and noisy final scores create uncertainty. The source, weights, loss audits and validation figures are public.</p>
+    <h3>7. Live results and ownership</h3><p>Rankings refresh after final scores. The conference ladder averages published team ratings. The results heatmap shows actual FBS matchups. On the ownership map, the winner takes the losing team’s existing territory. API credentials never enter public files.</p>
   </section>
 </main>
 
 <footer><div class="wrap">Dynamic CFB Rankings • 2026 season • Automated final-score updates</div></footer>
-<script src="ladder.js"></script>
-<script src="app.js"></script>
+<script src="ladder.js?v=8"></script>
+<script src="heatmap_image.js?v=8"></script>
+<script src="app.js?v=8"></script>
+<script src="chart_exports.js?v=8"></script>
 </body>
 </html>
+
 

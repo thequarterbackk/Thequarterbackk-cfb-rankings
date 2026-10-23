@@ -17,3 +17,6 @@
 .ladder-scroll svg{display:block;max-width:none;font-family:inherit}
 .ladder-team{cursor:pointer;outline:none}.ladder-team:hover circle,.ladder-team:focus circle,.ladder-team.selected circle{stroke:#fff;stroke-width:4;filter:drop-shadow(0 0 6px #65a7ff)}
 .ladder-team-list{margin-top:22px}.ladder-team-list summary{cursor:pointer;font-weight:700;padding:12px 0;color:#bcd0e9}
+
+
+[hidden]{display:none!important}.zoom-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}.zoom-toolbar select{background:#12243b;color:#f4f7fb;border:1px solid #385777;border-radius:8px;padding:10px;max-width:100%}.zoom-toolbar a{color:#8bc8ff;padding:10px}.zoom-toolbar button[aria-pressed="true"]{background:#254d78;border-color:#78b7ff}.zoom-toolbar button:disabled{opacity:.45;cursor:wait}#ladderImage{display:block;width:100%;height:auto;background:#091421;border-radius:12px;border:1px solid #28435f}.validation-card{padding:18px;background:#0d2239;border:1px solid #345579;border-radius:12px;line-height:1.65}.heat-legend{color:#b8cce2}.image-viewport{touch-action:none;cursor:grab}#heatImageSurface canvas{cursor:crosshair}a{color:#8bc8ff}

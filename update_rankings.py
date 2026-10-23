@@ -3,6 +3,7 @@ import json, os, sys, urllib.request, urllib.parse
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from model_core import resume_rankings, walk_forward
 
 ROOT=Path(__file__).resolve().parent
 DATA_PATH=ROOT/'data.json'
@@ -12,6 +13,7 @@ MARKET_PATH=ROOT/'market_closing_lines.json'
 TEAM_CACHE=ROOT/'team_meta.json'
 SEASON=2026
 API='https://api.collegefootballdata.com'
+CURRENT_FORECAST_ENGINE='v7-baseline'
 KEY=os.environ.get('CFBD_API_KEY')
 if not KEY:
     raise SystemExit('CFBD_API_KEY is not set')
@@ -109,117 +111,22 @@ def loss_penalty(team_rank, opponent_rank, pf, pa):
     return float(50 + 2 * gap + 2 * (pa - pf))
 
 def compute_rankings(completed, fbs_names):
-    fbs_set=set(fbs_names)
-    hidden_non_fbs=set()
-    for g in completed:
-        if g['homeTeam'] in fbs_set and g['awayTeam'] not in fbs_set: hidden_non_fbs.add(g['awayTeam'])
-        if g['awayTeam'] in fbs_set and g['homeTeam'] not in fbs_set: hidden_non_fbs.add(g['homeTeam'])
-    participants=set(fbs_set)|hidden_non_fbs
-    # FCS and other non-FBS teams are hidden benchmark opponents. Their strength is
-    # calculated only from games directly against FBS teams; their other games do
-    # not enter the model or any public output.
-    relevant=sorted((g for g in completed if g['homeTeam'] in fbs_set or g['awayTeam'] in fbs_set),
-                    key=lambda g:(g['week'],str(g['id'])))
-    weeks=sorted({g['week'] for g in relevant})
-    original={};game_ranks={}
-    prev_final={};prev_rank={};current={}
-    games_by_team={t:[] for t in participants}
-    for g in relevant:
-        if g['homeTeam'] in participants: games_by_team[g['homeTeam']].append(g)
-        if g['awayTeam'] in participants: games_by_team[g['awayTeam']].append(g)
+    return resume_rankings(completed, fbs_names, loss_penalty)
 
-    # A hidden non-FBS opponent is scored only by its on-field performance in
-    # direct games against FBS teams. Including the game being evaluated means a
-    # one-game FCS opponent is measured rather than silently assigned neutral 50.
-    hidden_direct={}
-    for cutoff in weeks:
-        raw={}
-        for t in hidden_non_fbs:
-            vals=[]
-            for g in games_by_team[t]:
-                if g['week']<=cutoff:
-                    res,pf,pa=result_for(t,g);vals.append(perf(pf,pa,res))
-            if vals: raw[t]=sum(vals)/len(vals)
-        hidden_direct[cutoff]=normalize_scores(raw)
-
-    for w in weeks:
-        prior_games={t:[g for g in games_by_team[t] if g['week']<w] for t in participants}
-        # Freeze entering-week FBS ranks before processing ANY game this week.
-        # No preseason seeds, alphabetical opening ranks, or future results.
-        ranked_prior=sorted((t for t in fbs_set if prior_games[t]),
-                            key=lambda t:(-prev_final[t],-current[t]['wins'],current[t]['losses'],t))
-        entered_rank={t:i for i,t in enumerate(ranked_prior,1)}
-        if prev_final:
-            entered=normalize_scores({t:r for t,r in prev_final.items() if prior_games[t]})
-        else: entered={}
-        for g in [x for x in relevant if x['week']==w]:
-            for team,opp in ((g['homeTeam'],g['awayTeam']),(g['awayTeam'],g['homeTeam'])):
-                if team not in participants: continue
-                original[(g['id'],team)]=hidden_direct[w].get(opp,entered.get(opp,50.0))
-                opponent_rank=(len(fbs_set)+1) if opp in hidden_non_fbs else entered_rank.get(opp)
-                game_ranks[(g['id'],team)]=(entered_rank.get(team),opponent_rank)
-
-        # later validation score maps for every earlier cutoff
-        later_norm={}
-        for cutoff in weeks:
-            if cutoff>=w: continue
-            raw={}
-            for t in participants:
-                vals=[]
-                for g in games_by_team[t]:
-                    if cutoff<g['week']<=w:
-                        res,pf,pa=result_for(t,g);vals.append(perf(pf,pa,res))
-                if vals:raw[t]=sum(vals)/len(vals)
-            later_norm[cutoff]=normalize_scores(raw)
-
-        current={}
-        for t in participants:
-            gs=[g for g in games_by_team[t] if g['week']<=w]
-            wins=losses=ties=pf=pa=0;quality=0.0;penalty=0.0;loss_details=[]
-            for g in gs:
-                res,tfp,tpa=result_for(t,g);pf+=tfp;pa+=tpa
-                wins+=res=='W';losses+=res=='L';ties+=res=='T'
-                opp=g['awayTeam'] if t==g['homeTeam'] else g['homeTeam']
-                orig=original.get((g['id'],t),50.0)
-                if opp in hidden_non_fbs:
-                    val=hidden_direct[w].get(opp,orig)
-                elif g['week']<w:
-                    val=later_norm.get(g['week'],{}).get(opp,orig)
-                else: val=orig
-                eff=.60*orig+.40*val
-                if res=='W':quality+=.75*eff
-                elif res=='L':quality-=.75*(100-eff)
-                if res=='L':
-                    tr,opr=game_ranks[(g['id'],t)]
-                    cost=loss_penalty(tr,opr,tfp,tpa)
-                    penalty+=cost
-                    loss_details.append({'gameId':g['id'],'week':g['week'],'opponent':opp,
-                                         'teamRankAtGame':tr,'opponentRankAtGame':opr,
-                                         'margin':tpa-tfp,'penalty':cost})
-            base=wins*100+pf-1.5*pa
-            final=base+quality-penalty
-            current[t]={'wins':wins,'losses':losses,'ties':ties,'games':len(gs),'pf':pf,'pa':pa,'base':base,'quality':quality,'penalty':penalty,'loss_details':loss_details,'final':final}
-        ordered=sorted(current,key=lambda t:(-current[t]['final'],-current[t]['wins'],current[t]['losses'],t))
-        prev_final={t:current[t]['final'] for t in participants}
-
-    # Recreate prior-week ranks explicitly to avoid ambiguity during partially completed current week.
-    latest=max(weeks) if weeks else 0
-    prior_ranks={}
-    if weeks and len(weeks)>1:
-        prior_week=weeks[-2]
-        # run a compact recursive pass through prior week using same function by truncating; recursion terminates.
-        prior_completed=[g for g in completed if g['week']<=prior_week]
-        prior_rows,_,_=compute_rankings(prior_completed,fbs_names)
-        prior_ranks={r['Team']:r['Rank'] for r in prior_rows}
-
-    ordered=sorted(fbs_set,key=lambda t:(-current[t]['final'],-current[t]['wins'],current[t]['losses'],t)) if current else sorted(fbs_set)
-    rows=[]
-    for i,t in enumerate(ordered,1):
-        r=current.get(t,{'wins':0,'losses':0,'ties':0,'games':0,'pf':0,'pa':0,'base':0,'quality':0,'final':0,'penalty':0,'loss_details':[]})
-        record=f"{r['wins']}-{r['losses']}"+(f"-{r['ties']}" if r['ties'] else '')
-        pr=prior_ranks.get(t,i);rows.append({'Rank':i,'Team':t,'Record':record,'Games':r['games'],'Points For':r['pf'],'Points Allowed':r['pa'],'Point Diff':r['pf']-r['pa'],'Base Rating':round(r['base'],4),'Dynamic Validation':round(r['quality'],4),'Loss Penalty':round(r['penalty'],4),'Loss Details':r['loss_details'],'Final Rating':round(r['final'],4),'Prior Rank':pr,'Rank Change':pr-i,'Model Logic':'60/40 validation + frozen game-time rank loss penalty'})
-    hidden_strength={t:round(v,4) for t,v in hidden_direct.get(latest,{}).items()}
-    return rows,hidden_strength,relevant
+def validate_rankings(rows, fbs_names):
+    import math
+    if len(rows)!=len(set(fbs_names)) or {r['Team'] for r in rows}!=set(fbs_names):
+        raise ValueError('Public rankings must contain every FBS team exactly once')
+    if [r['Rank'] for r in rows]!=list(range(1,len(rows)+1)):
+        raise ValueError('Rank sequence is incomplete')
+    for row in rows:
+        expected=row['Base Rating']+row['Margin Adjustment']-row['Loss Penalty']
+        if not math.isfinite(row['Final Rating']) or abs(row['Final Rating']-expected)>0.001:
+            raise ValueError('Rating components do not reconcile: '+row['Team'])
+        if sum(d['penalty'] for d in row['Loss Details'])!=row['Loss Penalty']:
+            raise ValueError('Loss audit does not reconcile: '+row['Team'])
+        if sum(int(x) for x in row['Record'].split('-'))!=row['Games']:
+            raise ValueError('Record/game count mismatch: '+row['Team'])
 
 
 def power_ratings(completed, names):
@@ -290,7 +197,7 @@ def update_prediction_archive(all_games, lines):
             archive[key]={'id':row['id'],'week':row['week'],'homeTeam':row['homeTeam'],
                           'awayTeam':row['awayTeam'],'startDate':row['startDate'],
                           'projectedHomeMargin':row['projectedHomeMargin'],
-                          'recordedAt':timestamp,'actualHomeMargin':None}
+                          'recordedAt':timestamp,'actualHomeMargin':None,'forecastEngine':CURRENT_FORECAST_ENGINE}
     PREDICTIONS_PATH.write_text(json.dumps(archive,indent=2,sort_keys=True))
     scored=[r for r in archive.values() if r.get('absoluteError') is not None]
     return {'archivedPredictions':len(archive),'evaluatedGames':len(scored),
@@ -396,7 +303,8 @@ def probability_home(margin, sigma):
 def prediction_sigma(archive):
     errors=[float(r['projectedHomeMargin'])-float(r['actualHomeMargin'])
             for r in archive.values() if isinstance(r,dict)
-            and r.get('actualHomeMargin') is not None and r.get('projectedHomeMargin') is not None]
+            and r.get('actualHomeMargin') is not None and r.get('projectedHomeMargin') is not None
+            and r.get('forecastEngine','v7-baseline')==CURRENT_FORECAST_ENGINE]
     # Conservative until at least 30 genuine pregame observations exist.
     if len(errors)<30:return 17.0,len(errors),False
     import math
@@ -496,6 +404,7 @@ def build_picks(all_games, rankings, fbs_names):
     return out[:20]
 
 def main():
+    global CURRENT_FORECAST_ENGINE
     state=read_json(STATE_PATH,{})
     team_meta=load_team_meta();fbs_names=[t['team'] for t in team_meta]
     now=datetime.now(timezone.utc)
@@ -516,7 +425,9 @@ def main():
     all_games=[normalize_game(g) for g in raw_games]
     completed=[g for g in all_games if is_final(g)]
     rankings,hidden_non_fbs_strength,relevant=compute_rankings(completed,fbs_names)
-    power,home_edge=power_ratings(completed,fbs_names)
+    validate_rankings(rankings,fbs_names)
+    power,home_edge,backtest=walk_forward(completed,fbs_names)
+    CURRENT_FORECAST_ENGINE=backtest['forecastEngine']
     for row in rankings:
         row['Power Rating']=round(power[row['Team']],3)
         row['Performance Adjustment']=0.0
@@ -528,11 +439,12 @@ def main():
     matrix=build_matrix(completed,fbs_names)
     picks=predictive_picks(lines,rankings,fbs_names)
     eastern=datetime.now(ZoneInfo('America/New_York')).isoformat(timespec='seconds')
-    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Game-time rank loss penalties v7; independent predictive picks'},'rankings':rankings,'modelLines':lines,'marketStats':market_stats,'modelAccuracy':accuracy,'probabilityMeta':probability_meta,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
+    data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Schedule-adjusted résumé + robust power + frozen rank penalties v8'},'rankings':rankings,'modelBacktest':backtest,'modelInputs':{'completedGames':relevant,'rankingWeights':{'resume':1000,'robustPower':10},'marginCap':35,'lossWeights':{'base':50,'rankGap':2,'margin':2}},'modelLines':lines,'marketStats':market_stats,'modelAccuracy':accuracy,'probabilityMeta':probability_meta,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))
     print(f'Updated: {len(completed)} completed games, {len(rankings)} FBS teams, {len(picks)} FBS-only picks, {len(hidden_non_fbs_strength)} hidden non-FBS opponent ratings.')
 
 if __name__=='__main__':main()
+
 

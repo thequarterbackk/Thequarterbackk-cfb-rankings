@@ -12,6 +12,10 @@ on:
 
       - "update_rankings.py"
 
+      - "model_core.py"
+
+      - "test_*.py"
+
       - ".github/workflows/update-rankings.yml"
 
   schedule:
@@ -44,7 +48,7 @@ jobs:
 
       - name: Verify ranking rules
 
-        run: python -m unittest -v test_rankings.py
+        run: python -m unittest -v test_rankings.py test_model_core.py
 
       - name: Update rankings
 
@@ -75,4 +79,5 @@ jobs:
             git push
 
           fi
+
 

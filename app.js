@@ -64,31 +64,6 @@ function renderMatrix(){
   document.getElementById('matrixTable').innerHTML=thead+tbody;
 }
 
-function drawHeatmapImage(){
-  const canvas=document.getElementById('heatmapCanvas');
-  const headers=DATA.matrix?.headers||[]; const rows=DATA.matrix?.rows||[];
-  if(!headers.length||!rows.length){canvas.setAttribute('aria-label','No heatmap data available');return;}
-  const cell=24,rowLabel=220,headerH=220;
-  canvas.width=rowLabel+(headers.length-1)*cell;
-  canvas.height=headerH+rows.length*cell;
-  const ctx=canvas.getContext('2d');
-  ctx.fillStyle='#091421';ctx.fillRect(0,0,canvas.width,canvas.height);
-  ctx.font='10px system-ui';ctx.textBaseline='middle';
-  ctx.save();ctx.translate(rowLabel,headerH);ctx.rotate(-Math.PI/2);ctx.fillStyle='#9fb0c7';
-  headers.slice(1).forEach((h,i)=>ctx.fillText(String(h),6,-i*cell-cell/2));ctx.restore();
-  rows.forEach((r,ri)=>{
-    const y=headerH+ri*cell;
-    ctx.fillStyle='#14253d';ctx.fillRect(0,y,rowLabel,cell);ctx.fillStyle='#dce8f7';ctx.fillText(String(r[0]),7,y+cell/2);
-    for(let ci=1;ci<r.length;ci++){
-      const v=r[ci],x=rowLabel+(ci-1)*cell;
-      if(v==='—')ctx.fillStyle='#1a2431'; else if(typeof v==='string'&&v.startsWith('+'))ctx.fillStyle='#173d2a'; else if(typeof v==='string'&&v.startsWith('-'))ctx.fillStyle='#492020'; else ctx.fillStyle='#0b1626';
-      ctx.fillRect(x,y,cell-1,cell-1);
-      if(v&&v!=='—'){ctx.fillStyle=String(v).startsWith('+')?'#8fe5b5':'#ffaaaa';ctx.font='7px system-ui';ctx.fillText(String(v).split(' ')[0],x+2,y+cell/2);ctx.font='10px system-ui';}
-    }
-  });
-  resetHeatZoom();
-}
-
 function applyHeatZoom(){document.getElementById('heatImageSurface').style.transform=`translate(${heatZoom.x}px,${heatZoom.y}px) scale(${heatZoom.scale})`;}
 function resetHeatZoom(){
   const vp=document.getElementById('heatImageViewport'), canvas=document.getElementById('heatmapCanvas');
@@ -160,5 +135,12 @@ document.addEventListener('click',e=>{
 
 document.getElementById('heatZoomIn').addEventListener('click',()=>zoomHeat(1.35));document.getElementById('heatZoomOut').addEventListener('click',()=>zoomHeat(1/1.35));document.getElementById('heatZoomReset').addEventListener('click',resetHeatZoom);document.getElementById('mapReset').addEventListener('click',()=>{if(ownershipState.svg)ownershipState.svg.transition().duration(250).call(ownershipState.zoom.transform,d3.zoomIdentity);});document.getElementById('ownerSearch').addEventListener('change',findOwner);initHeatGestures();window.addEventListener('resize',()=>{if(document.getElementById('matrixImage').classList.contains('active'))resetHeatZoom();});
 
-fetch(`data.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.json()).then(d=>{DATA=d;updateStamp();renderRankings();renderPicks();renderModelLines();renderMatrix();renderStrengthLadder(DATA);document.getElementById('rankSearch').addEventListener('input',renderRankings);document.getElementById('matrixSearch').addEventListener('input',renderMatrix);}).catch(err=>{document.getElementById('globalStamp').textContent='Could not load current data';console.error(err);});
+fetch(`data.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.json()).then(d=>{DATA=d;updateStamp();renderRankings();renderPicks();renderModelLines();renderMatrix();renderStrengthLadder(DATA);initHeatImageControls();renderValidation();document.getElementById('rankSearch').addEventListener('input',renderRankings);document.getElementById('matrixSearch').addEventListener('input',renderMatrix);}).catch(err=>{document.getElementById('globalStamp').textContent='Could not load current data';console.error(err);});
 
+
+
+function renderValidation(){
+ const b=DATA.modelBacktest;if(!b)return;
+ const target=document.getElementById('modelValidation');
+ target.textContent=`${b.games} held-out FBS games • Candidate margin MAE: ${b.candidateMAE??'N/A'} points • Previous engine MAE: ${b.v7BaselineMAE??'N/A'} points • Candidate winner accuracy: ${b.candidateWinnerAccuracy??'N/A'}% • Forecast engine: ${b.forecastEngine}. ${b.promoted?'Candidate passed the promotion check.':'Previous forecast engine retained until the candidate clears the evidence threshold.'} Retrospective backtest; current season only.`;
+}
