@@ -3643,7 +3643,8 @@
     "week": 7
   },
   "401907489": {
-    "actualHomeMargin": null,
+    "absoluteError": 29.2,
+    "actualHomeMargin": -49,
     "awayTeam": "Assumption",
     "homeTeam": "Saint Anselm",
     "id": 401907489,
