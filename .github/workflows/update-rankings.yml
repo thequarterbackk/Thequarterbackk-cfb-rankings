@@ -42,6 +42,10 @@ jobs:
 
           python-version: "3.12"
 
+      - name: Verify ranking rules
+
+        run: python -m unittest -v test_rankings.py
+
       - name: Update rankings
 
         env:
@@ -71,3 +75,4 @@ jobs:
             git push
 
           fi
+

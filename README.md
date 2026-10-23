@@ -35,7 +35,13 @@ Win quality = +0.75 × effective opponent strength
 
 Loss quality = −0.75 × (100 − effective opponent strength)
 
-No margin cap.
+Additional loss penalty = 50 + 2 × max(0, opponent rank − team rank) + 2 × losing margin
+
+Final Rating = Base Rating + Dynamic Validation − Additional Loss Penalties
+
+Both ranks are this model's FBS ranks entering the week, frozen before any game in that week. Later results cannot rewrite a past penalty. Opening games without prior rank evidence have a zero rank-gap term. Hidden non-FBS opponents use FBS count + 1. These policy weights use the existing 100-points-per-win scale; they are not statistically calibrated. Every team uses the same rule. Season history is replayed under this version, so historical ranks may differ from previously published versions. Loss Details in data.json records the frozen ranks and per-game deductions.
+
+No margin cap. Scoring and dynamic opponent validation continue separately.
 
 Only FBS teams appear in public rankings, picks, heatmaps, and the ownership map. When an FBS team plays an FCS or other non-FBS opponent, that opponent remains hidden but is evaluated from its games directly against FBS teams. FCS-vs-FCS results do not affect the model. The hidden opponent score feeds Dynamic Validation so an FBS result against a strong FCS performance is valued differently from a result against a weak one.
 
@@ -57,3 +63,4 @@ After uploading, open **Actions → Update rankings and maps → Run workflow**.
 
 ### Important
 GitHub Pages is still static hosting. The automatic behavior comes from GitHub Actions rebuilding `data.json` after final scores. The rankings do not swing during a game; they update after a game is marked completed by CFBD.
+

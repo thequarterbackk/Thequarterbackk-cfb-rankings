@@ -43,7 +43,7 @@ function renderRankings(){
   });
   document.querySelector('#rankTable tbody').innerHTML=rows.map(r=>{
     const mv=num(r['Rank Change']);const move=mv>0?`▲ ${mv}`:mv<0?`▼ ${Math.abs(mv)}`:'—';const mclass=mv>0?'move-up':mv<0?'move-down':'move-flat';
-    return `<tr class="${num(r.Rank)<=25?'top25':''}"><td class="rank-num">#${esc(r.Rank)}</td><td><strong>${esc(r.Team)}</strong></td><td>${esc(r.Record)}</td><td><strong>${fmt(r['Final Rating'])}</strong></td><td>${fmt(r['Power Rating'])}</td><td>${fmt(r['Base Rating'])}</td><td>${fmt(r['Dynamic Validation'])}</td><td class="${mclass}">${move}</td><td>${esc(r['Points For'])}</td><td>${esc(r['Points Allowed'])}</td><td>${esc(r['Point Diff'])}</td></tr>`;
+    return `<tr class="${num(r.Rank)<=25?'top25':''}"><td class="rank-num">#${esc(r.Rank)}</td><td><strong>${esc(r.Team)}</strong></td><td>${esc(r.Record)}</td><td><strong>${fmt(r['Final Rating'])}</strong></td><td>${fmt(r['Power Rating'])}</td><td>${fmt(r['Base Rating'])}</td><td>${fmt(r['Dynamic Validation'])}</td><td>${fmt(r['Loss Penalty']??0)}</td><td class="${mclass}">${move}</td><td>${esc(r['Points For'])}</td><td>${esc(r['Points Allowed'])}</td><td>${esc(r['Point Diff'])}</td></tr>`;
   }).join('');
 }
 
@@ -161,3 +161,4 @@ document.addEventListener('click',e=>{
 document.getElementById('heatZoomIn').addEventListener('click',()=>zoomHeat(1.35));document.getElementById('heatZoomOut').addEventListener('click',()=>zoomHeat(1/1.35));document.getElementById('heatZoomReset').addEventListener('click',resetHeatZoom);document.getElementById('mapReset').addEventListener('click',()=>{if(ownershipState.svg)ownershipState.svg.transition().duration(250).call(ownershipState.zoom.transform,d3.zoomIdentity);});document.getElementById('ownerSearch').addEventListener('change',findOwner);initHeatGestures();window.addEventListener('resize',()=>{if(document.getElementById('matrixImage').classList.contains('active'))resetHeatZoom();});
 
 fetch(`data.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.json()).then(d=>{DATA=d;updateStamp();renderRankings();renderPicks();renderModelLines();renderMatrix();renderStrengthLadder(DATA);document.getElementById('rankSearch').addEventListener('input',renderRankings);document.getElementById('matrixSearch').addEventListener('input',renderMatrix);}).catch(err=>{document.getElementById('globalStamp').textContent='Could not load current data';console.error(err);});
+

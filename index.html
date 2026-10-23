@@ -15,7 +15,7 @@
     <div class="eyebrow">2026 COLLEGE FOOTBALL</div>
     <h1>Dynamic CFB Rankings</h1>
     <p class="lede">No preseason bias. No poll reputation. Rankings are driven by wins, scoring, defense, and opponent strength that is validated by what teams do next.</p>
-    <div class="formula">Base = 100×Wins + PF − 1.5×PA &nbsp; • &nbsp; Opponent Value = 60% when played + 40% later validation</div>
+    <div class="formula">Base = 100×Wins + PF − 1.5×PA &nbsp; • &nbsp; Opponent Value = 60% when played + 40% later validation &nbsp; • &nbsp; Subtract game-time rank loss penalties</div>
     <div class="live-line"><span class="live-dot"></span><span id="globalStamp">Loading update status…</span></div>
   </div>
 </header>
@@ -33,7 +33,7 @@
 <main class="wrap">
   <section id="rankings" class="panel active">
     <div class="section-head"><div><h2>Current Rankings</h2><p>FBS-only dynamic-validation rankings. Search or sort the table.</p><div class="page-stamp" data-update-stamp></div></div><input id="rankSearch" class="search" placeholder="Search team…" aria-label="Search rankings"></div>
-    <div class="table-wrap"><table id="rankTable"><thead><tr><th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th><th data-key="Final Rating">Rating</th><th data-key="Power Rating">Power</th><th data-key="Base Rating">Base</th><th data-key="Dynamic Validation">Validation</th><th data-key="Rank Change">Move</th><th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th></tr></thead><tbody></tbody></table></div>
+    <div class="table-wrap"><table id="rankTable"><thead><tr><th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th><th data-key="Final Rating">Rating</th><th data-key="Power Rating">Power</th><th data-key="Base Rating">Base</th><th data-key="Dynamic Validation">Validation</th><th data-key="Loss Penalty">Loss penalty</th><th data-key="Rank Change">Move</th><th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section id="picks" class="panel">
@@ -77,9 +77,9 @@
     <h3>2. Dynamic Win Validation</h3><p>An opponent's value does not remain permanently frozen and does not decay merely because time passes. Instead, the model asks whether that opponent's later performances validate how strong they appeared when the game was played.</p><div class="formula-block">Effective Opponent Strength = 60% × Strength When Played + 40% × Later Validated Strength</div>
     <h3>3. Hidden non-FBS opponent strength</h3><p>FCS and other non-FBS teams never appear in public rankings, picks, heatmaps, or ownership results. When they play an FBS team, their hidden strength is measured only from their direct performances against FBS opponents. FCS-vs-FCS games do not affect the model.</p>
     <h3>4. Quality adjustment</h3><p>Wins receive positive opponent-quality value. Losses are penalized more severely when they come against weaker opponents. A highly rated opponent that continues to perform well preserves the value of an earlier win; an opponent that collapses can reduce that value. An underrated opponent that later proves strong can increase the value of the earlier result.</p>
-    <h3>5. Week-to-week memory</h3><p>The rating entering each week is frozen as that week's original opponent strength. Later games validate that historical value instead of simply replacing it with today's ranking.</p>
+    <h3>Game-time rank loss penalty</h3><p>Each loss costs an extra <strong>50 + 2 × max(0, opponent rank − team rank) + 2 × losing margin</strong> points. Both ranks are the model’s FBS ranks entering the game week, frozen before any results that week. Later results never rewrite this penalty. If either team has no prior games, the rank-gap term is zero. Hidden non-FBS opponents use rank 139 (FBS count + 1). These are explicit model weights, not statistically fitted values. Final Rating = Base + Validation − Loss Penalty. The same rule applies to every team.</p><h3>5. Week-to-week memory</h3><p>The rating entering each week is frozen as that week's original opponent strength. Later games validate that historical value instead of simply replacing it with today's ranking.</p>
     <h3>6. Live results</h3><p>The public site never receives the private CFBD API key. A GitHub Action checks for newly completed games, recalculates the model after finals, rewrites the public data file, and GitHub Pages republishes it automatically.</p>
-    <h3>7. Opponent-adjusted power and model lines</h3><p>Iterative opponent-adjusted scoring margins with sample-size shrinkage and recent-form weighting provide power ratings in point units. The original résumé ranking formula remains unchanged; power ratings are a separate forecasting measure. FBS and FCS opponents participate in the same current-season game network. Weekly lines compare power ratings using a home-field estimate inferred from current-season results and shrunk toward zero. No sportsbook information enters the model.</p><h3>8. CFP Ownership Map</h3><p>The map begins with county-level territory based on geographic proximity. A team's empire is made of the territory units it currently owns. FBS-vs-FBS results transfer every territory unit owned by the losing landholder to the winner. Split starting counties are shown with multiple colors until those shares consolidate through game results.</p>
+    <h3>7. Opponent-adjusted power and model lines</h3><p>Iterative opponent-adjusted scoring margins with sample-size shrinkage and recent-form weighting provide power ratings in point units. Power ratings are a separate forecasting measure; the game-time rank loss penalty affects résumé rankings. FBS and FCS opponents participate in the same current-season game network. Weekly lines compare power ratings using a home-field estimate inferred from current-season results and shrunk toward zero. No sportsbook information enters the model.</p><h3>8. CFP Ownership Map</h3><p>The map begins with county-level territory based on geographic proximity. A team's empire is made of the territory units it currently owns. FBS-vs-FBS results transfer every territory unit owned by the losing landholder to the winner. Split starting counties are shown with multiple colors until those shares consolidate through game results.</p>
   </section>
 </main>
 
@@ -88,3 +88,4 @@
 <script src="app.js"></script>
 </body>
 </html>
+
