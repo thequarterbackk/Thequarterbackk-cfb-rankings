@@ -559,7 +559,8 @@
     "week": 7
   },
   "401858495": {
-    "actualHomeMargin": null,
+    "absoluteError": 15.06,
+    "actualHomeMargin": 11,
     "awayTeam": "Oregon",
     "homeTeam": "Illinois",
     "id": 401858495,
@@ -997,7 +998,8 @@
     "week": 8
   },
   "401866448": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.22,
+    "actualHomeMargin": 7,
     "awayTeam": "Bowling Green",
     "homeTeam": "Buffalo",
     "id": 401866448,
@@ -1269,7 +1271,8 @@
     "week": 7
   },
   "401867842": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.41,
+    "actualHomeMargin": 28,
     "awayTeam": "Princeton",
     "homeTeam": "Harvard",
     "id": 401867842,
@@ -1290,7 +1293,8 @@
     "week": 7
   },
   "401867850": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.05,
+    "actualHomeMargin": 7,
     "awayTeam": "Indiana State",
     "homeTeam": "Illinois State",
     "id": 401867850,
@@ -1311,7 +1315,8 @@
     "week": 7
   },
   "401867871": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.94,
+    "actualHomeMargin": 33,
     "awayTeam": "Murray State",
     "homeTeam": "South Dakota State",
     "id": 401867871,
@@ -1332,7 +1337,8 @@
     "week": 7
   },
   "401867879": {
-    "actualHomeMargin": null,
+    "absoluteError": 4.55,
+    "actualHomeMargin": 3,
     "awayTeam": "North Dakota",
     "homeTeam": "South Dakota",
     "id": 401867879,
@@ -1474,7 +1480,8 @@
     "week": 7
   },
   "401867962": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.55,
+    "actualHomeMargin": -6,
     "awayTeam": "Howard",
     "homeTeam": "Morgan State",
     "id": 401867962,
@@ -1698,7 +1705,8 @@
     "week": 8
   },
   "401868121": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.0,
+    "actualHomeMargin": 5,
     "awayTeam": "Weber State",
     "homeTeam": "Montana State",
     "id": 401868121,
@@ -1761,7 +1769,8 @@
     "week": 7
   },
   "401868146": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.82,
+    "actualHomeMargin": 3,
     "awayTeam": "West Florida",
     "homeTeam": "Eastern Kentucky",
     "id": 401868146,
@@ -1803,7 +1812,8 @@
     "week": 7
   },
   "401868182": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.35,
+    "actualHomeMargin": -10,
     "awayTeam": "Southeast Missouri State",
     "homeTeam": "Eastern Illinois",
     "id": 401868182,
@@ -2031,7 +2041,8 @@
     "week": 7
   },
   "401868341": {
-    "actualHomeMargin": null,
+    "absoluteError": 26.55,
+    "actualHomeMargin": -23,
     "awayTeam": "Chattanooga",
     "homeTeam": "Western Carolina",
     "id": 401868341,
@@ -2160,7 +2171,8 @@
     "week": 8
   },
   "401868972": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.13,
+    "actualHomeMargin": 3,
     "awayTeam": "Southern",
     "homeTeam": "Texas Southern",
     "id": 401868972,
@@ -2667,7 +2679,8 @@
     "week": 7
   },
   "401906182": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.61,
+    "actualHomeMargin": 17,
     "awayTeam": "Chowan",
     "homeTeam": "UNC Pembroke",
     "id": 401906182,
@@ -2677,7 +2690,8 @@
     "week": 8
   },
   "401906191": {
-    "actualHomeMargin": null,
+    "absoluteError": 26.06,
+    "actualHomeMargin": -21,
     "awayTeam": "Ferrum",
     "homeTeam": "Erskine",
     "id": 401906191,
@@ -2741,7 +2755,8 @@
     "week": 7
   },
   "401906532": {
-    "actualHomeMargin": null,
+    "absoluteError": 17.81,
+    "actualHomeMargin": -39,
     "awayTeam": "Harding",
     "homeTeam": "Arkansas Monticello",
     "id": 401906532,
@@ -2804,7 +2819,8 @@
     "week": 8
   },
   "401906569": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.09,
+    "actualHomeMargin": 24,
     "awayTeam": "Oklahoma Baptist",
     "homeTeam": "Southeastern Oklahoma State",
     "id": 401906569,
@@ -2814,7 +2830,8 @@
     "week": 8
   },
   "401906573": {
-    "actualHomeMargin": null,
+    "absoluteError": 18.25,
+    "actualHomeMargin": -31,
     "awayTeam": "Ouachita Baptist",
     "homeTeam": "Southern Arkansas",
     "id": 401906573,
@@ -2998,7 +3015,8 @@
     "week": 8
   },
   "401906907": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.31,
+    "actualHomeMargin": 7,
     "awayTeam": "Grand Valley State",
     "homeTeam": "Saginaw Valley State",
     "id": 401906907,
@@ -3040,7 +3058,8 @@
     "week": 7
   },
   "401906926": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.32,
+    "actualHomeMargin": -3,
     "awayTeam": "Tuskegee",
     "homeTeam": "Allen",
     "id": 401906926,
@@ -3093,7 +3112,8 @@
     "week": 7
   },
   "401906954": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.08,
+    "actualHomeMargin": -28,
     "awayTeam": "Central State",
     "homeTeam": "Miles",
     "id": 401906954,
@@ -3168,7 +3188,8 @@
     "week": 7
   },
   "401907105": {
-    "actualHomeMargin": null,
+    "absoluteError": 25.0,
+    "actualHomeMargin": -47,
     "awayTeam": "Colorado Mesa",
     "homeTeam": "Adams State",
     "id": 401907105,
@@ -3189,7 +3210,8 @@
     "week": 7
   },
   "401907116": {
-    "actualHomeMargin": null,
+    "absoluteError": 23.8,
+    "actualHomeMargin": -32,
     "awayTeam": "Western Colorado",
     "homeTeam": "Black Hills State",
     "id": 401907116,
@@ -3242,7 +3264,8 @@
     "week": 7
   },
   "401907147": {
-    "actualHomeMargin": null,
+    "absoluteError": 15.2,
+    "actualHomeMargin": -6,
     "awayTeam": "CSU Pueblo",
     "homeTeam": "Fort Lewis",
     "id": 401907147,
@@ -3329,7 +3352,8 @@
     "week": 7
   },
   "401907242": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.93,
+    "actualHomeMargin": 24,
     "awayTeam": "Southwest Baptist",
     "homeTeam": "Truman State",
     "id": 401907242,
@@ -3520,7 +3544,8 @@
     "week": 7
   },
   "401907351": {
-    "actualHomeMargin": null,
+    "absoluteError": 41.34,
+    "actualHomeMargin": 38,
     "awayTeam": "Central Oklahoma",
     "homeTeam": "Pittsburg State",
     "id": 401907351,
@@ -3563,7 +3588,8 @@
     "week": 7
   },
   "401907373": {
-    "actualHomeMargin": null,
+    "absoluteError": 36.4,
+    "actualHomeMargin": -24,
     "awayTeam": "Missouri Southern State",
     "homeTeam": "Missouri Western",
     "id": 401907373,
@@ -3955,7 +3981,8 @@
     "week": 8
   },
   "401907608": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.14,
+    "actualHomeMargin": -3,
     "awayTeam": "Wheeling",
     "homeTeam": "Frostburg State",
     "id": 401907608,
@@ -4316,7 +4343,8 @@
     "week": 7
   },
   "401907858": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.99,
+    "actualHomeMargin": -7,
     "awayTeam": "Alfred State",
     "homeTeam": "Hartwick",
     "id": 401907858,
@@ -4480,7 +4508,8 @@
     "week": 8
   },
   "401908073": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.0,
+    "actualHomeMargin": 12,
     "awayTeam": "Hilbert",
     "homeTeam": "Buffalo State",
     "id": 401908073,
@@ -4764,7 +4793,8 @@
     "week": 7
   },
   "401908246": {
-    "actualHomeMargin": null,
+    "absoluteError": 21.93,
+    "actualHomeMargin": 21,
     "awayTeam": "Loras",
     "homeTeam": "Nebraska Wesleyan",
     "id": 401908246,
