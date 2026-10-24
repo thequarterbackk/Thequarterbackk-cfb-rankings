@@ -414,7 +414,8 @@
     "week": 8
   },
   "401858271": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.8,
+    "actualHomeMargin": -3,
     "awayTeam": "Duke",
     "homeTeam": "Virginia",
     "id": 401858271,
@@ -424,7 +425,8 @@
     "week": 8
   },
   "401858272": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.8,
+    "actualHomeMargin": 3,
     "awayTeam": "NC State",
     "homeTeam": "Stanford",
     "id": 401858272,
@@ -674,7 +676,8 @@
     "week": 7
   },
   "401861965": {
-    "actualHomeMargin": null,
+    "absoluteError": 10.41,
+    "actualHomeMargin": 19,
     "awayTeam": "Massachusetts",
     "homeTeam": "UConn",
     "id": 401861965,
@@ -772,7 +775,8 @@
     "week": 8
   },
   "401862808": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.16,
+    "actualHomeMargin": -3,
     "awayTeam": "Army",
     "homeTeam": "Tulsa",
     "id": 401862808,
@@ -867,7 +871,8 @@
     "week": 7
   },
   "401864525": {
-    "actualHomeMargin": null,
+    "absoluteError": 18.16,
+    "actualHomeMargin": 14,
     "awayTeam": "Air Force",
     "homeTeam": "Wyoming",
     "id": 401864525,
@@ -2265,7 +2270,8 @@
     "week": 8
   },
   "401870841": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.4,
+    "actualHomeMargin": 3,
     "awayTeam": "Yale",
     "homeTeam": "Pennsylvania",
     "id": 401870841,
