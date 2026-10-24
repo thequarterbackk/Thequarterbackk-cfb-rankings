@@ -1423,7 +1423,8 @@
     "week": 8
   },
   "401867955": {
-    "actualHomeMargin": null,
+    "absoluteError": 31.49,
+    "actualHomeMargin": -19,
     "awayTeam": "North Carolina Central",
     "homeTeam": "Delaware State",
     "id": 401867955,
@@ -4816,7 +4817,8 @@
     "week": 8
   },
   "401908352": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.37,
+    "actualHomeMargin": 26,
     "awayTeam": "Gettysburg",
     "homeTeam": "Johns Hopkins",
     "id": 401908352,
