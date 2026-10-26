@@ -4037,7 +4037,8 @@
     "week": 9
   },
   "401906149": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.8,
+    "actualHomeMargin": 43,
     "awayTeam": "Shaw",
     "homeTeam": "Virginia Union",
     "id": 401906149,
@@ -4465,7 +4466,8 @@
     "week": 9
   },
   "401906637": {
-    "actualHomeMargin": null,
+    "absoluteError": 13.29,
+    "actualHomeMargin": -7,
     "awayTeam": "Tiffin",
     "homeTeam": "Hillsdale",
     "id": 401906637,
@@ -4662,7 +4664,8 @@
     "week": 7
   },
   "401906916": {
-    "actualHomeMargin": null,
+    "absoluteError": 21.06,
+    "actualHomeMargin": -21,
     "awayTeam": "Benedict",
     "homeTeam": "Albany State",
     "id": 401906916,
@@ -4727,7 +4730,8 @@
     "week": 7
   },
   "401906934": {
-    "actualHomeMargin": null,
+    "absoluteError": 28.34,
+    "actualHomeMargin": 17,
     "awayTeam": "Roosevelt",
     "homeTeam": "Northern Michigan",
     "id": 401906934,
@@ -5639,7 +5643,8 @@
     "week": 9
   },
   "401907459": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.77,
+    "actualHomeMargin": 38,
     "awayTeam": "Virginia Lynchburg",
     "homeTeam": "Newberry",
     "id": 401907459,
@@ -5880,7 +5885,8 @@
     "week": 7
   },
   "401907523": {
-    "actualHomeMargin": null,
+    "absoluteError": 46.12,
+    "actualHomeMargin": 49,
     "awayTeam": "IU Pennsylvania",
     "homeTeam": "California (PA)",
     "id": 401907523,
@@ -5901,7 +5907,8 @@
     "week": 9
   },
   "401907532": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.78,
+    "actualHomeMargin": 3,
     "awayTeam": "Clarion",
     "homeTeam": "Seton Hill",
     "id": 401907532,
@@ -6285,7 +6292,8 @@
     "week": 7
   },
   "401907661": {
-    "actualHomeMargin": null,
+    "absoluteError": 17.07,
+    "actualHomeMargin": 27,
     "awayTeam": "Muhlenberg",
     "homeTeam": "Carnegie Mellon",
     "id": 401907661,
@@ -7493,7 +7501,8 @@
     "week": 7
   },
   "401908302": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.49,
+    "actualHomeMargin": 18,
     "awayTeam": "Brevard",
     "homeTeam": "Huntingdon",
     "id": 401908302,
@@ -8360,7 +8369,8 @@
     "week": 8
   },
   "401908590": {
-    "actualHomeMargin": null,
+    "absoluteError": 34.11,
+    "actualHomeMargin": -44,
     "awayTeam": "Worcester State",
     "homeTeam": "Dean",
     "id": 401908590,
@@ -8392,7 +8402,8 @@
     "week": 7
   },
   "401908596": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.19,
+    "actualHomeMargin": 4,
     "awayTeam": "Mass Maritime",
     "homeTeam": "Framingham State",
     "id": 401908596,
@@ -9392,7 +9403,8 @@
     "week": 9
   },
   "401908901": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.5,
+    "actualHomeMargin": 14,
     "awayTeam": "Colby",
     "homeTeam": "Hamilton",
     "id": 401908901,
@@ -9490,7 +9502,8 @@
     "week": 7
   },
   "401908929": {
-    "actualHomeMargin": null,
+    "absoluteError": 27.23,
+    "actualHomeMargin": 57,
     "awayTeam": "Vermont State Castleton",
     "homeTeam": "Christopher Newport",
     "id": 401908929,
@@ -9522,7 +9535,8 @@
     "week": 9
   },
   "401908955": {
-    "actualHomeMargin": null,
+    "absoluteError": 34.19,
+    "actualHomeMargin": -18,
     "awayTeam": "Springfield",
     "homeTeam": "Merchant Marine",
     "id": 401908955,
@@ -9532,7 +9546,8 @@
     "week": 8
   },
   "401908957": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.45,
+    "actualHomeMargin": -10,
     "awayTeam": "MIT",
     "homeTeam": "Salve Regina",
     "id": 401908957,
@@ -9839,7 +9854,8 @@
     "week": 7
   },
   "401909037": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.12,
+    "actualHomeMargin": 3,
     "awayTeam": "Geneva",
     "homeTeam": "Saint Vincent",
     "id": 401909037,
