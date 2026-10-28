@@ -3674,7 +3674,8 @@
     "week": 8
   },
   "401871071": {
-    "actualHomeMargin": null,
+    "absoluteError": 17.7,
+    "actualHomeMargin": -14,
     "awayTeam": "Delaware",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Western Kentucky",
@@ -3685,7 +3686,8 @@
     "week": 9
   },
   "401871072": {
-    "actualHomeMargin": null,
+    "absoluteError": 17.79,
+    "actualHomeMargin": 21,
     "awayTeam": "Sam Houston",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Missouri State",
