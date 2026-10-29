@@ -3597,7 +3597,8 @@
     "week": 8
   },
   "401871057": {
-    "actualHomeMargin": null,
+    "absoluteError": 25.79,
+    "actualHomeMargin": -24,
     "awayTeam": "Jacksonville State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "New Mexico State",
@@ -3608,7 +3609,8 @@
     "week": 9
   },
   "401871058": {
-    "actualHomeMargin": null,
+    "absoluteError": 21.43,
+    "actualHomeMargin": -16,
     "awayTeam": "Kennesaw State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Middle Tennessee",
