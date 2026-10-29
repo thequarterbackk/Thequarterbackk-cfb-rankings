@@ -14,6 +14,8 @@ on:
 
       - "model_core.py"
 
+      - "season_forecast.py"
+
       - "test_*.py"
 
       - ".github/workflows/update-rankings.yml"
@@ -48,7 +50,7 @@ jobs:
 
       - name: Verify ranking rules
 
-        run: python -m unittest -v test_rankings.py test_model_core.py
+        run: python -m unittest -v test_rankings.py test_model_core.py test_season_forecast.py
 
       - name: Update rankings
 

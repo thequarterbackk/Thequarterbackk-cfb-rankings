@@ -4,6 +4,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from model_core import resume_rankings, walk_forward
+from season_forecast import build_forecast
 
 ROOT=Path(__file__).resolve().parent
 DATA_PATH=ROOT/'data.json'
@@ -466,6 +467,7 @@ def main():
     picks=predictive_picks(lines,rankings,fbs_names)
     eastern=datetime.now(ZoneInfo('America/New_York')).isoformat(timespec='seconds')
     data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Schedule-adjusted résumé + robust power + frozen rank penalties v8'},'rankings':rankings,'modelBacktest':backtest,'modelInputs':{'completedGames':relevant,'rankingWeights':{'resume':1000,'robustPower':10},'marginCap':35,'lossWeights':{'base':50,'rankGap':2,'margin':2}},'modelLines':lines,'marketStats':market_stats,'modelAccuracy':accuracy,'probabilityMeta':probability_meta,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
+    data['seasonForecast']=build_forecast(all_games,completed,team_meta,power,home_edge,loss_penalty,probability_meta['sigma'])
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))

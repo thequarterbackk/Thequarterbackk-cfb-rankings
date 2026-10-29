@@ -23,6 +23,7 @@
 <nav class="tabs wrap" aria-label="Site sections">
   <button class="tab active" data-tab="rankings">Rankings</button>
   <button class="tab" data-tab="picks">Upcoming Picks</button><button class="tab" data-tab="lines">Weekly Model Lines</button>
+  <button class="tab" data-tab="forecast">Season & CFP Predictions</button>
   <button class="tab" data-tab="strength">Conference Strength</button>
   <button class="tab" data-tab="matrix">Results Heatmap</button>
   <button class="tab" data-tab="matrixImage">Heatmap Image</button>
@@ -71,6 +72,15 @@
     <details class="ladder-team-list"><summary>All team ratings (accessible table)</summary><div class="table-wrap"><table id="ladderTeams"><thead><tr><th scope="col">Team</th><th scope="col">Conference / group</th><th scope="col">Rank</th><th scope="col">Record</th><th scope="col">Final Rating</th></tr></thead><tbody></tbody></table></div></details>
   </section>
 
+  <section id="forecast" class="panel">
+    <div class="section-head"><div><h2>Season &amp; CFP Predictions</h2><p>Select any FBS team for projected results and scores in every remaining scheduled game. Follow the projected playoff field each week and every round through the national title.</p><div class="page-stamp" data-update-stamp></div></div></div>
+    <label for="forecastTeam">Choose a team</label> <select id="forecastTeam" aria-label="Choose a team for season predictions"></select>
+    <h3 id="forecastTeamSummary" aria-live="polite"></h3>
+    <div class="table-wrap"><table><thead><tr><th>Week</th><th>Date (ET)</th><th>Opponent / venue</th><th>Projected result</th><th>Winner confidence</th></tr></thead><tbody id="forecastGames"></tbody></table></div><div id="forecastTeamPath"></div>
+    <details class="forecast-method"><summary>Forecast method and assumptions</summary><p>Winning margins use the same current validated forecasting engine as Weekly Model Lines, including its home-field estimate. Score totals average the teams’ current scoring environments, shrunk with four games of season-average scoring. Integer scores break exact ties by one point. Score totals have not been separately backtested.</p><p>Power ratings stay fixed within this scenario; hypothetical scores replay the existing résumé model after each remaining week. Actual final scores replace projections on each automated refresh. Projected results never affect the published real-world rankings or archived pregame accuracy.</p><p>The 2026 field includes ACC, Big Ten, Big 12 and SEC projected champions, the highest model-ranked team from the other six conferences, and seven at-large teams. Notre Dame is protected if in the model top 12. Model rankings substitute for the committee. Future bowl games outside the CFP are not projected because pairings are unknown.</p><p><a href="https://collegefootballplayoff.com/news/2026/8/6/sc-aug-2627" target="_blank" rel="noopener">Official 2026 CFP selection format</a></p></details>
+    <div id="forecastContent" aria-live="polite">Loading full-season projections…</div>
+  </section>
+
   <section id="method" class="panel prose">
     <h2>How the model works</h2><div class="page-stamp" data-update-stamp></div>
     <h3>1. Results, not reputation</h3><p>Only this season’s completed scores enter the model. No polls, recruiting rankings, budgets, conference bonuses, sportsbook lines, or prior-season ratings. Every team begins with the same prior. Conference labels are used only to group the visuals.</p>
@@ -87,7 +97,8 @@
 <footer><div class="wrap">Dynamic CFB Rankings • 2026 season • Automated final-score updates</div></footer>
 <script src="ladder.js?v=8.1"></script>
 <script src="heatmap_image.js?v=8.1"></script>
-<script src="app.js?v=8.1"></script>
+<script src="forecast.js?v=1"></script>
+<script src="app.js?v=8.2"></script>
 <script src="chart_exports.js?v=8.1"></script>
 </body>
 </html>
