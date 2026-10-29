@@ -83,4 +83,5 @@ def build_forecast(games,completed,metadata,power,home_edge,penalty_fn,sigma=17)
     semis=[match(quarters[i]['winner'],quarters[i+1]['winner'],'Semifinal') for i in (0,2)]
     final=[match(semis[0]['winner'],semis[1]['winner'],'Championship')]
     for label,gs in [('First round · Dec 18–19',first),('Quarterfinals · Dec 30 / Jan 1',quarters),('Semifinals · Jan 14–15',semis),('National championship · Jan 25',final)]:rounds.append({'label':label,'games':gs})
+    projections.sort(key=lambda g:(g['week'],g.get('startDate') or '',str(g['id'])))
     return {'games':projections,'weeklyFields':snapshots,'conferenceTitles':title_games,'rounds':rounds,'champion':final[0]['winner'],'records':{r['Team']:r['Record'] for r in rows},'engine':'Fixed current validated power; projected results replay the résumé model weekly.'}
