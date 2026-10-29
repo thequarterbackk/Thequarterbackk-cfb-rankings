@@ -58,6 +58,11 @@ def build_forecast(games,completed,metadata,power,home_edge,penalty_fn,sigma=17)
         snapshots.append({'label':label,'field':field})
         return rows
     snapshot('Current model')
+    # Selection Day is Dec 6: Army–Navy on Dec 12 cannot rewrite the CFP field.
+    cutoff='2026-12-07'
+    late=[g for g in remaining if g.get('startDate') and g['startDate'][:10]>=cutoff]
+    remaining=[g for g in remaining if g not in late]
+    projections.extend(project_game(g,completed,power,home_edge,sigma) for g in late)
     for week in sorted({g['week'] for g in remaining}):
         for g in sorted((g for g in remaining if g['week']==week),key=lambda g:str(g['id'])):
             p=project_game(g,completed,power,home_edge,sigma);projections.append(p);scenario.append(p)
