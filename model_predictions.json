@@ -1232,7 +1232,8 @@
     "week": 8
   },
   "401862812": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.11,
+    "actualHomeMargin": 7,
     "awayTeam": "Florida Atlantic",
     "forecastEngine": "v7-baseline",
     "homeTeam": "North Texas",
@@ -2244,7 +2245,8 @@
     "week": 7
   },
   "401867969": {
-    "actualHomeMargin": null,
+    "absoluteError": 31.95,
+    "actualHomeMargin": -41,
     "awayTeam": "South Carolina State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Morgan State",
@@ -3509,7 +3511,8 @@
     "week": 7
   },
   "401869963": {
-    "actualHomeMargin": null,
+    "absoluteError": 24.7,
+    "actualHomeMargin": -3,
     "awayTeam": "Troy",
     "forecastEngine": "v7-baseline",
     "homeTeam": "James Madison",
@@ -4844,7 +4847,8 @@
     "week": 8
   },
   "401906977": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.95,
+    "actualHomeMargin": 7,
     "awayTeam": "Fort Valley State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Miles",
