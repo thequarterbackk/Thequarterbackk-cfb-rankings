@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Refresh requested after the October 29, 2026 JMU–Troy final.
 import json, os, sys, urllib.request, urllib.parse
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
