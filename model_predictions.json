@@ -1893,7 +1893,8 @@
     "week": 7
   },
   "401867838": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.25,
+    "actualHomeMargin": 10,
     "awayTeam": "Harvard",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Dartmouth",
@@ -4011,7 +4012,8 @@
     "week": 8
   },
   "401906138": {
-    "actualHomeMargin": null,
+    "absoluteError": 45.24,
+    "actualHomeMargin": -62,
     "awayTeam": "Virginia Union",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Lincoln (PA)",
