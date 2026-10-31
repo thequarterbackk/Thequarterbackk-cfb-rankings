@@ -396,7 +396,8 @@
     "week": 9
   },
   "401856844": {
-    "actualHomeMargin": null,
+    "absoluteError": 38.41,
+    "actualHomeMargin": -32,
     "awayTeam": "Baylor",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UCF",
@@ -1244,7 +1245,8 @@
     "week": 9
   },
   "401862813": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.83,
+    "actualHomeMargin": -7,
     "awayTeam": "Tulane",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Charlotte",
@@ -1530,7 +1532,8 @@
     "week": 8
   },
   "401866451": {
-    "actualHomeMargin": null,
+    "absoluteError": 24.11,
+    "actualHomeMargin": 21,
     "awayTeam": "Kent State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Sacramento State",
@@ -7785,7 +7788,8 @@
     "week": 7
   },
   "401908398": {
-    "actualHomeMargin": null,
+    "absoluteError": 25.79,
+    "actualHomeMargin": 55,
     "awayTeam": "Willamette",
     "forecastEngine": "v7-baseline",
     "homeTeam": "George Fox",
