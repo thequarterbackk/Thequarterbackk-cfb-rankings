@@ -174,7 +174,7 @@
     "homeTeam": "Arkansas",
     "kickoff": "2026-10-31T23:45:00.000Z",
     "modelHomeMargin": -4.368,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -185,7 +185,7 @@
     "homeTeam": "Georgia",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 5.565,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -196,7 +196,7 @@
     "homeTeam": "Ole Miss",
     "kickoff": "2026-10-31T16:45:00.000Z",
     "modelHomeMargin": 11.9,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -207,7 +207,7 @@
     "homeTeam": "Oklahoma",
     "kickoff": "2026-10-31T20:15:00.000Z",
     "modelHomeMargin": 2.949,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -218,7 +218,7 @@
     "homeTeam": "Texas",
     "kickoff": "2026-10-31T23:30:00.000Z",
     "modelHomeMargin": 12.009,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -228,7 +228,7 @@
     "homeSpread": -4.0,
     "homeTeam": "Florida",
     "kickoff": "2026-11-08T00:45:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -238,7 +238,7 @@
     "homeSpread": -4.5,
     "homeTeam": "LSU",
     "kickoff": "2026-11-07T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -248,7 +248,7 @@
     "homeSpread": 3.0,
     "homeTeam": "Ole Miss",
     "kickoff": "2026-11-07T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -258,7 +258,7 @@
     "homeSpread": 3.5,
     "homeTeam": "Missouri",
     "kickoff": "2026-11-07T17:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -268,7 +268,7 @@
     "homeSpread": -5.5,
     "homeTeam": "Tennessee",
     "kickoff": "2026-11-07T23:15:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -459,7 +459,7 @@
     "homeTeam": "Texas Tech",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 3.23,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -470,7 +470,7 @@
     "homeTeam": "BYU",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 16.375,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "Bovada",
     "week": 9
   },
@@ -493,7 +493,7 @@
     "homeTeam": "TCU",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 8.795,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -504,7 +504,7 @@
     "homeTeam": "Colorado",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": -0.738,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -515,7 +515,7 @@
     "homeTeam": "Iowa State",
     "kickoff": "2026-10-31T23:00:00.000Z",
     "modelHomeMargin": -3.493,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -526,7 +526,7 @@
     "homeTeam": "Cincinnati",
     "kickoff": "2026-10-31T19:45:00.000Z",
     "modelHomeMargin": -2.215,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -536,7 +536,7 @@
     "homeSpread": -3.0,
     "homeTeam": "Utah",
     "kickoff": "2026-11-07T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -546,7 +546,7 @@
     "homeSpread": 15.5,
     "homeTeam": "Oklahoma State",
     "kickoff": "2026-11-14T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 11
   },
@@ -556,7 +556,7 @@
     "homeSpread": 2.5,
     "homeTeam": "LSU",
     "kickoff": "2026-11-14T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 11
   },
@@ -566,7 +566,7 @@
     "homeSpread": -4.0,
     "homeTeam": "Oklahoma",
     "kickoff": "2026-11-14T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 11
   },
@@ -576,7 +576,7 @@
     "homeSpread": -8.5,
     "homeTeam": "Texas A&M",
     "kickoff": "2026-11-14T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 11
   },
@@ -775,11 +775,11 @@
   "401858277": {
     "awayTeam": "California",
     "gameId": "401858277",
-    "homeSpread": -7.5,
+    "homeSpread": -9.5,
     "homeTeam": "NC State",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 11.093,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "Bovada",
     "week": 9
   },
@@ -790,7 +790,7 @@
     "homeTeam": "Syracuse",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 0.549,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -801,7 +801,7 @@
     "homeTeam": "Duke",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 10.605,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "Bovada",
     "week": 9
   },
@@ -812,7 +812,7 @@
     "homeTeam": "Florida State",
     "kickoff": "2026-10-31T04:00:00.000Z",
     "modelHomeMargin": 8.615,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -823,7 +823,7 @@
     "homeTeam": "Pittsburgh",
     "kickoff": "2026-10-31T23:30:00.000Z",
     "modelHomeMargin": 15.569,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -834,7 +834,7 @@
     "homeTeam": "North Carolina",
     "kickoff": "2026-10-31T23:30:00.000Z",
     "modelHomeMargin": -9.109,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -845,7 +845,7 @@
     "homeTeam": "Louisville",
     "kickoff": "2026-10-31T19:15:00.000Z",
     "modelHomeMargin": 21.295,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -856,7 +856,7 @@
     "homeTeam": "Wake Forest",
     "kickoff": "2026-10-31T19:45:00.000Z",
     "modelHomeMargin": 13.357,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -866,7 +866,7 @@
     "homeSpread": -7.5,
     "homeTeam": "SMU",
     "kickoff": "2026-11-07T00:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -876,7 +876,7 @@
     "homeSpread": -3.5,
     "homeTeam": "Notre Dame",
     "kickoff": "2026-11-08T00:30:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -886,7 +886,7 @@
     "homeSpread": -21.0,
     "homeTeam": "Miami (FL)",
     "kickoff": "2026-11-14T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 11
   },
@@ -1053,7 +1053,7 @@
     "homeTeam": "Indiana",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 20.53,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1064,18 +1064,18 @@
     "homeTeam": "Iowa",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 2.519,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401858503": {
     "awayTeam": "Illinois",
     "gameId": "401858503",
-    "homeSpread": 2.5,
+    "homeSpread": 3.0,
     "homeTeam": "Maryland",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": -1.924,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1086,8 +1086,8 @@
     "homeTeam": "Nebraska",
     "kickoff": "2026-11-01T00:00:00.000Z",
     "modelHomeMargin": 16.978,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
-    "provider": "Bovada",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
+    "provider": "DraftKings",
     "week": 9
   },
   "401858505": {
@@ -1097,7 +1097,7 @@
     "homeTeam": "Oregon",
     "kickoff": "2026-10-31T04:00:00.000Z",
     "modelHomeMargin": 2.384,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1108,18 +1108,18 @@
     "homeTeam": "Penn State",
     "kickoff": "2026-10-31T20:15:00.000Z",
     "modelHomeMargin": 9.271,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401858507": {
     "awayTeam": "Michigan",
     "gameId": "401858507",
-    "homeSpread": 15.5,
+    "homeSpread": 16.5,
     "homeTeam": "Rutgers",
     "kickoff": "2026-10-31T16:30:00.000Z",
     "modelHomeMargin": 0.264,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1130,7 +1130,7 @@
     "homeTeam": "UCLA",
     "kickoff": "2026-10-31T20:15:00.000Z",
     "modelHomeMargin": 17.217,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1141,7 +1141,7 @@
     "homeTeam": "USC",
     "kickoff": "2026-10-31T04:00:00.000Z",
     "modelHomeMargin": -6.238,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1151,7 +1151,7 @@
     "homeSpread": -14.0,
     "homeTeam": "Michigan",
     "kickoff": "2026-11-07T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -1161,7 +1161,7 @@
     "homeSpread": 6.5,
     "homeTeam": "Minnesota",
     "kickoff": "2026-11-07T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -1171,7 +1171,7 @@
     "homeSpread": -2.5,
     "homeTeam": "Northwestern",
     "kickoff": "2026-11-07T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -1181,7 +1181,7 @@
     "homeSpread": -14.0,
     "homeTeam": "Ohio State",
     "kickoff": "2026-11-07T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -1191,7 +1191,7 @@
     "homeSpread": -10.0,
     "homeTeam": "Indiana",
     "kickoff": "2026-11-14T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 11
   },
@@ -1201,7 +1201,7 @@
     "homeSpread": -13.5,
     "homeTeam": "Oregon",
     "kickoff": "2026-11-14T05:00:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 11
   },
@@ -1212,7 +1212,7 @@
     "homeTeam": "Navy",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": -18.046,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "Bovada",
     "week": 9
   },
@@ -1283,7 +1283,7 @@
     "homeTeam": "Boise State",
     "kickoff": "2026-11-01T02:00:00.000Z",
     "modelHomeMargin": 12.522,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1294,7 +1294,7 @@
     "homeTeam": "San Diego State",
     "kickoff": "2026-10-31T23:00:00.000Z",
     "modelHomeMargin": 4.795,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1305,7 +1305,7 @@
     "homeTeam": "Utah State",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 6.156,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1328,7 +1328,7 @@
     "homeTeam": "Fresno State",
     "kickoff": "2026-11-01T03:00:00.000Z",
     "modelHomeMargin": -3.855,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1351,7 +1351,7 @@
     "homeTeam": "Air Force",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 2.701,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1530,29 +1530,29 @@
     "homeTeam": "Memphis",
     "kickoff": "2026-11-01T00:00:00.000Z",
     "modelHomeMargin": 4.409,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401862815": {
     "awayTeam": "Temple",
     "gameId": "401862815",
-    "homeSpread": -4.5,
+    "homeSpread": -4.0,
     "homeTeam": "East Carolina",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 7.476,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401862816": {
     "awayTeam": "UAB",
     "gameId": "401862816",
-    "homeSpread": -8.0,
+    "homeSpread": -7.5,
     "homeTeam": "South Florida",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 11.769,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "Bovada",
     "week": 9
   },
@@ -1562,7 +1562,7 @@
     "homeSpread": -5.5,
     "homeTeam": "Army",
     "kickoff": "2026-11-08T00:30:00.000Z",
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 10
   },
@@ -1681,7 +1681,7 @@
     "homeTeam": "San Jos\u00e9 State",
     "kickoff": "2026-10-31T20:00:00.000Z",
     "modelHomeMargin": -10.26,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1692,7 +1692,7 @@
     "homeTeam": "UNLV",
     "kickoff": "2026-11-01T02:30:00.000Z",
     "modelHomeMargin": 19.945,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1703,7 +1703,7 @@
     "homeTeam": "North Dakota State",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 27.632,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -1842,11 +1842,11 @@
   "401866452": {
     "awayTeam": "Bowling Green",
     "gameId": "401866452",
-    "homeSpread": -13.5,
+    "homeSpread": -14.0,
     "homeTeam": "Western Michigan",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 16.447,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2021,33 +2021,33 @@
   "401866675": {
     "awayTeam": "Campbell",
     "gameId": "401866675",
-    "homeSpread": 1.5,
+    "homeSpread": 2.5,
     "homeTeam": "UAlbany",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 6.19,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401866676": {
     "awayTeam": "Maine",
     "gameId": "401866676",
-    "homeSpread": -15.5,
+    "homeSpread": -10.5,
     "homeTeam": "Rhode Island",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 17.203,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401866677": {
     "awayTeam": "Sacred Heart",
     "gameId": "401866677",
-    "homeSpread": -12.5,
+    "homeSpread": -8.5,
     "homeTeam": "Stony Brook",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 12.115,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2058,18 +2058,18 @@
     "homeTeam": "Monmouth",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": 10.511,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401866679": {
     "awayTeam": "Elon",
     "gameId": "401866679",
-    "homeSpread": 10.5,
+    "homeSpread": 8.5,
     "homeTeam": "North Carolina A&T",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": 1.772,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2080,7 +2080,7 @@
     "homeTeam": "Towson",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": 14.671,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2123,11 +2123,11 @@
   "401867809": {
     "awayTeam": "Pennsylvania",
     "gameId": "401867809",
-    "homeSpread": -3.0,
+    "homeSpread": -3.5,
     "homeTeam": "Brown",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 10.926,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2158,11 +2158,11 @@
   "401867823": {
     "awayTeam": "Yale",
     "gameId": "401867823",
-    "homeSpread": 7.0,
+    "homeSpread": 9.5,
     "homeTeam": "Columbia",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 0.726,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2185,7 +2185,7 @@
     "homeTeam": "Princeton",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 6.281,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2268,7 +2268,7 @@
     "homeTeam": "Illinois State",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 29.326,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2279,7 +2279,7 @@
     "homeTeam": "Northern Iowa",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 9.654,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2334,11 +2334,11 @@
   "401867880": {
     "awayTeam": "North Dakota",
     "gameId": "401867880",
-    "homeSpread": -6.5,
+    "homeSpread": -5.5,
     "homeTeam": "Youngstown State",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 9.467,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2349,7 +2349,7 @@
     "homeTeam": "South Dakota State",
     "kickoff": "2026-10-31T20:00:00.000Z",
     "modelHomeMargin": 7.689,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2404,11 +2404,11 @@
   "401867903": {
     "awayTeam": "Robert Morris",
     "gameId": "401867903",
-    "homeSpread": -10.0,
+    "homeSpread": -8.5,
     "homeTeam": "Central Connecticut",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 9.506,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2475,11 +2475,11 @@
   "401867926": {
     "awayTeam": "Mercyhurst",
     "gameId": "401867926",
-    "homeSpread": -5.5,
+    "homeSpread": -7.0,
     "homeTeam": "Stonehill",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 11.737,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2498,11 +2498,11 @@
   "401867932": {
     "awayTeam": "Wagner",
     "gameId": "401867932",
-    "homeSpread": -15.5,
+    "homeSpread": -16.5,
     "homeTeam": "Merrimack",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 13.2,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2521,11 +2521,11 @@
   "401867956": {
     "awayTeam": "Delaware State",
     "gameId": "401867956",
-    "homeSpread": -1.5,
+    "homeSpread": 1.5,
     "homeTeam": "Norfolk State",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 11.32,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2548,7 +2548,7 @@
     "homeTeam": "North Carolina Central",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 3.105,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2615,11 +2615,11 @@
   "401867995": {
     "awayTeam": "Bucknell",
     "gameId": "401867995",
-    "homeSpread": -27.5,
+    "homeSpread": -26.5,
     "homeTeam": "Lehigh",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 25.985,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2654,7 +2654,7 @@
     "homeTeam": "Colgate",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": 18.742,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2701,7 +2701,7 @@
     "homeTeam": "Holy Cross",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": 5.234,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2712,7 +2712,7 @@
     "homeTeam": "Lafayette",
     "kickoff": "2026-10-31T16:30:00.000Z",
     "modelHomeMargin": 3.106,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2747,7 +2747,7 @@
     "homeTeam": "Abilene Christian",
     "kickoff": "2026-10-31T20:00:00.000Z",
     "modelHomeMargin": 16.733,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2806,7 +2806,7 @@
     "homeTeam": "Montana State",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 22.011,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2829,7 +2829,7 @@
     "homeTeam": "Eastern Washington",
     "kickoff": "2026-10-31T20:00:00.000Z",
     "modelHomeMargin": -6.043,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2864,7 +2864,7 @@
     "homeTeam": "Portland State",
     "kickoff": "2026-10-31T20:00:00.000Z",
     "modelHomeMargin": -4.265,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2899,7 +2899,7 @@
     "homeTeam": "Utah Tech",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": -10.099,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2930,11 +2930,11 @@
   "401868126": {
     "awayTeam": "Northern Arizona",
     "gameId": "401868126",
-    "homeSpread": 1.5,
+    "homeSpread": 3.0,
     "homeTeam": "Southern Utah",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 2.241,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -2981,7 +2981,7 @@
     "homeTeam": "Central Arkansas",
     "kickoff": "2026-10-31T21:00:00.000Z",
     "modelHomeMargin": 3.708,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3016,7 +3016,7 @@
     "homeTeam": "Tarleton State",
     "kickoff": "2026-10-31T23:00:00.000Z",
     "modelHomeMargin": 21.994,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3039,7 +3039,7 @@
     "homeTeam": "Weber State",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 6.307,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3062,7 +3062,7 @@
     "homeTeam": "Charleston Southern",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 2.677,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3097,7 +3097,7 @@
     "homeTeam": "UT Martin",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 8.418,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3116,11 +3116,11 @@
   "401868190": {
     "awayTeam": "Gardner-Webb",
     "gameId": "401868190",
-    "homeSpread": -7.0,
+    "homeSpread": -6.5,
     "homeTeam": "Southeast Missouri State",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 7.451,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3131,7 +3131,7 @@
     "homeTeam": "Lindenwood",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 6.891,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3190,7 +3190,7 @@
     "homeTeam": "Presbyterian",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": -9.222,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3213,7 +3213,7 @@
     "homeTeam": "St. Thomas (MN)",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 24.294,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3236,7 +3236,7 @@
     "homeTeam": "Stetson",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": -12.95,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3271,7 +3271,7 @@
     "homeTeam": "UT Rio Grande Valley",
     "kickoff": "2026-11-01T00:00:00.000Z",
     "modelHomeMargin": 1.634,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3294,7 +3294,7 @@
     "homeTeam": "Morehead State",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": -2.133,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3317,7 +3317,7 @@
     "homeTeam": "San Diego",
     "kickoff": "2026-10-31T20:00:00.000Z",
     "modelHomeMargin": 3.124,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3372,11 +3372,11 @@
   "401868296": {
     "awayTeam": "Alabama State",
     "gameId": "401868296",
-    "homeSpread": -6.0,
+    "homeSpread": -6.5,
     "homeTeam": "Alabama A&M",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 9.068,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3423,7 +3423,7 @@
     "homeTeam": "Stephen F. Austin",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 23.103,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3446,7 +3446,7 @@
     "homeTeam": "East Texas A&M",
     "kickoff": "2026-10-31T20:00:00.000Z",
     "modelHomeMargin": -1.341,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3481,7 +3481,7 @@
     "homeTeam": "Chattanooga",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": 33.406,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3504,7 +3504,7 @@
     "homeTeam": "East Tennessee State",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 3.437,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3527,7 +3527,7 @@
     "homeTeam": "Mississippi Valley State",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": -9.212,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3550,7 +3550,7 @@
     "homeTeam": "Furman",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 3.339,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3569,22 +3569,22 @@
   "401868384": {
     "awayTeam": "The Citadel",
     "gameId": "401868384",
-    "homeSpread": -18.5,
+    "homeSpread": -16.5,
     "homeTeam": "Mercer",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 17.366,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401868388": {
     "awayTeam": "Wofford",
     "gameId": "401868388",
-    "homeSpread": 4.5,
+    "homeSpread": 5.5,
     "homeTeam": "Samford",
     "kickoff": "2026-10-31T23:00:00.000Z",
     "modelHomeMargin": 1.488,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3631,7 +3631,7 @@
     "homeTeam": "Arkansas-Pine Bluff",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 8.582,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3674,22 +3674,22 @@
   "401868950": {
     "awayTeam": "Southern",
     "gameId": "401868950",
-    "homeSpread": -7.0,
+    "homeSpread": -6.5,
     "homeTeam": "Florida A&M",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 5.825,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401868956": {
     "awayTeam": "Grambling",
     "gameId": "401868956",
-    "homeSpread": 7.0,
+    "homeSpread": 6.5,
     "homeTeam": "Texas Southern",
     "kickoff": "2026-11-01T00:30:00.000Z",
     "modelHomeMargin": -8.265,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3748,7 +3748,7 @@
     "homeTeam": "Incarnate Word",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 29.696,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3771,7 +3771,7 @@
     "homeTeam": "McNeese",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 15.655,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3802,11 +3802,11 @@
   "401869154": {
     "awayTeam": "Duquesne",
     "gameId": "401869154",
-    "homeSpread": 4.5,
+    "homeSpread": 5.5,
     "homeTeam": "New Haven",
     "kickoff": "2026-10-31T16:00:00.000Z",
     "modelHomeMargin": 2.334,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3837,11 +3837,11 @@
   "401869846": {
     "awayTeam": "Appalachian State",
     "gameId": "401869846",
-    "homeSpread": -5.5,
+    "homeSpread": -6.0,
     "homeTeam": "Georgia Southern",
     "kickoff": "2026-10-31T22:30:00.000Z",
     "modelHomeMargin": 7.653,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -3872,11 +3872,11 @@
   "401869944": {
     "awayTeam": "Coastal Carolina",
     "gameId": "401869944",
-    "homeSpread": -4.0,
+    "homeSpread": -3.5,
     "homeTeam": "Georgia State",
     "kickoff": "2026-10-31T18:00:00.000Z",
     "modelHomeMargin": 11.343,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -4031,7 +4031,7 @@
     "homeTeam": "Liberty",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": 16.05,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
@@ -4162,18 +4162,18 @@
     "homeTeam": "Louisiana-Monroe",
     "kickoff": "2026-10-31T19:30:00.000Z",
     "modelHomeMargin": -0.012,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   },
   "401871096": {
     "awayTeam": "Marshall",
     "gameId": "401871096",
-    "homeSpread": 3.0,
+    "homeSpread": 2.5,
     "homeTeam": "Old Dominion",
     "kickoff": "2026-10-31T17:00:00.000Z",
     "modelHomeMargin": 5.306,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "Bovada",
     "week": 9
   },
@@ -4184,7 +4184,7 @@
     "homeTeam": "South Alabama",
     "kickoff": "2026-10-31T19:00:00.000Z",
     "modelHomeMargin": 0.457,
-    "observedAt": "2026-10-31T09:46:29.566181+00:00",
+    "observedAt": "2026-10-31T15:46:39.453832+00:00",
     "provider": "DraftKings",
     "week": 9
   }
