@@ -213,6 +213,94 @@
     "startDate": "2026-10-31T23:30:00.000Z",
     "week": 9
   },
+  "401856738": {
+    "actualHomeMargin": null,
+    "awayTeam": "Arkansas",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Auburn",
+    "id": 401856738,
+    "projectedHomeMargin": 9.77,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:45:00.000Z",
+    "week": 10
+  },
+  "401856739": {
+    "actualHomeMargin": null,
+    "awayTeam": "Oklahoma",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Florida",
+    "id": 401856739,
+    "projectedHomeMargin": 10.214,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:45:00.000Z",
+    "week": 10
+  },
+  "401856740": {
+    "actualHomeMargin": null,
+    "awayTeam": "Alabama",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "LSU",
+    "id": 401856740,
+    "projectedHomeMargin": 8.088,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
+  },
+  "401856741": {
+    "actualHomeMargin": null,
+    "awayTeam": "Georgia",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ole Miss",
+    "id": 401856741,
+    "projectedHomeMargin": 2.749,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:30:00.000Z",
+    "week": 10
+  },
+  "401856742": {
+    "actualHomeMargin": null,
+    "awayTeam": "Vanderbilt",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Mississippi State",
+    "id": 401856742,
+    "projectedHomeMargin": 10.722,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:15:00.000Z",
+    "week": 10
+  },
+  "401856743": {
+    "actualHomeMargin": null,
+    "awayTeam": "Texas",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Missouri",
+    "id": 401856743,
+    "projectedHomeMargin": 4.798,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401856744": {
+    "actualHomeMargin": null,
+    "awayTeam": "Texas A&M",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "South Carolina",
+    "id": 401856744,
+    "projectedHomeMargin": 6.559,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
+  "401856745": {
+    "actualHomeMargin": null,
+    "awayTeam": "Kentucky",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tennessee",
+    "id": 401856745,
+    "projectedHomeMargin": 6.795,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T23:15:00.000Z",
+    "week": 10
+  },
   "401856809": {
     "absoluteError": 7.31,
     "actualHomeMargin": 4,
@@ -461,6 +549,94 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:45:00.000Z",
     "week": 9
+  },
+  "401856849": {
+    "actualHomeMargin": null,
+    "awayTeam": "BYU",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Utah",
+    "id": 401856849,
+    "projectedHomeMargin": 11.204,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401856850": {
+    "actualHomeMargin": null,
+    "awayTeam": "UCF",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Kansas",
+    "id": 401856850,
+    "projectedHomeMargin": 4.859,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:45:00.000Z",
+    "week": 10
+  },
+  "401856851": {
+    "actualHomeMargin": null,
+    "awayTeam": "Cincinnati",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Houston",
+    "id": 401856851,
+    "projectedHomeMargin": 14.927,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T05:00:00.000Z",
+    "week": 10
+  },
+  "401856852": {
+    "actualHomeMargin": null,
+    "awayTeam": "Colorado",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Arizona State",
+    "id": 401856852,
+    "projectedHomeMargin": 7.339,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:30:00.000Z",
+    "week": 10
+  },
+  "401856853": {
+    "actualHomeMargin": null,
+    "awayTeam": "Iowa State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Baylor",
+    "id": 401856853,
+    "projectedHomeMargin": 12.882,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T05:00:00.000Z",
+    "week": 10
+  },
+  "401856854": {
+    "actualHomeMargin": null,
+    "awayTeam": "Oklahoma State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Kansas State",
+    "id": 401856854,
+    "projectedHomeMargin": -2.146,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401856855": {
+    "actualHomeMargin": null,
+    "awayTeam": "TCU",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Arizona",
+    "id": 401856855,
+    "projectedHomeMargin": 10.723,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T03:15:00.000Z",
+    "week": 10
+  },
+  "401856856": {
+    "actualHomeMargin": null,
+    "awayTeam": "West Virginia",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Texas Tech",
+    "id": 401856856,
+    "projectedHomeMargin": 13.776,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T02:30:00.000Z",
+    "week": 10
   },
   "401858261": {
     "absoluteError": 30.35,
@@ -734,6 +910,94 @@
     "startDate": "2026-10-31T19:45:00.000Z",
     "week": 9
   },
+  "401858285": {
+    "actualHomeMargin": null,
+    "awayTeam": "Clemson",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Syracuse",
+    "id": 401858285,
+    "projectedHomeMargin": 3.414,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401858286": {
+    "actualHomeMargin": null,
+    "awayTeam": "Duke",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "NC State",
+    "id": 401858286,
+    "projectedHomeMargin": -1.913,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:30:00.000Z",
+    "week": 10
+  },
+  "401858287": {
+    "actualHomeMargin": null,
+    "awayTeam": "Louisville",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Georgia Tech",
+    "id": 401858287,
+    "projectedHomeMargin": -9.642,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:30:00.000Z",
+    "week": 10
+  },
+  "401858288": {
+    "actualHomeMargin": null,
+    "awayTeam": "Virginia Tech",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "SMU",
+    "id": 401858288,
+    "projectedHomeMargin": 7.228,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T00:00:00.000Z",
+    "week": 10
+  },
+  "401858289": {
+    "actualHomeMargin": null,
+    "awayTeam": "Florida State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Boston College",
+    "id": 401858289,
+    "projectedHomeMargin": -1.582,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401858290": {
+    "actualHomeMargin": null,
+    "awayTeam": "Merrimack",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wake Forest",
+    "id": 401858290,
+    "projectedHomeMargin": 32.118,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
+  },
+  "401858291": {
+    "actualHomeMargin": null,
+    "awayTeam": "Miami (FL)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Notre Dame",
+    "id": 401858291,
+    "projectedHomeMargin": 3.706,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:30:00.000Z",
+    "week": 10
+  },
+  "401858292": {
+    "actualHomeMargin": null,
+    "awayTeam": "North Carolina",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "UConn",
+    "id": 401858292,
+    "projectedHomeMargin": 1.088,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401858488": {
     "absoluteError": 9.4,
     "actualHomeMargin": -4,
@@ -985,6 +1249,94 @@
     "startDate": "2026-10-31T23:30:00.000Z",
     "week": 9
   },
+  "401858510": {
+    "actualHomeMargin": null,
+    "awayTeam": "Nebraska",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Illinois",
+    "id": 401858510,
+    "projectedHomeMargin": -1.351,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T01:00:00.000Z",
+    "week": 10
+  },
+  "401858511": {
+    "actualHomeMargin": null,
+    "awayTeam": "Michigan State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Michigan",
+    "id": 401858511,
+    "projectedHomeMargin": 8.024,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T05:00:00.000Z",
+    "week": 10
+  },
+  "401858512": {
+    "actualHomeMargin": null,
+    "awayTeam": "UCLA",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Minnesota",
+    "id": 401858512,
+    "projectedHomeMargin": -5.143,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T05:00:00.000Z",
+    "week": 10
+  },
+  "401858513": {
+    "actualHomeMargin": null,
+    "awayTeam": "Iowa",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Northwestern",
+    "id": 401858513,
+    "projectedHomeMargin": 5.075,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T05:00:00.000Z",
+    "week": 10
+  },
+  "401858514": {
+    "actualHomeMargin": null,
+    "awayTeam": "Oregon",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ohio State",
+    "id": 401858514,
+    "projectedHomeMargin": 10.457,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
+  },
+  "401858515": {
+    "actualHomeMargin": null,
+    "awayTeam": "Maryland",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Purdue",
+    "id": 401858515,
+    "projectedHomeMargin": 10.688,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:30:00.000Z",
+    "week": 10
+  },
+  "401858516": {
+    "actualHomeMargin": null,
+    "awayTeam": "Penn State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Washington",
+    "id": 401858516,
+    "projectedHomeMargin": 3.092,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T05:00:00.000Z",
+    "week": 10
+  },
+  "401858517": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rutgers",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wisconsin",
+    "id": 401858517,
+    "projectedHomeMargin": 17.106,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:30:00.000Z",
+    "week": 10
+  },
   "401859185": {
     "absoluteError": 3.95,
     "actualHomeMargin": -22,
@@ -1087,6 +1439,39 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:30:00.000Z",
     "week": 9
+  },
+  "401860911": {
+    "actualHomeMargin": null,
+    "awayTeam": "Boise State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Colorado State",
+    "id": 401860911,
+    "projectedHomeMargin": -11.863,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T23:00:00.000Z",
+    "week": 10
+  },
+  "401860912": {
+    "actualHomeMargin": null,
+    "awayTeam": "Texas State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Oregon State",
+    "id": 401860912,
+    "projectedHomeMargin": 8.474,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T03:30:00.000Z",
+    "week": 10
+  },
+  "401860913": {
+    "actualHomeMargin": null,
+    "awayTeam": "Fresno State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Utah State",
+    "id": 401860913,
+    "projectedHomeMargin": -1.175,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T02:30:00.000Z",
+    "week": 10
   },
   "401860923": {
     "absoluteError": 29.75,
@@ -1326,6 +1711,83 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401862817": {
+    "actualHomeMargin": null,
+    "awayTeam": "UTSA",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Florida Atlantic",
+    "id": 401862817,
+    "projectedHomeMargin": -1.294,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-06T00:30:00.000Z",
+    "week": 10
+  },
+  "401862818": {
+    "actualHomeMargin": null,
+    "awayTeam": "South Florida",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "East Carolina",
+    "id": 401862818,
+    "projectedHomeMargin": -0.625,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T00:30:00.000Z",
+    "week": 10
+  },
+  "401862819": {
+    "actualHomeMargin": null,
+    "awayTeam": "Charlotte",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "UAB",
+    "id": 401862819,
+    "projectedHomeMargin": 13.959,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
+  },
+  "401862820": {
+    "actualHomeMargin": null,
+    "awayTeam": "Temple",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Navy",
+    "id": 401862820,
+    "projectedHomeMargin": 8.993,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
+  },
+  "401862821": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rice",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "North Texas",
+    "id": 401862821,
+    "projectedHomeMargin": 17.993,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
+  "401862822": {
+    "actualHomeMargin": null,
+    "awayTeam": "Tulsa",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tulane",
+    "id": 401862822,
+    "projectedHomeMargin": 0.905,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401862823": {
+    "actualHomeMargin": null,
+    "awayTeam": "Air Force",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Army",
+    "id": 401862823,
+    "projectedHomeMargin": 7.081,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:30:00.000Z",
+    "week": 10
+  },
   "401864520": {
     "absoluteError": 0.17,
     "actualHomeMargin": 14,
@@ -1461,6 +1923,50 @@
     "startDate": "2026-10-31T19:30:00.000Z",
     "week": 9
   },
+  "401864532": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hawaii",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "UTEP",
+    "id": 401864532,
+    "projectedHomeMargin": -4.056,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T02:30:00.000Z",
+    "week": 10
+  },
+  "401864533": {
+    "actualHomeMargin": null,
+    "awayTeam": "New Mexico",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Nevada",
+    "id": 401864533,
+    "projectedHomeMargin": -5.514,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T02:00:00.000Z",
+    "week": 10
+  },
+  "401864534": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northern Illinois",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "San Jos\u00e9 State",
+    "id": 401864534,
+    "projectedHomeMargin": 14.538,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
+  "401864535": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wyoming",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "UNLV",
+    "id": 401864535,
+    "projectedHomeMargin": 7.428,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T03:30:00.000Z",
+    "week": 10
+  },
   "401866441": {
     "absoluteError": 8.9,
     "actualHomeMargin": -1,
@@ -1594,6 +2100,61 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401866453": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ohio",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Akron",
+    "id": 401866453,
+    "projectedHomeMargin": -8.533,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-04T00:00:00.000Z",
+    "week": 10
+  },
+  "401866454": {
+    "actualHomeMargin": null,
+    "awayTeam": "Buffalo",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Miami (OH)",
+    "id": 401866454,
+    "projectedHomeMargin": 7.195,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-04T01:00:00.000Z",
+    "week": 10
+  },
+  "401866455": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ball State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Massachusetts",
+    "id": 401866455,
+    "projectedHomeMargin": 10.936,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-05T00:00:00.000Z",
+    "week": 10
+  },
+  "401866456": {
+    "actualHomeMargin": null,
+    "awayTeam": "Central Michigan",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Eastern Michigan",
+    "id": 401866456,
+    "projectedHomeMargin": 0.383,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-05T00:30:00.000Z",
+    "week": 10
+  },
+  "401866457": {
+    "actualHomeMargin": null,
+    "awayTeam": "Toledo",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Sacramento State",
+    "id": 401866457,
+    "projectedHomeMargin": -13.507,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-05T00:00:00.000Z",
+    "week": 10
   },
   "401866476": {
     "absoluteError": 3.06,
@@ -1821,6 +2382,72 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401866681": {
+    "actualHomeMargin": null,
+    "awayTeam": "North Carolina A&T",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Monmouth",
+    "id": 401866681,
+    "projectedHomeMargin": 15.516,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401866682": {
+    "actualHomeMargin": null,
+    "awayTeam": "Towson",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Sacred Heart",
+    "id": 401866682,
+    "projectedHomeMargin": 5.254,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
+  "401866683": {
+    "actualHomeMargin": null,
+    "awayTeam": "UAlbany",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bryant",
+    "id": 401866683,
+    "projectedHomeMargin": -4.358,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
+  "401866684": {
+    "actualHomeMargin": null,
+    "awayTeam": "Stony Brook",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Campbell",
+    "id": 401866684,
+    "projectedHomeMargin": 10.214,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
+  "401866685": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hampton",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Elon",
+    "id": 401866685,
+    "projectedHomeMargin": 18.784,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
+  "401866686": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rhode Island",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "New Hampshire",
+    "id": 401866686,
+    "projectedHomeMargin": -2.039,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401867689": {
     "absoluteError": 27.27,
     "actualHomeMargin": 35,
@@ -1878,6 +2505,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401867810": {
+    "actualHomeMargin": null,
+    "awayTeam": "Brown",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Yale",
+    "id": 401867810,
+    "projectedHomeMargin": 3.789,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401867821": {
     "absoluteError": 6.46,
     "actualHomeMargin": -1,
@@ -1912,6 +2550,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401867824": {
+    "actualHomeMargin": null,
+    "awayTeam": "Columbia",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Harvard",
+    "id": 401867824,
+    "projectedHomeMargin": 20.862,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401867830": {
     "absoluteError": 12.03,
     "actualHomeMargin": 10,
@@ -1935,6 +2584,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401867832": {
+    "actualHomeMargin": null,
+    "awayTeam": "Pennsylvania",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Cornell",
+    "id": 401867832,
+    "projectedHomeMargin": 12.888,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401867837": {
     "absoluteError": 6.07,
     "actualHomeMargin": 6,
@@ -1957,6 +2617,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-30T23:00:00.000Z",
     "week": 9
+  },
+  "401867839": {
+    "actualHomeMargin": null,
+    "awayTeam": "Dartmouth",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Princeton",
+    "id": 401867839,
+    "projectedHomeMargin": 7.645,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401867841": {
     "absoluteError": 4.01,
@@ -2014,6 +2685,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401867852": {
+    "actualHomeMargin": null,
+    "awayTeam": "Illinois State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "North Dakota",
+    "id": 401867852,
+    "projectedHomeMargin": 4.385,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401867861": {
     "absoluteError": 12.35,
     "actualHomeMargin": 22,
@@ -2025,6 +2707,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401867862": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southern Illinois",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Indiana State",
+    "id": 401867862,
+    "projectedHomeMargin": 1.611,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T23:00:00.000Z",
+    "week": 10
   },
   "401867870": {
     "absoluteError": 8.43,
@@ -2047,6 +2740,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T19:00:00.000Z",
     "week": 8
+  },
+  "401867872": {
+    "actualHomeMargin": null,
+    "awayTeam": "Youngstown State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Murray State",
+    "id": 401867872,
+    "projectedHomeMargin": -20.644,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401867878": {
     "absoluteError": 15.04,
@@ -2150,6 +2854,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401867904": {
+    "actualHomeMargin": null,
+    "awayTeam": "Central Connecticut",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Stonehill",
+    "id": 401867904,
+    "projectedHomeMargin": -2.386,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401867912": {
     "absoluteError": 7.23,
     "actualHomeMargin": -5,
@@ -2172,6 +2887,17 @@
     "startDate": "2026-10-24T04:00:00.000Z",
     "week": 8
   },
+  "401867914": {
+    "actualHomeMargin": null,
+    "awayTeam": "Long Island University",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "New Haven",
+    "id": 401867914,
+    "projectedHomeMargin": 2.973,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401867920": {
     "absoluteError": 24.04,
     "actualHomeMargin": -11,
@@ -2193,6 +2919,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401867922": {
+    "actualHomeMargin": null,
+    "awayTeam": "Robert Morris",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Duquesne",
+    "id": 401867922,
+    "projectedHomeMargin": 9.702,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401867925": {
     "absoluteError": 18.2,
@@ -2240,6 +2977,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401867933": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wagner",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Mercyhurst",
+    "id": 401867933,
+    "projectedHomeMargin": 9.201,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401867955": {
     "absoluteError": 31.49,
     "actualHomeMargin": -19,
@@ -2262,6 +3010,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401867957": {
+    "actualHomeMargin": null,
+    "awayTeam": "Morgan State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Delaware State",
+    "id": 401867957,
+    "projectedHomeMargin": 7.868,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401867961": {
     "absoluteError": 8.34,
@@ -2297,6 +3056,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401867964": {
+    "actualHomeMargin": null,
+    "awayTeam": "South Carolina State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Howard",
+    "id": 401867964,
+    "projectedHomeMargin": -15.029,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-06T00:30:00.000Z",
+    "week": 10
+  },
   "401867968": {
     "absoluteError": 7.89,
     "actualHomeMargin": 9,
@@ -2330,6 +3100,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:30:00.000Z",
     "week": 8
+  },
+  "401867976": {
+    "actualHomeMargin": null,
+    "awayTeam": "North Carolina Central",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Norfolk State",
+    "id": 401867976,
+    "projectedHomeMargin": 7.98,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401867993": {
     "absoluteError": 16.02,
@@ -2365,6 +3146,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401867996": {
+    "actualHomeMargin": null,
+    "awayTeam": "Fordham",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bucknell",
+    "id": 401867996,
+    "projectedHomeMargin": 5.567,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401868002": {
     "absoluteError": 30.18,
     "actualHomeMargin": -10,
@@ -2399,6 +3191,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401868005": {
+    "actualHomeMargin": null,
+    "awayTeam": "Colgate",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lehigh",
+    "id": 401868005,
+    "projectedHomeMargin": 6.674,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401868012": {
     "absoluteError": 25.78,
     "actualHomeMargin": -21,
@@ -2432,6 +3235,17 @@
     "startDate": "2026-10-24T19:30:00.000Z",
     "week": 8
   },
+  "401868020": {
+    "actualHomeMargin": null,
+    "awayTeam": "Holy Cross",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Georgetown",
+    "id": 401868020,
+    "projectedHomeMargin": 1.44,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:30:00.000Z",
+    "week": 10
+  },
   "401868026": {
     "absoluteError": 13.77,
     "actualHomeMargin": 19,
@@ -2456,6 +3270,17 @@
     "startDate": "2026-10-31T16:30:00.000Z",
     "week": 9
   },
+  "401868031": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lafayette",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "William & Mary",
+    "id": 401868031,
+    "projectedHomeMargin": 0.936,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401868035": {
     "absoluteError": 14.13,
     "actualHomeMargin": 6,
@@ -2466,6 +3291,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T19:30:00.000Z",
     "week": 8
+  },
+  "401868038": {
+    "actualHomeMargin": null,
+    "awayTeam": "Richmond",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Villanova",
+    "id": 401868038,
+    "projectedHomeMargin": 8.777,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401868055": {
     "absoluteError": 9.5,
@@ -2490,6 +3326,17 @@
     "startDate": "2026-10-31T20:00:00.000Z",
     "week": 9
   },
+  "401868057": {
+    "actualHomeMargin": null,
+    "awayTeam": "Abilene Christian",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tarleton State",
+    "id": 401868057,
+    "projectedHomeMargin": 8.814,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:00:00.000Z",
+    "week": 10
+  },
   "401868066": {
     "absoluteError": 4.81,
     "actualHomeMargin": -14,
@@ -2511,6 +3358,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T23:00:00.000Z",
     "week": 8
+  },
+  "401868068": {
+    "actualHomeMargin": null,
+    "awayTeam": "Eastern Kentucky",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Austin Peay",
+    "id": 401868068,
+    "projectedHomeMargin": 17.074,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
   },
   "401868079": {
     "absoluteError": 6.43,
@@ -2546,6 +3404,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401868082": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northern Arizona",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Cal Poly",
+    "id": 401868082,
+    "projectedHomeMargin": -5.394,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
   "401868088": {
     "absoluteError": 26.71,
     "actualHomeMargin": -36,
@@ -2568,6 +3437,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T20:00:00.000Z",
     "week": 9
+  },
+  "401868090": {
+    "actualHomeMargin": null,
+    "awayTeam": "Eastern Washington",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Idaho",
+    "id": 401868090,
+    "projectedHomeMargin": 12.407,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
   },
   "401868096": {
     "absoluteError": 23.28,
@@ -2636,6 +3516,28 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
+  },
+  "401868108": {
+    "actualHomeMargin": null,
+    "awayTeam": "Montana State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Idaho State",
+    "id": 401868108,
+    "projectedHomeMargin": -6.151,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T23:00:00.000Z",
+    "week": 10
+  },
+  "401868116": {
+    "actualHomeMargin": null,
+    "awayTeam": "Portland State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Montana",
+    "id": 401868116,
+    "projectedHomeMargin": 22.124,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401868121": {
     "absoluteError": 14.0,
@@ -2716,6 +3618,17 @@
     "startDate": "2026-10-31T21:00:00.000Z",
     "week": 9
   },
+  "401868137": {
+    "actualHomeMargin": null,
+    "awayTeam": "West Georgia",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Central Arkansas",
+    "id": 401868137,
+    "projectedHomeMargin": 15.368,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
   "401868145": {
     "absoluteError": 12.99,
     "actualHomeMargin": 29,
@@ -2750,6 +3663,28 @@
     "startDate": "2026-10-31T23:00:00.000Z",
     "week": 9
   },
+  "401868152": {
+    "actualHomeMargin": null,
+    "awayTeam": "West Florida",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "North Alabama",
+    "id": 401868152,
+    "projectedHomeMargin": 4.356,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:00:00.000Z",
+    "week": 10
+  },
+  "401868153": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northern Colorado",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Southern Utah",
+    "id": 401868153,
+    "projectedHomeMargin": 9.058,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401868161": {
     "absoluteError": 16.3,
     "actualHomeMargin": 21,
@@ -2773,6 +3708,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401868166": {
+    "actualHomeMargin": null,
+    "awayTeam": "Utah Tech",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "UC Davis",
+    "id": 401868166,
+    "projectedHomeMargin": 13.217,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:00:00.000Z",
+    "week": 10
+  },
   "401868174": {
     "absoluteError": 13.27,
     "actualHomeMargin": -13,
@@ -2795,6 +3741,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401868176": {
+    "actualHomeMargin": null,
+    "awayTeam": "UT Martin",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Charleston Southern",
+    "id": 401868176,
+    "projectedHomeMargin": 13.586,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401868181": {
     "absoluteError": 15.43,
@@ -2830,6 +3787,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401868184": {
+    "actualHomeMargin": null,
+    "awayTeam": "Western Illinois",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Eastern Illinois",
+    "id": 401868184,
+    "projectedHomeMargin": -2.84,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401868189": {
     "absoluteError": 9.51,
     "actualHomeMargin": 11,
@@ -2853,6 +3821,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401868191": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lindenwood",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Gardner-Webb",
+    "id": 401868191,
+    "projectedHomeMargin": 9.98,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
   "401868199": {
     "absoluteError": 20.11,
     "actualHomeMargin": 27,
@@ -2864,6 +3843,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401868200": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southeast Missouri State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tennessee State",
+    "id": 401868200,
+    "projectedHomeMargin": -3.503,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
   },
   "401868201": {
     "absoluteError": 21.93,
@@ -2921,6 +3911,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401868216": {
+    "actualHomeMargin": null,
+    "awayTeam": "St. Thomas (MN)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Butler",
+    "id": 401868216,
+    "projectedHomeMargin": 8.591,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401868222": {
     "absoluteError": 0.17,
     "actualHomeMargin": 3,
@@ -2944,6 +3945,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401868224": {
+    "actualHomeMargin": null,
+    "awayTeam": "Stetson",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Davidson",
+    "id": 401868224,
+    "projectedHomeMargin": 3.282,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401868230": {
     "absoluteError": 10.9,
     "actualHomeMargin": 5,
@@ -2966,6 +3978,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401868232": {
+    "actualHomeMargin": null,
+    "awayTeam": "Valparaiso",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Dayton",
+    "id": 401868232,
+    "projectedHomeMargin": 10.569,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401868238": {
     "absoluteError": 32.26,
@@ -3001,6 +4024,17 @@
     "startDate": "2026-11-01T00:00:00.000Z",
     "week": 9
   },
+  "401868252": {
+    "actualHomeMargin": null,
+    "awayTeam": "UT Rio Grande Valley",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Northwestern State",
+    "id": 401868252,
+    "projectedHomeMargin": -11.539,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401868257": {
     "absoluteError": 6.83,
     "actualHomeMargin": -5,
@@ -3024,6 +4058,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401868259": {
+    "actualHomeMargin": null,
+    "awayTeam": "San Diego",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Drake",
+    "id": 401868259,
+    "projectedHomeMargin": 4.4,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401868266": {
     "absoluteError": 27.3,
     "actualHomeMargin": -22,
@@ -3046,6 +4091,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T20:00:00.000Z",
     "week": 9
+  },
+  "401868268": {
+    "actualHomeMargin": null,
+    "awayTeam": "Morehead State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Marist",
+    "id": 401868268,
+    "projectedHomeMargin": 16.512,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401868271": {
     "absoluteError": 2.03,
@@ -3114,6 +4170,17 @@
     "startDate": "2026-10-17T19:00:00.000Z",
     "week": 7
   },
+  "401868302": {
+    "actualHomeMargin": null,
+    "awayTeam": "Alabama A&M",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Prairie View A&M",
+    "id": 401868302,
+    "projectedHomeMargin": -5.778,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401868310": {
     "absoluteError": 34.09,
     "actualHomeMargin": -56,
@@ -3148,6 +4215,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401868313": {
+    "actualHomeMargin": null,
+    "awayTeam": "Stephen F. Austin",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lamar",
+    "id": 401868313,
+    "projectedHomeMargin": -4.755,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
   "401868319": {
     "absoluteError": 1.2,
     "actualHomeMargin": 3,
@@ -3171,6 +4249,17 @@
     "startDate": "2026-10-31T20:00:00.000Z",
     "week": 9
   },
+  "401868321": {
+    "actualHomeMargin": null,
+    "awayTeam": "Incarnate Word",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "SE Louisiana",
+    "id": 401868321,
+    "projectedHomeMargin": -4.529,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:00:00.000Z",
+    "week": 10
+  },
   "401868330": {
     "absoluteError": 16.26,
     "actualHomeMargin": -6,
@@ -3181,6 +4270,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T19:00:00.000Z",
     "week": 7
+  },
+  "401868331": {
+    "actualHomeMargin": null,
+    "awayTeam": "Alabama State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Texas Southern",
+    "id": 401868331,
+    "projectedHomeMargin": -8.765,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401868341": {
     "absoluteError": 26.55,
@@ -3205,6 +4305,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401868343": {
+    "actualHomeMargin": null,
+    "awayTeam": "Mercer",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Chattanooga",
+    "id": 401868343,
+    "projectedHomeMargin": 5.693,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401868348": {
     "absoluteError": 17.77,
     "actualHomeMargin": -38,
@@ -3227,6 +4338,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:30:00.000Z",
     "week": 9
+  },
+  "401868350": {
+    "actualHomeMargin": null,
+    "awayTeam": "Samford",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "East Tennessee State",
+    "id": 401868350,
+    "projectedHomeMargin": 13.265,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401868361": {
     "absoluteError": 1.72,
@@ -3251,6 +4373,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401868363": {
+    "actualHomeMargin": null,
+    "awayTeam": "Florida A&M",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Alcorn State",
+    "id": 401868363,
+    "projectedHomeMargin": 13.187,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401868377": {
     "absoluteError": 18.36,
     "actualHomeMargin": -7,
@@ -3273,6 +4406,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401868379": {
+    "actualHomeMargin": null,
+    "awayTeam": "Furman",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "The Citadel",
+    "id": 401868379,
+    "projectedHomeMargin": -0.031,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401868383": {
     "absoluteError": 4.84,
@@ -3320,6 +4464,17 @@
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
   },
+  "401868393": {
+    "actualHomeMargin": null,
+    "awayTeam": "VMI",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tennessee Tech",
+    "id": 401868393,
+    "projectedHomeMargin": 32.845,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:30:00.000Z",
+    "week": 10
+  },
   "401868398": {
     "absoluteError": 1.04,
     "actualHomeMargin": 27,
@@ -3330,6 +4485,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T17:30:00.000Z",
     "week": 7
+  },
+  "401868399": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wofford",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Western Carolina",
+    "id": 401868399,
+    "projectedHomeMargin": 5.213,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401868937": {
     "absoluteError": 3.05,
@@ -3354,6 +4520,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401868939": {
+    "actualHomeMargin": null,
+    "awayTeam": "Arkansas-Pine Bluff",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Grambling",
+    "id": 401868939,
+    "projectedHomeMargin": -2.62,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401868943": {
     "absoluteError": 14.18,
     "actualHomeMargin": -20,
@@ -3375,6 +4552,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401868945": {
+    "actualHomeMargin": null,
+    "awayTeam": "Bethune-Cookman",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Southern",
+    "id": 401868945,
+    "projectedHomeMargin": 8.525,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401868949": {
     "absoluteError": 9.35,
@@ -3410,6 +4598,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-11-01T00:30:00.000Z",
     "week": 9
+  },
+  "401868961": {
+    "actualHomeMargin": null,
+    "awayTeam": "Mississippi Valley State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Jackson State",
+    "id": 401868961,
+    "projectedHomeMargin": 29.189,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401868969": {
     "absoluteError": 16.52,
@@ -3490,6 +4689,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401869140": {
+    "actualHomeMargin": null,
+    "awayTeam": "McNeese",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Houston Christian",
+    "id": 401869140,
+    "projectedHomeMargin": 8.106,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
   "401869145": {
     "absoluteError": 16.97,
     "actualHomeMargin": 25,
@@ -3511,6 +4721,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T23:00:00.000Z",
     "week": 7
+  },
+  "401869153": {
+    "actualHomeMargin": null,
+    "awayTeam": "East Texas A&M",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Nicholls",
+    "id": 401869153,
+    "projectedHomeMargin": -2.768,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
   },
   "401869154": {
     "absoluteError": 29.33,
@@ -3558,6 +4779,17 @@
     "startDate": "2026-10-31T22:30:00.000Z",
     "week": 9
   },
+  "401869927": {
+    "actualHomeMargin": null,
+    "awayTeam": "Georgia State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Appalachian State",
+    "id": 401869927,
+    "projectedHomeMargin": 3.229,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:30:00.000Z",
+    "week": 10
+  },
   "401869934": {
     "absoluteError": 10.01,
     "actualHomeMargin": -10,
@@ -3580,6 +4812,17 @@
     "startDate": "2026-10-24T23:00:00.000Z",
     "week": 8
   },
+  "401869936": {
+    "actualHomeMargin": null,
+    "awayTeam": "Louisiana-Monroe",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Arkansas State",
+    "id": 401869936,
+    "projectedHomeMargin": 17.258,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401869944": {
     "absoluteError": 22.34,
     "actualHomeMargin": -11,
@@ -3592,6 +4835,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401869945": {
+    "actualHomeMargin": null,
+    "awayTeam": "Old Dominion",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Coastal Carolina",
+    "id": 401869945,
+    "projectedHomeMargin": 13.652,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401869950": {
     "absoluteError": 6.04,
     "actualHomeMargin": -8,
@@ -3602,6 +4856,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-15T23:30:00.000Z",
     "week": 7
+  },
+  "401869951": {
+    "actualHomeMargin": null,
+    "awayTeam": "Marshall",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Georgia Southern",
+    "id": 401869951,
+    "projectedHomeMargin": 13.112,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
   },
   "401869957": {
     "absoluteError": 18.2,
@@ -3626,6 +4891,17 @@
     "startDate": "2026-10-29T23:30:00.000Z",
     "week": 9
   },
+  "401869964": {
+    "actualHomeMargin": null,
+    "awayTeam": "James Madison",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Southern Miss",
+    "id": 401869964,
+    "projectedHomeMargin": -8.936,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-06T01:00:00.000Z",
+    "week": 10
+  },
   "401869966": {
     "absoluteError": 19.85,
     "actualHomeMargin": 27,
@@ -3647,6 +4923,28 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T21:00:00.000Z",
     "week": 8
+  },
+  "401869968": {
+    "actualHomeMargin": null,
+    "awayTeam": "South Alabama",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Louisiana",
+    "id": 401869968,
+    "projectedHomeMargin": 11.339,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
+  "401870795": {
+    "actualHomeMargin": null,
+    "awayTeam": "Liberty",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "New Mexico State",
+    "id": 401870795,
+    "projectedHomeMargin": -13.77,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T01:00:00.000Z",
+    "week": 10
   },
   "401870841": {
     "absoluteError": 0.4,
@@ -3807,6 +5105,50 @@
     "startDate": "2026-10-28T00:00:00.000Z",
     "week": 9
   },
+  "401871073": {
+    "actualHomeMargin": null,
+    "awayTeam": "Delaware",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Kennesaw State",
+    "id": 401871073,
+    "projectedHomeMargin": 3.205,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
+  "401871074": {
+    "actualHomeMargin": null,
+    "awayTeam": "Missouri State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Florida International",
+    "id": 401871074,
+    "projectedHomeMargin": 8.706,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
+  "401871075": {
+    "actualHomeMargin": null,
+    "awayTeam": "Sam Houston",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Jacksonville State",
+    "id": 401871075,
+    "projectedHomeMargin": 16.709,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:00:00.000Z",
+    "week": 10
+  },
+  "401871076": {
+    "actualHomeMargin": null,
+    "awayTeam": "Western Kentucky",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Middle Tennessee",
+    "id": 401871076,
+    "projectedHomeMargin": 5.239,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
+  },
   "401871091": {
     "absoluteError": 15.92,
     "actualHomeMargin": -24,
@@ -3887,6 +5229,28 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401871098": {
+    "actualHomeMargin": null,
+    "awayTeam": "Louisiana Tech",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Troy",
+    "id": 401871098,
+    "projectedHomeMargin": -3.048,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
+  "401872617": {
+    "actualHomeMargin": null,
+    "awayTeam": "South Dakota State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Northern Iowa",
+    "id": 401872617,
+    "projectedHomeMargin": -4.49,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401873233": {
     "absoluteError": 26.58,
     "actualHomeMargin": -25,
@@ -3920,6 +5284,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401873236": {
+    "actualHomeMargin": null,
+    "awayTeam": "Puget Sound",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Linfield",
+    "id": 401873236,
+    "projectedHomeMargin": 34.34,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
   },
   "401873398": {
     "absoluteError": 21.62,
@@ -3955,6 +5330,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401873401": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rockford",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Eureka",
+    "id": 401873401,
+    "projectedHomeMargin": -4.157,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401873408": {
     "absoluteError": 16.36,
     "actualHomeMargin": 3,
@@ -3988,6 +5374,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401873411": {
+    "actualHomeMargin": null,
+    "awayTeam": "Salisbury",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Kean",
+    "id": 401873411,
+    "projectedHomeMargin": -6.089,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401874037": {
     "absoluteError": 31.09,
@@ -4034,6 +5431,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401906057": {
+    "actualHomeMargin": null,
+    "awayTeam": "Elizabeth City State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bluefield State",
+    "id": 401906057,
+    "projectedHomeMargin": -4.852,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401906122": {
     "absoluteError": 37.22,
     "actualHomeMargin": -41,
@@ -4067,6 +5475,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401906125": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lincoln (PA)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bowie State",
+    "id": 401906125,
+    "projectedHomeMargin": 16.789,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401906130": {
     "absoluteError": 22.73,
@@ -4159,6 +5578,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401906144": {
+    "actualHomeMargin": null,
+    "awayTeam": "Virginia Union",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Virginia State",
+    "id": 401906144,
+    "projectedHomeMargin": 0.458,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401906149": {
     "absoluteError": 19.8,
     "actualHomeMargin": 43,
@@ -4169,6 +5599,28 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401906156": {
+    "actualHomeMargin": null,
+    "awayTeam": "Fayetteville State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Winston-Salem State",
+    "id": 401906156,
+    "projectedHomeMargin": -9.332,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
+  "401906161": {
+    "actualHomeMargin": null,
+    "awayTeam": "Johnson C. Smith",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Livingstone",
+    "id": 401906161,
+    "projectedHomeMargin": -14.208,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401906165": {
     "absoluteError": 3.04,
@@ -4216,6 +5668,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401906176": {
+    "actualHomeMargin": null,
+    "awayTeam": "Barton",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Erskine",
+    "id": 401906176,
+    "projectedHomeMargin": 8.414,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
   "401906181": {
     "absoluteError": 18.75,
     "actualHomeMargin": 30,
@@ -4250,6 +5713,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401906184": {
+    "actualHomeMargin": null,
+    "awayTeam": "Shorter",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Chowan",
+    "id": 401906184,
+    "projectedHomeMargin": 8.218,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401906191": {
     "absoluteError": 26.06,
     "actualHomeMargin": -21,
@@ -4273,6 +5747,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401906198": {
+    "actualHomeMargin": null,
+    "awayTeam": "UNC Pembroke",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ferrum",
+    "id": 401906198,
+    "projectedHomeMargin": -12.073,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401906203": {
     "absoluteError": 12.89,
     "actualHomeMargin": 28,
@@ -4283,6 +5768,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T18:00:00.000Z",
     "week": 7
+  },
+  "401906204": {
+    "actualHomeMargin": null,
+    "awayTeam": "North Greenville",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Valdosta State",
+    "id": 401906204,
+    "projectedHomeMargin": 9.646,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
   },
   "401906209": {
     "absoluteError": 16.47,
@@ -4329,6 +5825,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401906524": {
+    "actualHomeMargin": null,
+    "awayTeam": "Oklahoma Baptist",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Arkansas Tech",
+    "id": 401906524,
+    "projectedHomeMargin": 13.099,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401906531": {
     "absoluteError": 33.84,
     "actualHomeMargin": 52,
@@ -4362,6 +5869,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T04:00:00.000Z",
     "week": 9
+  },
+  "401906534": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northwestern (OK)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Arkansas Monticello",
+    "id": 401906534,
+    "projectedHomeMargin": 8.408,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401906540": {
     "absoluteError": 6.28,
@@ -4397,6 +5915,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401906543": {
+    "actualHomeMargin": null,
+    "awayTeam": "Henderson State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "East Central",
+    "id": 401906543,
+    "projectedHomeMargin": -1.859,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401906550": {
     "absoluteError": 19.52,
     "actualHomeMargin": 30,
@@ -4419,6 +5948,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
+  },
+  "401906552": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southern Nazarene",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Harding",
+    "id": 401906552,
+    "projectedHomeMargin": 35.997,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
   },
   "401906558": {
     "absoluteError": 11.72,
@@ -4488,6 +6028,28 @@
     "startDate": "2026-10-24T19:30:00.000Z",
     "week": 8
   },
+  "401906574": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southwestern Oklahoma State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ouachita Baptist",
+    "id": 401906574,
+    "projectedHomeMargin": 15.483,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
+  "401906577": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southern Arkansas",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Southeastern Oklahoma State",
+    "id": 401906577,
+    "projectedHomeMargin": 19.533,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401906581": {
     "absoluteError": 17.22,
     "actualHomeMargin": 0,
@@ -4509,6 +6071,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T17:00:00.000Z",
     "week": 7
+  },
+  "401906593": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northeastern State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "McKendree",
+    "id": 401906593,
+    "projectedHomeMargin": -7.055,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401906599": {
     "absoluteError": 1.9,
@@ -4532,6 +6105,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401906601": {
+    "actualHomeMargin": null,
+    "awayTeam": "Monroe",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "West Alabama",
+    "id": 401906601,
+    "projectedHomeMargin": 12.031,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401906607": {
     "absoluteError": 23.97,
@@ -4568,6 +6152,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401906616": {
+    "actualHomeMargin": null,
+    "awayTeam": "Gallaudet",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Keystone",
+    "id": 401906616,
+    "projectedHomeMargin": 13.027,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401906626": {
     "absoluteError": 2.49,
     "actualHomeMargin": -4,
@@ -4602,6 +6197,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401906629": {
+    "actualHomeMargin": null,
+    "awayTeam": "Kentucky Wesleyan",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Walsh",
+    "id": 401906629,
+    "projectedHomeMargin": 28.421,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401906637": {
     "absoluteError": 13.29,
     "actualHomeMargin": -7,
@@ -4614,7 +6220,8 @@
     "week": 8
   },
   "401906638": {
-    "actualHomeMargin": null,
+    "absoluteError": 26.93,
+    "actualHomeMargin": -7,
     "awayTeam": "Lake Erie",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Tiffin",
@@ -4623,6 +6230,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401906639": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ohio Dominican",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tiffin",
+    "id": 401906639,
+    "projectedHomeMargin": 14.734,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401906644": {
     "absoluteError": 34.05,
@@ -4657,6 +6275,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401906647": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northwood",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Thomas More",
+    "id": 401906647,
+    "projectedHomeMargin": -17.803,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401906653": {
     "absoluteError": 12.74,
@@ -4703,6 +6332,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401906686": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lake Erie",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Findlay",
+    "id": 401906686,
+    "projectedHomeMargin": 24.781,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401906842": {
     "absoluteError": 22.47,
     "actualHomeMargin": 56,
@@ -4736,6 +6376,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T17:00:00.000Z",
     "week": 7
+  },
+  "401906847": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ashland",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Hillsdale",
+    "id": 401906847,
+    "projectedHomeMargin": 7.226,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401906885": {
     "absoluteError": 31.71,
@@ -4771,6 +6422,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401906888": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ferris State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wayne State (MI)",
+    "id": 401906888,
+    "projectedHomeMargin": -40.099,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401906907": {
     "absoluteError": 14.31,
     "actualHomeMargin": 7,
@@ -4793,6 +6455,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401906909": {
+    "actualHomeMargin": null,
+    "awayTeam": "Saginaw Valley State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Roosevelt",
+    "id": 401906909,
+    "projectedHomeMargin": -3.455,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401906915": {
     "absoluteError": 4.72,
@@ -4828,6 +6501,17 @@
     "startDate": "2026-10-31T22:00:00.000Z",
     "week": 9
   },
+  "401906918": {
+    "actualHomeMargin": null,
+    "awayTeam": "Albany State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Fort Valley State",
+    "id": 401906918,
+    "projectedHomeMargin": -8.044,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401906925": {
     "absoluteError": 12.02,
     "actualHomeMargin": 3,
@@ -4862,6 +6546,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401906928": {
+    "actualHomeMargin": null,
+    "awayTeam": "Allen",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Edward Waters",
+    "id": 401906928,
+    "projectedHomeMargin": 12.285,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401906933": {
     "absoluteError": 39.4,
     "actualHomeMargin": -38,
@@ -4885,7 +6580,8 @@
     "week": 8
   },
   "401906935": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.61,
+    "actualHomeMargin": -23,
     "awayTeam": "Grand Valley State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Roosevelt",
@@ -4907,7 +6603,8 @@
     "week": 7
   },
   "401906941": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.35,
+    "actualHomeMargin": 23,
     "awayTeam": "Savannah State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Benedict",
@@ -4916,6 +6613,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401906942": {
+    "actualHomeMargin": null,
+    "awayTeam": "Central State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Benedict",
+    "id": 401906942,
+    "projectedHomeMargin": 10.606,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401906947": {
     "absoluteError": 6.83,
@@ -4927,6 +6635,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T16:00:00.000Z",
     "week": 7
+  },
+  "401906948": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northern Michigan",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Grand Valley State",
+    "id": 401906948,
+    "projectedHomeMargin": 28.398,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401906954": {
     "absoluteError": 22.08,
@@ -5007,6 +6726,17 @@
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
   },
+  "401906999": {
+    "actualHomeMargin": null,
+    "awayTeam": "Davenport",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Michigan Tech",
+    "id": 401906999,
+    "projectedHomeMargin": 1.425,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907005": {
     "absoluteError": 9.02,
     "actualHomeMargin": -7,
@@ -5064,6 +6794,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907107": {
+    "actualHomeMargin": null,
+    "awayTeam": "Adams State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "New Mexico Highlands",
+    "id": 401907107,
+    "projectedHomeMargin": 23.75,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907115": {
     "absoluteError": 18.26,
     "actualHomeMargin": -8,
@@ -5097,6 +6838,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
+  },
+  "401907118": {
+    "actualHomeMargin": null,
+    "awayTeam": "Chadron State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Black Hills State",
+    "id": 401907118,
+    "projectedHomeMargin": 1.321,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
   },
   "401907126": {
     "absoluteError": 41.92,
@@ -5144,6 +6896,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401907136": {
+    "actualHomeMargin": null,
+    "awayTeam": "Colorado Mesa",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Fort Lewis",
+    "id": 401907136,
+    "projectedHomeMargin": -5.249,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401907141": {
     "absoluteError": 4.33,
     "actualHomeMargin": 7,
@@ -5154,6 +6917,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401907142": {
+    "actualHomeMargin": null,
+    "awayTeam": "Colorado School of Mines",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Western Colorado",
+    "id": 401907142,
+    "projectedHomeMargin": 13.564,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907146": {
     "absoluteError": 34.81,
@@ -5176,6 +6950,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401907148": {
+    "actualHomeMargin": null,
+    "awayTeam": "CSU Pueblo",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "South Dakota Mines",
+    "id": 401907148,
+    "projectedHomeMargin": -9.898,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
   },
   "401907154": {
     "absoluteError": 34.55,
@@ -5223,6 +7008,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907202": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southwest Baptist",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Indianapolis",
+    "id": 401907202,
+    "projectedHomeMargin": 17.815,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907209": {
     "absoluteError": 12.86,
     "actualHomeMargin": -10,
@@ -5245,6 +7041,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401907211": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lincoln (MO)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Missouri S&T",
+    "id": 401907211,
+    "projectedHomeMargin": 8.65,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401907216": {
     "absoluteError": 5.83,
@@ -5303,6 +7110,17 @@
     "startDate": "2026-10-17T19:00:00.000Z",
     "week": 7
   },
+  "401907237": {
+    "actualHomeMargin": null,
+    "awayTeam": "Upper Iowa",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Quincy",
+    "id": 401907237,
+    "projectedHomeMargin": -5.757,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907241": {
     "absoluteError": 28.07,
     "actualHomeMargin": -19,
@@ -5324,6 +7142,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:30:00.000Z",
     "week": 8
+  },
+  "401907245": {
+    "actualHomeMargin": null,
+    "awayTeam": "Truman State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "William Jewell",
+    "id": 401907245,
+    "projectedHomeMargin": -7.91,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
   },
   "401907248": {
     "absoluteError": 14.29,
@@ -5370,6 +7199,17 @@
     "startDate": "2026-10-31T23:00:00.000Z",
     "week": 9
   },
+  "401907283": {
+    "actualHomeMargin": null,
+    "awayTeam": "Eastern New Mexico",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Angelo State",
+    "id": 401907283,
+    "projectedHomeMargin": 22.882,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:00:00.000Z",
+    "week": 10
+  },
   "401907289": {
     "absoluteError": 7.88,
     "actualHomeMargin": -14,
@@ -5415,6 +7255,17 @@
     "startDate": "2026-10-11T15:00:00.000Z",
     "week": 7
   },
+  "401907296": {
+    "actualHomeMargin": null,
+    "awayTeam": "Morehouse",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Kentucky State",
+    "id": 401907296,
+    "projectedHomeMargin": 11.159,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907302": {
     "absoluteError": 44.96,
     "actualHomeMargin": 71,
@@ -5437,6 +7288,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-11-01T00:00:00.000Z",
     "week": 9
+  },
+  "401907304": {
+    "actualHomeMargin": null,
+    "awayTeam": "UT Permian Basin",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Midwestern State",
+    "id": 401907304,
+    "projectedHomeMargin": 9.832,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907306": {
     "absoluteError": 0.09,
@@ -5470,6 +7332,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-18T00:00:00.000Z",
     "week": 7
+  },
+  "401907313": {
+    "actualHomeMargin": null,
+    "awayTeam": "Sul Ross State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Texas A&M-Kingsville",
+    "id": 401907313,
+    "projectedHomeMargin": 26.192,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T01:00:00.000Z",
+    "week": 10
   },
   "401907318": {
     "absoluteError": 32.36,
@@ -5505,7 +7378,8 @@
     "week": 8
   },
   "401907321": {
-    "actualHomeMargin": null,
+    "absoluteError": 13.58,
+    "actualHomeMargin": -29,
     "awayTeam": "West Texas",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Sul Ross State",
@@ -5514,6 +7388,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-11-01T00:00:00.000Z",
     "week": 9
+  },
+  "401907322": {
+    "actualHomeMargin": null,
+    "awayTeam": "West Texas",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Western Oregon",
+    "id": 401907322,
+    "projectedHomeMargin": 9.775,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
   },
   "401907326": {
     "absoluteError": 2.87,
@@ -5550,6 +7435,28 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907329": {
+    "actualHomeMargin": null,
+    "awayTeam": "Western New Mexico",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Central Washington",
+    "id": 401907329,
+    "projectedHomeMargin": 36.103,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
+  "401907336": {
+    "actualHomeMargin": null,
+    "awayTeam": "Miles",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tuskegee",
+    "id": 401907336,
+    "projectedHomeMargin": 13.745,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
+  },
   "401907341": {
     "absoluteError": 0.55,
     "actualHomeMargin": 6,
@@ -5583,6 +7490,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401907344": {
+    "actualHomeMargin": null,
+    "awayTeam": "Central Missouri",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Pittsburg State",
+    "id": 401907344,
+    "projectedHomeMargin": -1.847,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
   },
   "401907350": {
     "absoluteError": 1.24,
@@ -5618,6 +7536,28 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907353": {
+    "actualHomeMargin": null,
+    "awayTeam": "Central Oklahoma",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Missouri Southern State",
+    "id": 401907353,
+    "projectedHomeMargin": -0.491,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
+  "401907355": {
+    "actualHomeMargin": null,
+    "awayTeam": "Virginia Lynchburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Savannah State",
+    "id": 401907355,
+    "projectedHomeMargin": 18.295,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
   "401907361": {
     "absoluteError": 33.95,
     "actualHomeMargin": 45,
@@ -5629,6 +7569,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
+  },
+  "401907362": {
+    "actualHomeMargin": null,
+    "awayTeam": "Washburn",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Emporia State",
+    "id": 401907362,
+    "projectedHomeMargin": 2.561,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907367": {
     "absoluteError": 7.37,
@@ -5651,6 +7602,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401907369": {
+    "actualHomeMargin": null,
+    "awayTeam": "Fort Hays",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Nebraska Kearney",
+    "id": 401907369,
+    "projectedHomeMargin": -2.854,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907372": {
     "absoluteError": 3.64,
@@ -5709,6 +7671,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401907380": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northwest Missouri State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Missouri Western",
+    "id": 401907380,
+    "projectedHomeMargin": -14.957,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
   "401907384": {
     "absoluteError": 1.01,
     "actualHomeMargin": -17,
@@ -5743,6 +7716,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401907401": {
+    "actualHomeMargin": null,
+    "awayTeam": "Mars Hill",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Anderson (SC)",
+    "id": 401907401,
+    "projectedHomeMargin": 3.986,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
+  },
   "401907409": {
     "absoluteError": 32.6,
     "actualHomeMargin": -34,
@@ -5755,6 +7739,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907410": {
+    "actualHomeMargin": null,
+    "awayTeam": "Catawba",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "UVA Wise",
+    "id": 401907410,
+    "projectedHomeMargin": -0.888,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401907417": {
     "absoluteError": 9.29,
     "actualHomeMargin": 21,
@@ -5765,6 +7760,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T17:00:00.000Z",
     "week": 7
+  },
+  "401907418": {
+    "actualHomeMargin": null,
+    "awayTeam": "Newberry",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Carson Newman",
+    "id": 401907418,
+    "projectedHomeMargin": 11.669,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907424": {
     "absoluteError": 3.25,
@@ -5778,6 +7784,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907425": {
+    "actualHomeMargin": null,
+    "awayTeam": "Emory & Henry",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wingate",
+    "id": 401907425,
+    "projectedHomeMargin": 11.826,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
   "401907430": {
     "absoluteError": 8.16,
     "actualHomeMargin": -3,
@@ -5788,6 +7805,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T18:00:00.000Z",
     "week": 7
+  },
+  "401907431": {
+    "actualHomeMargin": null,
+    "awayTeam": "Tusculum",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lenoir Rhyne",
+    "id": 401907431,
+    "projectedHomeMargin": 10.684,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401907433": {
     "absoluteError": 17.84,
@@ -5880,6 +7908,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907473": {
+    "actualHomeMargin": null,
+    "awayTeam": "Washington St. Louis",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ohio Wesleyan",
+    "id": 401907473,
+    "projectedHomeMargin": -11.274,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907479": {
     "absoluteError": 16.49,
     "actualHomeMargin": 2,
@@ -5913,6 +7952,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401907482": {
+    "actualHomeMargin": null,
+    "awayTeam": "American International",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bentley",
+    "id": 401907482,
+    "projectedHomeMargin": 17.92,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401907488": {
     "absoluteError": 11.97,
@@ -5948,6 +7998,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401907491": {
+    "actualHomeMargin": null,
+    "awayTeam": "Franklin Pierce",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Assumption",
+    "id": 401907491,
+    "projectedHomeMargin": 8.587,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401907499": {
     "absoluteError": 20.71,
     "actualHomeMargin": -6,
@@ -5981,6 +8042,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401907502": {
+    "actualHomeMargin": null,
+    "awayTeam": "Bloomsburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Kutztown",
+    "id": 401907502,
+    "projectedHomeMargin": 21.646,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401907507": {
     "absoluteError": 2.77,
@@ -6084,6 +8156,17 @@
     "startDate": "2026-10-31T22:00:00.000Z",
     "week": 9
   },
+  "401907525": {
+    "actualHomeMargin": null,
+    "awayTeam": "Gannon",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "California (PA)",
+    "id": 401907525,
+    "projectedHomeMargin": 15.068,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401907532": {
     "absoluteError": 0.78,
     "actualHomeMargin": 3,
@@ -6106,6 +8189,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401907534": {
+    "actualHomeMargin": null,
+    "awayTeam": "Clarion",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "IU Pennsylvania",
+    "id": 401907534,
+    "projectedHomeMargin": 4.889,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907541": {
     "absoluteError": 31.14,
@@ -6141,6 +8235,17 @@
     "startDate": "2026-10-31T17:05:00.000Z",
     "week": 9
   },
+  "401907544": {
+    "actualHomeMargin": null,
+    "awayTeam": "East Stroudsburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Millersville",
+    "id": 401907544,
+    "projectedHomeMargin": -20.359,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907548": {
     "absoluteError": 20.98,
     "actualHomeMargin": -7,
@@ -6175,6 +8280,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401907551": {
+    "actualHomeMargin": null,
+    "awayTeam": "Edinboro",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Slippery Rock",
+    "id": 401907551,
+    "projectedHomeMargin": 32.549,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
   "401907556": {
     "absoluteError": 7.8,
     "actualHomeMargin": -4,
@@ -6197,6 +8313,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401907562": {
+    "actualHomeMargin": null,
+    "awayTeam": "Pace",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Southern Connecticut State",
+    "id": 401907562,
+    "projectedHomeMargin": 0.688,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401907567": {
     "absoluteError": 5.46,
@@ -6230,6 +8357,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T16:00:00.000Z",
     "week": 8
+  },
+  "401907577": {
+    "actualHomeMargin": null,
+    "awayTeam": "Post",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Saint Anselm",
+    "id": 401907577,
+    "projectedHomeMargin": 1.41,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:30:00.000Z",
+    "week": 10
   },
   "401907583": {
     "absoluteError": 4.47,
@@ -6265,6 +8403,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907586": {
+    "actualHomeMargin": null,
+    "awayTeam": "Charleston (WV)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "West Liberty",
+    "id": 401907586,
+    "projectedHomeMargin": 9.978,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907591": {
     "absoluteError": 19.94,
     "actualHomeMargin": 3,
@@ -6299,6 +8448,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907594": {
+    "actualHomeMargin": null,
+    "awayTeam": "Concord",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Fairmont State",
+    "id": 401907594,
+    "projectedHomeMargin": 4.904,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907600": {
     "absoluteError": 19.84,
     "actualHomeMargin": 17,
@@ -6322,6 +8482,17 @@
     "startDate": "2026-10-24T19:00:00.000Z",
     "week": 8
   },
+  "401907609": {
+    "actualHomeMargin": null,
+    "awayTeam": "Frostburg State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "West Virginia State",
+    "id": 401907609,
+    "projectedHomeMargin": -1.812,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401907611": {
     "absoluteError": 11.3,
     "actualHomeMargin": -22,
@@ -6344,6 +8515,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401907613": {
+    "actualHomeMargin": null,
+    "awayTeam": "Glenville State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wheeling",
+    "id": 401907613,
+    "projectedHomeMargin": 21.03,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401907617": {
     "absoluteError": 6.34,
@@ -6412,6 +8594,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907629": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lackawanna",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Shepherd",
+    "id": 401907629,
+    "projectedHomeMargin": 34.16,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907632": {
     "absoluteError": 35.46,
     "actualHomeMargin": 59,
@@ -6422,6 +8615,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401907633": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lock Haven",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Seton Hill",
+    "id": 401907633,
+    "projectedHomeMargin": 7.639,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401907639": {
     "absoluteError": 25.44,
@@ -6445,6 +8649,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401907641": {
+    "actualHomeMargin": null,
+    "awayTeam": "Minnesota Duluth",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bemidji State",
+    "id": 401907641,
+    "projectedHomeMargin": -4.786,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907649": {
     "absoluteError": 4.84,
@@ -6492,7 +8707,8 @@
     "week": 8
   },
   "401907662": {
-    "actualHomeMargin": null,
+    "absoluteError": 10.14,
+    "actualHomeMargin": -3,
     "awayTeam": "Dickinson",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Carnegie Mellon",
@@ -6501,6 +8717,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:30:00.000Z",
     "week": 9
+  },
+  "401907663": {
+    "actualHomeMargin": null,
+    "awayTeam": "Carnegie Mellon",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Franklin & Marshall",
+    "id": 401907663,
+    "projectedHomeMargin": 7.226,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401907671": {
     "absoluteError": 5.78,
@@ -6525,6 +8752,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907673": {
+    "actualHomeMargin": null,
+    "awayTeam": "Chicago",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lawrence",
+    "id": 401907673,
+    "projectedHomeMargin": -23.605,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907682": {
     "absoluteError": 6.29,
     "actualHomeMargin": -1,
@@ -6535,6 +8773,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401907683": {
+    "actualHomeMargin": null,
+    "awayTeam": "Minnesota St Moorhead",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Jamestown",
+    "id": 401907683,
+    "projectedHomeMargin": -14.691,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907688": {
     "absoluteError": 14.83,
@@ -6559,6 +8808,17 @@
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
   },
+  "401907690": {
+    "actualHomeMargin": null,
+    "awayTeam": "Northern State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Minot State",
+    "id": 401907690,
+    "projectedHomeMargin": -0.956,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401907701": {
     "absoluteError": 5.49,
     "actualHomeMargin": -7,
@@ -6571,6 +8831,17 @@
     "startDate": "2026-10-31T23:00:00.000Z",
     "week": 9
   },
+  "401907706": {
+    "actualHomeMargin": null,
+    "awayTeam": "University of Mary",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Winona State",
+    "id": 401907706,
+    "projectedHomeMargin": 11.114,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401907710": {
     "absoluteError": 14.72,
     "actualHomeMargin": 45,
@@ -6581,6 +8852,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401907711": {
+    "actualHomeMargin": null,
+    "awayTeam": "Augustana (SD)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Minnesota State",
+    "id": 401907711,
+    "projectedHomeMargin": 12.09,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401907713": {
     "absoluteError": 1.19,
@@ -6604,6 +8886,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401907715": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southwest Minnesota State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Concordia St. Paul",
+    "id": 401907715,
+    "projectedHomeMargin": 9.827,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401907719": {
     "absoluteError": 20.43,
@@ -6639,6 +8932,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401907723": {
+    "actualHomeMargin": null,
+    "awayTeam": "Sioux Falls",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wayne State (NE)",
+    "id": 401907723,
+    "projectedHomeMargin": 8.322,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907735": {
     "absoluteError": 4.52,
@@ -6685,6 +8989,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907744": {
+    "actualHomeMargin": null,
+    "awayTeam": "Case Western Reserve",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Grove City",
+    "id": 401907744,
+    "projectedHomeMargin": 8.007,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907751": {
     "absoluteError": 26.77,
     "actualHomeMargin": -34,
@@ -6708,6 +9023,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907753": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rochester (NY)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Union",
+    "id": 401907753,
+    "projectedHomeMargin": 17.973,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907755": {
     "absoluteError": 0.92,
     "actualHomeMargin": -3,
@@ -6719,6 +9045,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401907756": {
+    "actualHomeMargin": null,
+    "awayTeam": "Shippensburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "West Chester",
+    "id": 401907756,
+    "projectedHomeMargin": 7.938,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401907763": {
     "absoluteError": 23.7,
@@ -6754,6 +9091,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907766": {
+    "actualHomeMargin": null,
+    "awayTeam": "Buena Vista",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Loras",
+    "id": 401907766,
+    "projectedHomeMargin": 15.804,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907785": {
     "absoluteError": 19.62,
     "actualHomeMargin": -23,
@@ -6776,6 +9124,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401907787": {
+    "actualHomeMargin": null,
+    "awayTeam": "Carthage",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Augustana (IL)",
+    "id": 401907787,
+    "projectedHomeMargin": 19.876,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401907815": {
     "absoluteError": 16.23,
@@ -6879,6 +9238,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907830": {
+    "actualHomeMargin": null,
+    "awayTeam": "Elmhurst",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wheaton (IL)",
+    "id": 401907830,
+    "projectedHomeMargin": 46.249,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907835": {
     "absoluteError": 17.52,
     "actualHomeMargin": 7,
@@ -6889,6 +9259,28 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T23:00:00.000Z",
     "week": 7
+  },
+  "401907836": {
+    "actualHomeMargin": null,
+    "awayTeam": "North Park",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Illinois Wesleyan",
+    "id": 401907836,
+    "projectedHomeMargin": 15.78,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
+  "401907842": {
+    "actualHomeMargin": null,
+    "awayTeam": "North Central College",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Millikin",
+    "id": 401907842,
+    "projectedHomeMargin": -22.621,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401907857": {
     "absoluteError": 5.43,
@@ -6924,6 +9316,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401907860": {
+    "actualHomeMargin": null,
+    "awayTeam": "Alfred State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Alfred",
+    "id": 401907860,
+    "projectedHomeMargin": 3.077,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401907867": {
     "absoluteError": 23.38,
     "actualHomeMargin": -38,
@@ -6947,7 +9350,8 @@
     "week": 8
   },
   "401907869": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.76,
+    "actualHomeMargin": -25,
     "awayTeam": "Brockport",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Alfred",
@@ -6967,6 +9371,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T16:00:00.000Z",
     "week": 8
+  },
+  "401907877": {
+    "actualHomeMargin": null,
+    "awayTeam": "SUNY Cortland",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Brockport",
+    "id": 401907877,
+    "projectedHomeMargin": -2.696,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401907884": {
     "absoluteError": 11.75,
@@ -7013,6 +9428,17 @@
     "startDate": "2026-11-01T00:00:00.000Z",
     "week": 9
   },
+  "401907893": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wisconsin Whitewater",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wisconsin Platteville",
+    "id": 401907893,
+    "projectedHomeMargin": 11.728,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907947": {
     "absoluteError": 4.25,
     "actualHomeMargin": -5,
@@ -7048,6 +9474,17 @@
     "startDate": "2026-10-31T18:05:00.000Z",
     "week": 9
   },
+  "401907961": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wisconsin Eau Claire",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wisconsin Stout",
+    "id": 401907961,
+    "projectedHomeMargin": 7.511,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:05:00.000Z",
+    "week": 10
+  },
   "401907969": {
     "absoluteError": 6.64,
     "actualHomeMargin": -3,
@@ -7059,6 +9496,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401907970": {
+    "actualHomeMargin": null,
+    "awayTeam": "Utica",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Hartwick",
+    "id": 401907970,
+    "projectedHomeMargin": -23.252,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401907981": {
     "absoluteError": 12.84,
@@ -7083,6 +9531,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401907983": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wisconsin Oshkosh",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wisconsin Stevens Point",
+    "id": 401907983,
+    "projectedHomeMargin": -6.46,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401907999": {
     "absoluteError": 30.62,
     "actualHomeMargin": 42,
@@ -7104,6 +9563,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401908001": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wisconsin River Falls",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wisconsin La Crosse",
+    "id": 401908001,
+    "projectedHomeMargin": -3.31,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908012": {
     "absoluteError": 15.2,
@@ -7173,6 +9643,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908056": {
+    "actualHomeMargin": null,
+    "awayTeam": "Huntingdon",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Southern Virginia",
+    "id": 401908056,
+    "projectedHomeMargin": -4.85,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908073": {
     "absoluteError": 2.0,
     "actualHomeMargin": 12,
@@ -7196,6 +9677,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401908075": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hilbert",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Hobart",
+    "id": 401908075,
+    "projectedHomeMargin": 44.811,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908081": {
     "absoluteError": 18.89,
     "actualHomeMargin": -14,
@@ -7218,8 +9710,31 @@
     "startDate": "2026-10-24T22:00:00.000Z",
     "week": 8
   },
-  "401908090": {
+  "401908083": {
     "actualHomeMargin": null,
+    "awayTeam": "North Carolina Wesleyan",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Greensboro",
+    "id": 401908083,
+    "projectedHomeMargin": 2.146,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
+  "401908087": {
+    "actualHomeMargin": null,
+    "awayTeam": "SUNY Morrisville",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "St. John Fisher",
+    "id": 401908087,
+    "projectedHomeMargin": 20.598,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
+  "401908090": {
+    "absoluteError": 14.06,
+    "actualHomeMargin": -21,
     "awayTeam": "Utica",
     "forecastEngine": "v7-baseline",
     "homeTeam": "St. John Fisher",
@@ -7228,6 +9743,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401908099": {
+    "actualHomeMargin": null,
+    "awayTeam": "Methodist",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Brevard",
+    "id": 401908099,
+    "projectedHomeMargin": 25.457,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908107": {
     "absoluteError": 20.14,
@@ -7250,6 +9776,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401908109": {
+    "actualHomeMargin": null,
+    "awayTeam": "Southwestern U",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Maryville (TN)",
+    "id": 401908109,
+    "projectedHomeMargin": 14.109,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908114": {
     "absoluteError": 19.13,
@@ -7274,7 +9811,8 @@
     "week": 8
   },
   "401908116": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.63,
+    "actualHomeMargin": 4,
     "awayTeam": "LaGrange",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Huntingdon",
@@ -7283,6 +9821,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401908117": {
+    "actualHomeMargin": null,
+    "awayTeam": "LaGrange",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Belhaven",
+    "id": 401908117,
+    "projectedHomeMargin": -6.918,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908146": {
     "absoluteError": 31.91,
@@ -7307,6 +9856,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908148": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wartburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Central College",
+    "id": 401908148,
+    "projectedHomeMargin": -10.409,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908152": {
     "absoluteError": 5.49,
     "actualHomeMargin": -4,
@@ -7329,6 +9889,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401908154": {
+    "actualHomeMargin": null,
+    "awayTeam": "Dubuque",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Coe",
+    "id": 401908154,
+    "projectedHomeMargin": 1.767,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401908167": {
     "absoluteError": 20.06,
@@ -7364,6 +9935,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401908170": {
+    "actualHomeMargin": null,
+    "awayTeam": "King's",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Albright",
+    "id": 401908170,
+    "projectedHomeMargin": 3.697,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908176": {
     "absoluteError": 6.86,
     "actualHomeMargin": 1,
@@ -7386,6 +9968,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908178": {
+    "actualHomeMargin": null,
+    "awayTeam": "Alvernia",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Delaware Valley",
+    "id": 401908178,
+    "projectedHomeMargin": 12.831,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908185": {
     "absoluteError": 14.67,
@@ -7431,6 +10024,17 @@
     "startDate": "2026-10-17T17:00:00.000Z",
     "week": 7
   },
+  "401908194": {
+    "actualHomeMargin": null,
+    "awayTeam": "Stevenson",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Eastern",
+    "id": 401908194,
+    "projectedHomeMargin": 11.484,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
   "401908198": {
     "absoluteError": 1.27,
     "actualHomeMargin": 21,
@@ -7452,6 +10056,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T16:00:00.000Z",
     "week": 8
+  },
+  "401908200": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lebanon Valley",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "FDU Florham",
+    "id": 401908200,
+    "projectedHomeMargin": -12.155,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908204": {
     "absoluteError": 6.35,
@@ -7498,6 +10113,17 @@
     "startDate": "2026-10-31T17:30:00.000Z",
     "week": 9
   },
+  "401908214": {
+    "actualHomeMargin": null,
+    "awayTeam": "Anderson (IN)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Franklin",
+    "id": 401908214,
+    "projectedHomeMargin": 23.887,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
   "401908220": {
     "absoluteError": 8.66,
     "actualHomeMargin": 31,
@@ -7531,6 +10157,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:30:00.000Z",
     "week": 9
+  },
+  "401908223": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ohio Northern",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bluffton",
+    "id": 401908223,
+    "projectedHomeMargin": -11.225,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401908228": {
     "absoluteError": 13.84,
@@ -7599,6 +10236,17 @@
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
   },
+  "401908250": {
+    "actualHomeMargin": null,
+    "awayTeam": "Simpson (IA)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Nebraska Wesleyan",
+    "id": 401908250,
+    "projectedHomeMargin": -0.435,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401908253": {
     "absoluteError": 24.17,
     "actualHomeMargin": 49,
@@ -7621,6 +10269,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401908256": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hanover",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Manchester",
+    "id": 401908256,
+    "projectedHomeMargin": -17.364,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
   },
   "401908261": {
     "absoluteError": 3.41,
@@ -7668,6 +10327,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908270": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rose Hulman",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Mount St Joseph",
+    "id": 401908270,
+    "projectedHomeMargin": 15.088,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
   "401908281": {
     "absoluteError": 19.91,
     "actualHomeMargin": 36,
@@ -7691,6 +10361,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908283": {
+    "actualHomeMargin": null,
+    "awayTeam": "Mary Hardin Baylor",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "East Texas Baptist",
+    "id": 401908283,
+    "projectedHomeMargin": -11.442,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401908288": {
     "actualHomeMargin": null,
     "awayTeam": "Hardin Simmons",
@@ -7713,6 +10394,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908290": {
+    "actualHomeMargin": null,
+    "awayTeam": "Schreiner",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Hardin Simmons",
+    "id": 401908290,
+    "projectedHomeMargin": 35.365,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401908295": {
     "absoluteError": 24.33,
     "actualHomeMargin": -29,
@@ -7723,6 +10415,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T17:00:00.000Z",
     "week": 7
+  },
+  "401908297": {
+    "actualHomeMargin": null,
+    "awayTeam": "Widener",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Misericordia",
+    "id": 401908297,
+    "projectedHomeMargin": 12.343,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908302": {
     "absoluteError": 19.49,
@@ -7804,6 +10507,17 @@
     "startDate": "2026-10-17T20:00:00.000Z",
     "week": 7
   },
+  "401908317": {
+    "actualHomeMargin": null,
+    "awayTeam": "Howard Payne",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "McMurry",
+    "id": 401908317,
+    "projectedHomeMargin": 0.202,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
+  },
   "401908321": {
     "actualHomeMargin": null,
     "awayTeam": "Mary Hardin Baylor",
@@ -7859,6 +10573,17 @@
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
   },
+  "401908337": {
+    "actualHomeMargin": null,
+    "awayTeam": "Dickinson",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ursinus",
+    "id": 401908337,
+    "projectedHomeMargin": 1.97,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908343": {
     "absoluteError": 10.29,
     "actualHomeMargin": 18,
@@ -7894,6 +10619,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908350": {
+    "actualHomeMargin": null,
+    "awayTeam": "Gettysburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Muhlenberg",
+    "id": 401908350,
+    "projectedHomeMargin": 15.945,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908352": {
     "absoluteError": 14.37,
     "actualHomeMargin": 26,
@@ -7928,6 +10664,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908358": {
+    "actualHomeMargin": null,
+    "awayTeam": "Johns Hopkins",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "McDaniel",
+    "id": 401908358,
+    "projectedHomeMargin": -13.221,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401908363": {
     "absoluteError": 19.32,
     "actualHomeMargin": 42,
@@ -7938,6 +10685,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T18:00:00.000Z",
     "week": 7
+  },
+  "401908375": {
+    "actualHomeMargin": null,
+    "awayTeam": "Berry",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Millsaps",
+    "id": 401908375,
+    "projectedHomeMargin": 6.847,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401908382": {
     "absoluteError": 17.13,
@@ -7960,6 +10718,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401908384": {
+    "actualHomeMargin": null,
+    "awayTeam": "Trinity (TX)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Centre",
+    "id": 401908384,
+    "projectedHomeMargin": -0.756,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908390": {
     "absoluteError": 33.84,
@@ -8018,6 +10787,17 @@
     "startDate": "2026-10-31T02:05:00.000Z",
     "week": 9
   },
+  "401908399": {
+    "actualHomeMargin": null,
+    "awayTeam": "George Fox",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Pacific (OR)",
+    "id": 401908399,
+    "projectedHomeMargin": -16.813,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
   "401908402": {
     "absoluteError": 3.43,
     "actualHomeMargin": 24,
@@ -8041,6 +10821,17 @@
     "startDate": "2026-10-31T23:00:00.000Z",
     "week": 9
   },
+  "401908404": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rhodes",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Sewanee",
+    "id": 401908404,
+    "projectedHomeMargin": 5.915,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908408": {
     "absoluteError": 5.99,
     "actualHomeMargin": -2,
@@ -8063,6 +10854,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T20:00:00.000Z",
     "week": 9
+  },
+  "401908410": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lewis & Clark",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Pacific Lutheran",
+    "id": 401908410,
+    "projectedHomeMargin": -10.026,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
   },
   "401908414": {
     "absoluteError": 26.27,
@@ -8166,6 +10968,17 @@
     "startDate": "2026-10-31T20:00:00.000Z",
     "week": 9
   },
+  "401908441": {
+    "actualHomeMargin": null,
+    "awayTeam": "Chapman",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Cal Lutheran",
+    "id": 401908441,
+    "projectedHomeMargin": -0.097,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T03:03:00.000Z",
+    "week": 10
+  },
   "401908445": {
     "absoluteError": 6.9,
     "actualHomeMargin": -23,
@@ -8212,7 +11025,8 @@
     "week": 7
   },
   "401908452": {
-    "actualHomeMargin": null,
+    "absoluteError": 27.37,
+    "actualHomeMargin": -21,
     "awayTeam": "Claremont Mudd Scripps",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Redlands",
@@ -8221,6 +11035,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-11-01T02:05:00.000Z",
     "week": 9
+  },
+  "401908453": {
+    "actualHomeMargin": null,
+    "awayTeam": "Azusa Pacific",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Claremont Mudd Scripps",
+    "id": 401908453,
+    "projectedHomeMargin": 21.324,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T03:00:00.000Z",
+    "week": 10
   },
   "401908457": {
     "absoluteError": 45.36,
@@ -8245,6 +11070,17 @@
     "startDate": "2026-11-01T01:00:00.000Z",
     "week": 9
   },
+  "401908459": {
+    "actualHomeMargin": null,
+    "awayTeam": "Whittier",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "La Verne",
+    "id": 401908459,
+    "projectedHomeMargin": 19.273,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
   "401908462": {
     "absoluteError": 6.56,
     "actualHomeMargin": 14,
@@ -8255,6 +11091,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-25T02:00:00.000Z",
     "week": 8
+  },
+  "401908463": {
+    "actualHomeMargin": null,
+    "awayTeam": "Redlands",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Pomona Pitzer",
+    "id": 401908463,
+    "projectedHomeMargin": 3.425,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T03:00:00.000Z",
+    "week": 10
   },
   "401908466": {
     "absoluteError": 52.95,
@@ -8301,7 +11148,8 @@
     "week": 8
   },
   "401908482": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.65,
+    "actualHomeMargin": -10,
     "awayTeam": "Husson",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Curry",
@@ -8310,6 +11158,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908483": {
+    "actualHomeMargin": null,
+    "awayTeam": "Curry",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "New England",
+    "id": 401908483,
+    "projectedHomeMargin": 18.621,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401908487": {
     "absoluteError": 14.25,
@@ -8345,6 +11204,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401908490": {
+    "actualHomeMargin": null,
+    "awayTeam": "New England College",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Endicott",
+    "id": 401908490,
+    "projectedHomeMargin": 51.534,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401908495": {
     "absoluteError": 0.53,
     "actualHomeMargin": 8,
@@ -8367,6 +11237,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401908497": {
+    "actualHomeMargin": null,
+    "awayTeam": "Minnesota Morris",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Crown",
+    "id": 401908497,
+    "projectedHomeMargin": 0.677,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908504": {
     "absoluteError": 20.85,
@@ -8391,6 +11272,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908506": {
+    "actualHomeMargin": null,
+    "awayTeam": "Westminster (MO)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Greenville",
+    "id": 401908506,
+    "projectedHomeMargin": -2.927,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908511": {
     "absoluteError": 6.03,
     "actualHomeMargin": -3,
@@ -8414,6 +11306,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908513": {
+    "actualHomeMargin": null,
+    "awayTeam": "Martin Luther",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Northwestern (MN)",
+    "id": 401908513,
+    "projectedHomeMargin": 15.9,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908516": {
     "absoluteError": 0.09,
     "actualHomeMargin": 21,
@@ -8436,6 +11339,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908523": {
+    "actualHomeMargin": null,
+    "awayTeam": "Maine Maritime",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Western New England",
+    "id": 401908523,
+    "projectedHomeMargin": 36.232,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401908526": {
     "absoluteError": 32.63,
@@ -8482,6 +11396,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401908542": {
+    "actualHomeMargin": null,
+    "awayTeam": "Nichols",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Husson",
+    "id": 401908542,
+    "projectedHomeMargin": 18.485,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401908545": {
     "absoluteError": 30.44,
     "actualHomeMargin": 34,
@@ -8505,7 +11430,8 @@
     "week": 8
   },
   "401908547": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.36,
+    "actualHomeMargin": -23,
     "awayTeam": "Texas Lutheran",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Austin",
@@ -8549,6 +11475,17 @@
     "startDate": "2026-10-31T23:00:00.000Z",
     "week": 9
   },
+  "401908556": {
+    "actualHomeMargin": null,
+    "awayTeam": "Centenary (LA)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Texas Lutheran",
+    "id": 401908556,
+    "projectedHomeMargin": 27.601,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908560": {
     "absoluteError": 36.74,
     "actualHomeMargin": -42,
@@ -8571,6 +11508,17 @@
     "startDate": "2026-10-24T15:00:00.000Z",
     "week": 8
   },
+  "401908562": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hendrix",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lyon",
+    "id": 401908562,
+    "projectedHomeMargin": -4.858,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908572": {
     "absoluteError": 16.27,
     "actualHomeMargin": -28,
@@ -8583,7 +11531,8 @@
     "week": 7
   },
   "401908573": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.28,
+    "actualHomeMargin": 23,
     "awayTeam": "Fitchburg State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Bridgewater State",
@@ -8592,6 +11541,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908574": {
+    "actualHomeMargin": null,
+    "awayTeam": "Plymouth State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Fitchburg State",
+    "id": 401908574,
+    "projectedHomeMargin": -0.724,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401908583": {
     "absoluteError": 21.64,
@@ -8638,6 +11598,17 @@
     "startDate": "2026-10-31T18:30:00.000Z",
     "week": 9
   },
+  "401908592": {
+    "actualHomeMargin": null,
+    "awayTeam": "Framingham State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Dean",
+    "id": 401908592,
+    "projectedHomeMargin": -15.308,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401908595": {
     "absoluteError": 4.76,
     "actualHomeMargin": 3,
@@ -8661,7 +11632,8 @@
     "week": 8
   },
   "401908597": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.46,
+    "actualHomeMargin": 14,
     "awayTeam": "Plymouth State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Framingham State",
@@ -8672,7 +11644,8 @@
     "week": 9
   },
   "401908601": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.74,
+    "actualHomeMargin": 14,
     "awayTeam": "Westfield State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Mass Maritime",
@@ -8681,6 +11654,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908602": {
+    "actualHomeMargin": null,
+    "awayTeam": "Mass Maritime",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Worcester State",
+    "id": 401908602,
+    "projectedHomeMargin": 2.177,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401908604": {
     "absoluteError": 10.7,
@@ -8703,6 +11687,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T18:30:00.000Z",
     "week": 7
+  },
+  "401908608": {
+    "actualHomeMargin": null,
+    "awayTeam": "UMass Dartmouth",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Westfield State",
+    "id": 401908608,
+    "projectedHomeMargin": -4.537,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401908612": {
     "absoluteError": 2.74,
@@ -8738,6 +11733,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908615": {
+    "actualHomeMargin": null,
+    "awayTeam": "Western Connecticut State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Susquehanna",
+    "id": 401908615,
+    "projectedHomeMargin": 27.038,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
+  },
   "401908627": {
     "absoluteError": 8.79,
     "actualHomeMargin": 6,
@@ -8761,7 +11767,8 @@
     "week": 8
   },
   "401908629": {
-    "actualHomeMargin": null,
+    "absoluteError": 4.52,
+    "actualHomeMargin": -14,
     "awayTeam": "Merchant Marine",
     "forecastEngine": "v7-baseline",
     "homeTeam": "WPI",
@@ -8770,6 +11777,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908630": {
+    "actualHomeMargin": null,
+    "awayTeam": "MIT",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "WPI",
+    "id": 401908630,
+    "projectedHomeMargin": 3.333,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908635": {
     "absoluteError": 26.0,
@@ -8793,6 +11811,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908637": {
+    "actualHomeMargin": null,
+    "awayTeam": "Catholic",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Juniata",
+    "id": 401908637,
+    "projectedHomeMargin": 2.187,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T17:00:00.000Z",
+    "week": 10
   },
   "401908642": {
     "absoluteError": 12.68,
@@ -8862,6 +11891,17 @@
     "startDate": "2026-10-31T17:30:00.000Z",
     "week": 9
   },
+  "401908660": {
+    "actualHomeMargin": null,
+    "awayTeam": "Baldwin Wallace",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Mount Union",
+    "id": 401908660,
+    "projectedHomeMargin": 0.017,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
   "401908666": {
     "absoluteError": 16.91,
     "actualHomeMargin": -22,
@@ -8884,6 +11924,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908668": {
+    "actualHomeMargin": null,
+    "awayTeam": "Heidelberg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Capital",
+    "id": 401908668,
+    "projectedHomeMargin": -10.323,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
   },
   "401908673": {
     "absoluteError": 18.74,
@@ -8942,6 +11993,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908682": {
+    "actualHomeMargin": null,
+    "awayTeam": "John Carroll",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Oberlin",
+    "id": 401908682,
+    "projectedHomeMargin": -39.778,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908688": {
     "absoluteError": 20.62,
     "actualHomeMargin": -21,
@@ -8988,7 +12050,8 @@
     "week": 8
   },
   "401908696": {
-    "actualHomeMargin": null,
+    "absoluteError": 60.19,
+    "actualHomeMargin": -70,
     "awayTeam": "Adrian",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Olivet",
@@ -8997,6 +12060,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
+  },
+  "401908697": {
+    "actualHomeMargin": null,
+    "awayTeam": "Adrian",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Albion",
+    "id": 401908697,
+    "projectedHomeMargin": -14.729,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908701": {
     "absoluteError": 32.94,
@@ -9008,6 +12082,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T16:00:00.000Z",
     "week": 7
+  },
+  "401908702": {
+    "actualHomeMargin": null,
+    "awayTeam": "Moravian",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wilkes",
+    "id": 401908702,
+    "projectedHomeMargin": 17.624,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908705": {
     "absoluteError": 14.42,
@@ -9065,6 +12150,28 @@
     "startDate": "2026-10-17T17:00:00.000Z",
     "week": 7
   },
+  "401908715": {
+    "actualHomeMargin": null,
+    "awayTeam": "Buffalo State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "St. Lawrence",
+    "id": 401908715,
+    "projectedHomeMargin": 13.846,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
+  "401908718": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rensselaer",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ithaca",
+    "id": 401908718,
+    "projectedHomeMargin": 7.187,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908720": {
     "absoluteError": 20.64,
     "actualHomeMargin": -51,
@@ -9111,6 +12218,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908731": {
+    "actualHomeMargin": null,
+    "awayTeam": "Cornell (IA)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lake Forest",
+    "id": 401908731,
+    "projectedHomeMargin": 36.462,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908735": {
     "absoluteError": 28.23,
     "actualHomeMargin": -35,
@@ -9121,6 +12239,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401908736": {
+    "actualHomeMargin": null,
+    "awayTeam": "Alma",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Kalamazoo",
+    "id": 401908736,
+    "projectedHomeMargin": -5.878,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908741": {
     "absoluteError": 13.4,
@@ -9144,6 +12273,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401908743": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hope",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Calvin",
+    "id": 401908743,
+    "projectedHomeMargin": 7.234,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908746": {
     "absoluteError": 0.77,
@@ -9214,6 +12354,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908757": {
+    "actualHomeMargin": null,
+    "awayTeam": "Beloit",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Ripon",
+    "id": 401908757,
+    "projectedHomeMargin": 9.921,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T22:00:00.000Z",
+    "week": 10
+  },
   "401908762": {
     "absoluteError": 12.7,
     "actualHomeMargin": -21,
@@ -9246,6 +12397,28 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401908776": {
+    "actualHomeMargin": null,
+    "awayTeam": "Grinnell",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Monmouth (IL)",
+    "id": 401908776,
+    "projectedHomeMargin": 26.355,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
+  "401908780": {
+    "actualHomeMargin": null,
+    "awayTeam": "Illinois College",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Knox",
+    "id": 401908780,
+    "projectedHomeMargin": -10.67,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908783": {
     "absoluteError": 22.7,
@@ -9293,6 +12466,28 @@
     "startDate": "2026-10-24T17:30:00.000Z",
     "week": 8
   },
+  "401908794": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wilmington (OH)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Marietta",
+    "id": 401908794,
+    "projectedHomeMargin": 27.18,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
+  },
+  "401908795": {
+    "actualHomeMargin": null,
+    "awayTeam": "Augsburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Gustavus Adolphus",
+    "id": 401908795,
+    "projectedHomeMargin": 22.507,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908800": {
     "absoluteError": 50.68,
     "actualHomeMargin": -75,
@@ -9327,6 +12522,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908803": {
+    "actualHomeMargin": null,
+    "awayTeam": "Bethel (MN)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Carleton",
+    "id": 401908803,
+    "projectedHomeMargin": -22.348,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908807": {
     "absoluteError": 0.06,
     "actualHomeMargin": 1,
@@ -9360,6 +12566,17 @@
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
   },
+  "401908815": {
+    "actualHomeMargin": null,
+    "awayTeam": "Olivet",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Trine",
+    "id": 401908815,
+    "projectedHomeMargin": 27.518,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908821": {
     "absoluteError": 0.3,
     "actualHomeMargin": 10,
@@ -9370,6 +12587,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T18:00:00.000Z",
     "week": 7
+  },
+  "401908822": {
+    "actualHomeMargin": null,
+    "awayTeam": "Macalester",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Concordia (MN)",
+    "id": 401908822,
+    "projectedHomeMargin": 31.478,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908828": {
     "absoluteError": 4.3,
@@ -9405,6 +12633,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908831": {
+    "actualHomeMargin": null,
+    "awayTeam": "Trinity (CT)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Amherst",
+    "id": 401908831,
+    "projectedHomeMargin": -4.166,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908838": {
     "absoluteError": 13.77,
     "actualHomeMargin": 43,
@@ -9438,6 +12677,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T20:00:00.000Z",
     "week": 7
+  },
+  "401908843": {
+    "actualHomeMargin": null,
+    "awayTeam": "Otterbein",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Muskingum",
+    "id": 401908843,
+    "projectedHomeMargin": 1.932,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
   },
   "401908845": {
     "absoluteError": 16.96,
@@ -9484,6 +12734,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908852": {
+    "actualHomeMargin": null,
+    "awayTeam": "Aurora",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Benedictine (IL)",
+    "id": 401908852,
+    "projectedHomeMargin": 5.518,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908856": {
     "absoluteError": 1.46,
     "actualHomeMargin": 26,
@@ -9517,6 +12778,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T23:00:00.000Z",
     "week": 9
+  },
+  "401908859": {
+    "actualHomeMargin": null,
+    "awayTeam": "Bowdoin",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bates",
+    "id": 401908859,
+    "projectedHomeMargin": 1.501,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908862": {
     "absoluteError": 11.25,
@@ -9575,7 +12847,8 @@
     "week": 8
   },
   "401908871": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.98,
+    "actualHomeMargin": -28,
     "awayTeam": "Wesleyan (CT)",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Bowdoin",
@@ -9641,6 +12914,17 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
+  "401908885": {
+    "actualHomeMargin": null,
+    "awayTeam": "Salve Regina",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Coast Guard",
+    "id": 401908885,
+    "projectedHomeMargin": -1.141,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908889": {
     "absoluteError": 8.03,
     "actualHomeMargin": 4,
@@ -9675,6 +12959,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908896": {
+    "actualHomeMargin": null,
+    "awayTeam": "St. Olaf",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Hamline",
+    "id": 401908896,
+    "projectedHomeMargin": -0.166,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908901": {
     "absoluteError": 9.5,
     "actualHomeMargin": 14,
@@ -9685,6 +12980,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T16:00:00.000Z",
     "week": 8
+  },
+  "401908902": {
+    "actualHomeMargin": null,
+    "awayTeam": "Tufts",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Colby",
+    "id": 401908902,
+    "projectedHomeMargin": 0.298,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401908905": {
     "absoluteError": 9.83,
@@ -9698,6 +13004,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401908906": {
+    "actualHomeMargin": null,
+    "awayTeam": "Saint John's (MN)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "St. Scholastica",
+    "id": 401908906,
+    "projectedHomeMargin": -32.197,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908911": {
     "absoluteError": 0.07,
     "actualHomeMargin": 9,
@@ -9709,6 +13026,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:30:00.000Z",
     "week": 9
+  },
+  "401908912": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hamilton",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Middlebury",
+    "id": 401908912,
+    "projectedHomeMargin": 9.821,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:30:00.000Z",
+    "week": 10
   },
   "401908913": {
     "absoluteError": 9.74,
@@ -9766,6 +13094,17 @@
     "startDate": "2026-10-24T17:30:00.000Z",
     "week": 8
   },
+  "401908924": {
+    "actualHomeMargin": null,
+    "awayTeam": "Williams",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wesleyan (CT)",
+    "id": 401908924,
+    "projectedHomeMargin": 13.798,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401908928": {
     "absoluteError": 39.69,
     "actualHomeMargin": -49,
@@ -9788,6 +13127,17 @@
     "startDate": "2026-10-24T16:00:00.000Z",
     "week": 8
   },
+  "401908930": {
+    "actualHomeMargin": null,
+    "awayTeam": "Vermont State Castleton",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Montclair State",
+    "id": 401908930,
+    "projectedHomeMargin": 28.815,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908935": {
     "absoluteError": 7.08,
     "actualHomeMargin": -7,
@@ -9800,7 +13150,8 @@
     "week": 7
   },
   "401908936": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.75,
+    "actualHomeMargin": 1,
     "awayTeam": "Rowan",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Christopher Newport",
@@ -9809,6 +13160,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401908937": {
+    "actualHomeMargin": null,
+    "awayTeam": "The College of New Jersey",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Christopher Newport",
+    "id": 401908937,
+    "projectedHomeMargin": 20.654,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908955": {
     "absoluteError": 34.19,
@@ -9844,8 +13206,20 @@
     "startDate": "2026-10-31T16:00:00.000Z",
     "week": 9
   },
-  "401908964": {
+  "401908961": {
     "actualHomeMargin": null,
+    "awayTeam": "Norwich",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Springfield",
+    "id": 401908961,
+    "projectedHomeMargin": 31.991,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
+  "401908964": {
+    "absoluteError": 3.75,
+    "actualHomeMargin": 28,
     "awayTeam": "Norwich",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Salve Regina",
@@ -9889,6 +13263,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908971": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wittenberg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Denison",
+    "id": 401908971,
+    "projectedHomeMargin": 15.281,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-08T00:00:00.000Z",
+    "week": 10
+  },
   "401908974": {
     "absoluteError": 18.77,
     "actualHomeMargin": -10,
@@ -9922,6 +13307,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T18:00:00.000Z",
     "week": 8
+  },
+  "401908979": {
+    "actualHomeMargin": null,
+    "awayTeam": "Rowan",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "William Paterson",
+    "id": 401908979,
+    "projectedHomeMargin": -24.113,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401908982": {
     "absoluteError": 32.85,
@@ -9980,6 +13376,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401908991": {
+    "actualHomeMargin": null,
+    "awayTeam": "Guilford",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Averett",
+    "id": 401908991,
+    "projectedHomeMargin": 16.06,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401908995": {
     "absoluteError": 9.72,
     "actualHomeMargin": 1,
@@ -10013,6 +13420,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401908998": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hampden Sydney",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bridgewater",
+    "id": 401908998,
+    "projectedHomeMargin": -15.503,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401909001": {
     "absoluteError": 27.7,
@@ -10071,6 +13489,17 @@
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
   },
+  "401909012": {
+    "actualHomeMargin": null,
+    "awayTeam": "Roanoke College",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Randolph Macon",
+    "id": 401909012,
+    "projectedHomeMargin": 12.501,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
   "401909016": {
     "absoluteError": 1.23,
     "actualHomeMargin": 6,
@@ -10081,6 +13510,17 @@
     "recordedAt": "2026-10-11T03:56:59.636844+00:00",
     "startDate": "2026-10-17T16:00:00.000Z",
     "week": 7
+  },
+  "401909019": {
+    "actualHomeMargin": null,
+    "awayTeam": "Shenandoah",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Washington and Lee",
+    "id": 401909019,
+    "projectedHomeMargin": 2.598,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401909023": {
     "absoluteError": 44.07,
@@ -10116,6 +13556,17 @@
     "startDate": "2026-10-31T23:00:00.000Z",
     "week": 9
   },
+  "401909026": {
+    "actualHomeMargin": null,
+    "awayTeam": "Hiram",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Allegheny",
+    "id": 401909026,
+    "projectedHomeMargin": 18.705,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401909031": {
     "absoluteError": 42.81,
     "actualHomeMargin": -44,
@@ -10127,6 +13578,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401909032": {
+    "actualHomeMargin": null,
+    "awayTeam": "Saint Vincent",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Bethany (WV)",
+    "id": 401909032,
+    "projectedHomeMargin": 5.24,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T20:00:00.000Z",
+    "week": 10
   },
   "401909036": {
     "absoluteError": 14.09,
@@ -10149,6 +13611,17 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401909038": {
+    "actualHomeMargin": null,
+    "awayTeam": "Waynesburg",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Geneva",
+    "id": 401909038,
+    "projectedHomeMargin": 14.62,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
   },
   "401909043": {
     "absoluteError": 30.38,
@@ -10208,7 +13681,8 @@
     "week": 7
   },
   "401909055": {
-    "actualHomeMargin": null,
+    "absoluteError": 27.35,
+    "actualHomeMargin": -22,
     "awayTeam": "Westminster (PA)",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Saint Vincent",
@@ -10229,6 +13703,17 @@
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
   },
+  "401909069": {
+    "actualHomeMargin": null,
+    "awayTeam": "Westminster (PA)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Thiel",
+    "id": 401909069,
+    "projectedHomeMargin": -18.701,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401909071": {
     "absoluteError": 16.47,
     "actualHomeMargin": -58,
@@ -10239,6 +13724,28 @@
     "recordedAt": "2026-10-18T06:02:22.725977+00:00",
     "startDate": "2026-10-24T17:00:00.000Z",
     "week": 8
+  },
+  "401909072": {
+    "actualHomeMargin": null,
+    "awayTeam": "Saint Francis",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Washington & Jefferson",
+    "id": 401909072,
+    "projectedHomeMargin": 49.139,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
+  },
+  "401909073": {
+    "actualHomeMargin": null,
+    "awayTeam": "Willamette",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Whitworth",
+    "id": 401909073,
+    "projectedHomeMargin": 29.506,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T21:00:00.000Z",
+    "week": 10
   },
   "401909103": {
     "absoluteError": 4.89,
@@ -10263,6 +13770,17 @@
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
   },
+  "401909105": {
+    "actualHomeMargin": null,
+    "awayTeam": "Concordia Chicago",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "St. Norbert",
+    "id": 401909105,
+    "projectedHomeMargin": 5.543,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401909117": {
     "absoluteError": 3.9,
     "actualHomeMargin": 11,
@@ -10274,6 +13792,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T18:00:00.000Z",
     "week": 9
+  },
+  "401909118": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wisconsin Lutheran",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Concordia (WI)",
+    "id": 401909118,
+    "projectedHomeMargin": 18.764,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401909121": {
     "absoluteError": 13.99,
@@ -10308,6 +13837,17 @@
     "startDate": "2026-10-24T20:00:00.000Z",
     "week": 8
   },
+  "401909135": {
+    "actualHomeMargin": null,
+    "awayTeam": "DePauw",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wooster",
+    "id": 401909135,
+    "projectedHomeMargin": -20.761,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T19:00:00.000Z",
+    "week": 10
+  },
   "401909138": {
     "absoluteError": 25.75,
     "actualHomeMargin": 52,
@@ -10319,6 +13859,17 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T17:00:00.000Z",
     "week": 9
+  },
+  "401909139": {
+    "actualHomeMargin": null,
+    "awayTeam": "Kenyon",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Wabash",
+    "id": 401909139,
+    "projectedHomeMargin": 16.818,
+    "recordedAt": "2026-11-01T19:45:22.872880+00:00",
+    "startDate": "2026-11-07T18:00:00.000Z",
+    "week": 10
   },
   "401909142": {
     "absoluteError": 41.19,
