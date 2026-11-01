@@ -10003,7 +10003,8 @@
     "week": 8
   },
   "401908187": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.23,
+    "actualHomeMargin": -26,
     "awayTeam": "Delaware Valley",
     "forecastEngine": "v7-baseline",
     "homeTeam": "King's",
