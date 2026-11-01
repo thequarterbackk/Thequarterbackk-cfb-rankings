@@ -1100,7 +1100,8 @@
     "week": 7
   },
   "401860924": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.86,
+    "actualHomeMargin": 16,
     "awayTeam": "Oregon State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Fresno State",
