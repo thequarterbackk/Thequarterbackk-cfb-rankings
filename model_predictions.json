@@ -2102,7 +2102,8 @@
     "week": 9
   },
   "401866453": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.53,
+    "actualHomeMargin": -8,
     "awayTeam": "Ohio",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Akron",
@@ -2113,7 +2114,8 @@
     "week": 10
   },
   "401866454": {
-    "actualHomeMargin": null,
+    "absoluteError": 10.2,
+    "actualHomeMargin": -3,
     "awayTeam": "Buffalo",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Miami (OH)",
