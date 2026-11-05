@@ -2126,7 +2126,8 @@
     "week": 10
   },
   "401866455": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.94,
+    "actualHomeMargin": 1,
     "awayTeam": "Ball State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Massachusetts",
@@ -2137,7 +2138,8 @@
     "week": 10
   },
   "401866456": {
-    "actualHomeMargin": null,
+    "absoluteError": 28.38,
+    "actualHomeMargin": -28,
     "awayTeam": "Central Michigan",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Eastern Michigan",
@@ -2148,7 +2150,8 @@
     "week": 10
   },
   "401866457": {
-    "actualHomeMargin": null,
+    "absoluteError": 10.51,
+    "actualHomeMargin": -3,
     "awayTeam": "Toledo",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Sacramento State",
