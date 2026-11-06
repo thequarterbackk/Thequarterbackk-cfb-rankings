@@ -1712,7 +1712,8 @@
     "week": 9
   },
   "401862817": {
-    "actualHomeMargin": null,
+    "absoluteError": 32.29,
+    "actualHomeMargin": 31,
     "awayTeam": "UTSA",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Florida Atlantic",
@@ -3062,7 +3063,8 @@
     "week": 9
   },
   "401867964": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.03,
+    "actualHomeMargin": -7,
     "awayTeam": "South Carolina State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Howard",
@@ -4897,7 +4899,8 @@
     "week": 9
   },
   "401869964": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.06,
+    "actualHomeMargin": -31,
     "awayTeam": "James Madison",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Southern Miss",
