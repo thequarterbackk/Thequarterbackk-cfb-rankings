@@ -617,7 +617,8 @@
     "week": 10
   },
   "401856855": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.72,
+    "actualHomeMargin": 1,
     "awayTeam": "TCU",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Arizona",
