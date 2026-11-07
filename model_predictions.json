@@ -944,7 +944,8 @@
     "week": 10
   },
   "401858288": {
-    "actualHomeMargin": null,
+    "absoluteError": 15.77,
+    "actualHomeMargin": 23,
     "awayTeam": "Virginia Tech",
     "forecastEngine": "v7-baseline",
     "homeTeam": "SMU",
@@ -1250,7 +1251,8 @@
     "week": 9
   },
   "401858510": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.35,
+    "actualHomeMargin": 11,
     "awayTeam": "Nebraska",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Illinois",
@@ -1724,7 +1726,8 @@
     "week": 10
   },
   "401862818": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.62,
+    "actualHomeMargin": 3,
     "awayTeam": "South Florida",
     "forecastEngine": "v7-baseline",
     "homeTeam": "East Carolina",
@@ -1936,7 +1939,8 @@
     "week": 10
   },
   "401864533": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.49,
+    "actualHomeMargin": -28,
     "awayTeam": "New Mexico",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Nevada",
