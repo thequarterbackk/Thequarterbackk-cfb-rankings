@@ -17658,5 +17658,60 @@
     "recordedAt": "2026-10-25T06:17:36.948902+00:00",
     "startDate": "2026-10-31T19:00:00.000Z",
     "week": 9
+  },
+  "401933675": {
+    "actualHomeMargin": null,
+    "awayTeam": "Kentucky State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Benedict",
+    "id": 401933675,
+    "projectedHomeMargin": 7.104,
+    "recordedAt": "2026-11-09T18:54:08.594720+00:00",
+    "startDate": "2026-11-14T15:30:00.000Z",
+    "week": 11
+  },
+  "401933695": {
+    "actualHomeMargin": null,
+    "awayTeam": "UNC Pembroke",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "North Greenville",
+    "id": 401933695,
+    "projectedHomeMargin": 2.926,
+    "recordedAt": "2026-11-09T18:54:08.594720+00:00",
+    "startDate": "2026-11-14T18:00:00.000Z",
+    "week": 11
+  },
+  "401933696": {
+    "actualHomeMargin": null,
+    "awayTeam": "Claremont Mudd Scripps",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Chapman",
+    "id": 401933696,
+    "projectedHomeMargin": 14.705,
+    "recordedAt": "2026-11-09T18:54:08.594720+00:00",
+    "startDate": "2026-11-14T21:00:00.000Z",
+    "week": 11
+  },
+  "401933697": {
+    "actualHomeMargin": null,
+    "awayTeam": "Cal Lutheran",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Pomona Pitzer",
+    "id": 401933697,
+    "projectedHomeMargin": -2.597,
+    "recordedAt": "2026-11-09T18:54:08.594720+00:00",
+    "startDate": "2026-11-14T21:00:00.000Z",
+    "week": 11
+  },
+  "401933698": {
+    "actualHomeMargin": null,
+    "awayTeam": "Azusa Pacific",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Redlands",
+    "id": 401933698,
+    "projectedHomeMargin": 17.12,
+    "recordedAt": "2026-11-09T18:54:08.594720+00:00",
+    "startDate": "2026-11-14T21:05:00.000Z",
+    "week": 11
   }
 }
