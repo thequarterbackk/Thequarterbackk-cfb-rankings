@@ -2758,7 +2758,8 @@
     "week": 10
   },
   "401866458": {
-    "actualHomeMargin": null,
+    "absoluteError": 18.07,
+    "actualHomeMargin": -28,
     "awayTeam": "Western Michigan",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Akron",
@@ -2769,7 +2770,8 @@
     "week": 11
   },
   "401866459": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.84,
+    "actualHomeMargin": 5,
     "awayTeam": "Kent State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Bowling Green",
@@ -2780,7 +2782,8 @@
     "week": 11
   },
   "401866460": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.09,
+    "actualHomeMargin": 17,
     "awayTeam": "Ohio",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Miami (OH)",
