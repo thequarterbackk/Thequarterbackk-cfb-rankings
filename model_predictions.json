@@ -2805,7 +2805,8 @@
     "week": 11
   },
   "401866462": {
-    "actualHomeMargin": null,
+    "absoluteError": 4.68,
+    "actualHomeMargin": 21,
     "awayTeam": "Sacramento State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Central Michigan",
