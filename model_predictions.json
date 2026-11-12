@@ -2794,7 +2794,8 @@
     "week": 11
   },
   "401866461": {
-    "actualHomeMargin": null,
+    "absoluteError": 21.73,
+    "actualHomeMargin": -21,
     "awayTeam": "Buffalo",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Ball State",
@@ -2817,7 +2818,8 @@
     "week": 11
   },
   "401866463": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.59,
+    "actualHomeMargin": 24,
     "awayTeam": "Massachusetts",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Toledo",
