@@ -2260,7 +2260,8 @@
     "week": 10
   },
   "401862824": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.85,
+    "actualHomeMargin": -11,
     "awayTeam": "Memphis",
     "forecastEngine": "v7-baseline",
     "homeTeam": "South Florida",
@@ -6379,7 +6380,8 @@
     "week": 10
   },
   "401869969": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.43,
+    "actualHomeMargin": -21,
     "awayTeam": "Louisiana",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Louisiana-Monroe",
@@ -8483,7 +8485,8 @@
     "week": 8
   },
   "401906974": {
-    "actualHomeMargin": null,
+    "absoluteError": 17.74,
+    "actualHomeMargin": -11,
     "awayTeam": "Clark Atlanta",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Fort Valley State",
@@ -17718,6 +17721,50 @@
     "projectedHomeMargin": 17.12,
     "recordedAt": "2026-11-09T18:54:08.594720+00:00",
     "startDate": "2026-11-14T21:05:00.000Z",
+    "week": 11
+  },
+  "401934184": {
+    "actualHomeMargin": null,
+    "awayTeam": "Virginia State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Fayetteville State",
+    "id": 401934184,
+    "projectedHomeMargin": -3.605,
+    "recordedAt": "2026-11-13T09:41:18.702558+00:00",
+    "startDate": "2026-11-13T23:00:00.000Z",
+    "week": 11
+  },
+  "401934185": {
+    "actualHomeMargin": null,
+    "awayTeam": "Johnson C. Smith",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Virginia Union",
+    "id": 401934185,
+    "projectedHomeMargin": 6.364,
+    "recordedAt": "2026-11-13T09:41:18.702558+00:00",
+    "startDate": "2026-11-14T20:00:00.000Z",
+    "week": 11
+  },
+  "401934218": {
+    "actualHomeMargin": null,
+    "awayTeam": "Edward Waters",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Chowan",
+    "id": 401934218,
+    "projectedHomeMargin": 3.97,
+    "recordedAt": "2026-11-13T09:41:18.702558+00:00",
+    "startDate": "2026-11-14T18:00:00.000Z",
+    "week": 11
+  },
+  "401934219": {
+    "actualHomeMargin": null,
+    "awayTeam": "Albany State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Shorter",
+    "id": 401934219,
+    "projectedHomeMargin": 2.039,
+    "recordedAt": "2026-11-13T09:41:18.702558+00:00",
+    "startDate": "2026-11-14T18:00:00.000Z",
     "week": 11
   }
 }
