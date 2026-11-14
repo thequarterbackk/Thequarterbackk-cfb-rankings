@@ -17808,7 +17808,8 @@
     "week": 11
   },
   "401934270": {
-    "actualHomeMargin": null,
+    "absoluteError": 20.56,
+    "actualHomeMargin": 28,
     "awayTeam": "Gallaudet",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Austin",
