@@ -1199,7 +1199,8 @@
     "week": 10
   },
   "401858293": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.47,
+    "actualHomeMargin": -6,
     "awayTeam": "Florida State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Pittsburgh",
@@ -1733,7 +1734,8 @@
     "week": 11
   },
   "401858526": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.09,
+    "actualHomeMargin": 8,
     "awayTeam": "Illinois",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UCLA",
@@ -4746,7 +4748,8 @@
     "week": 10
   },
   "401868157": {
-    "actualHomeMargin": null,
+    "absoluteError": 4.43,
+    "actualHomeMargin": -2,
     "awayTeam": "Southern Utah",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Portland State",
@@ -13494,7 +13497,8 @@
     "week": 9
   },
   "401908345": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.91,
+    "actualHomeMargin": 14,
     "awayTeam": "Franklin & Marshall",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Johns Hopkins",
@@ -16859,7 +16863,8 @@
     "week": 9
   },
   "401908976": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.35,
+    "actualHomeMargin": -7,
     "awayTeam": "Montclair State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Rowan",
@@ -17724,7 +17729,8 @@
     "week": 11
   },
   "401934184": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.61,
+    "actualHomeMargin": 2,
     "awayTeam": "Virginia State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Fayetteville State",
