@@ -688,7 +688,8 @@
     "week": 11
   },
   "401856860": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.66,
+    "actualHomeMargin": 10,
     "awayTeam": "Houston",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Colorado",
@@ -17771,6 +17772,50 @@
     "projectedHomeMargin": 2.039,
     "recordedAt": "2026-11-13T09:41:18.702558+00:00",
     "startDate": "2026-11-14T18:00:00.000Z",
+    "week": 11
+  },
+  "401934267": {
+    "actualHomeMargin": null,
+    "awayTeam": "Texas Lutheran",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Hendrix",
+    "id": 401934267,
+    "projectedHomeMargin": -6.88,
+    "recordedAt": "2026-11-14T14:16:06.316520+00:00",
+    "startDate": "2026-11-14T21:00:00.000Z",
+    "week": 11
+  },
+  "401934268": {
+    "actualHomeMargin": null,
+    "awayTeam": "Whittier",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "La Verne",
+    "id": 401934268,
+    "projectedHomeMargin": 18.464,
+    "recordedAt": "2026-11-14T14:16:06.316520+00:00",
+    "startDate": "2026-11-14T21:00:00.000Z",
+    "week": 11
+  },
+  "401934269": {
+    "actualHomeMargin": null,
+    "awayTeam": "Centenary (LA)",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lyon",
+    "id": 401934269,
+    "projectedHomeMargin": -0.883,
+    "recordedAt": "2026-11-14T14:16:06.316520+00:00",
+    "startDate": "2026-11-15T02:00:00.000Z",
+    "week": 11
+  },
+  "401934270": {
+    "actualHomeMargin": null,
+    "awayTeam": "Gallaudet",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Austin",
+    "id": 401934270,
+    "projectedHomeMargin": 7.437,
+    "recordedAt": "2026-11-14T14:16:06.316520+00:00",
+    "startDate": "2026-11-14T16:00:00.000Z",
     "week": 11
   }
 }
