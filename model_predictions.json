@@ -655,7 +655,8 @@
     "week": 10
   },
   "401856857": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.58,
+    "actualHomeMargin": -13,
     "awayTeam": "Arizona State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UCF",
@@ -701,7 +702,8 @@
     "week": 11
   },
   "401856861": {
-    "actualHomeMargin": null,
+    "absoluteError": 28.62,
+    "actualHomeMargin": -23,
     "awayTeam": "Kansas",
     "forecastEngine": "v7-baseline",
     "homeTeam": "West Virginia",
@@ -757,7 +759,8 @@
     "week": 11
   },
   "401856883": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.41,
+    "actualHomeMargin": 27,
     "awayTeam": "Missouri",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Georgia",
@@ -768,7 +771,8 @@
     "week": 11
   },
   "401856884": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.18,
+    "actualHomeMargin": -7,
     "awayTeam": "Florida",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Kentucky",
@@ -790,7 +794,8 @@
     "week": 11
   },
   "401856886": {
-    "actualHomeMargin": null,
+    "absoluteError": 36.39,
+    "actualHomeMargin": -32,
     "awayTeam": "Auburn",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Mississippi State",
@@ -812,7 +817,8 @@
     "week": 11
   },
   "401856888": {
-    "actualHomeMargin": null,
+    "absoluteError": 13.25,
+    "actualHomeMargin": -15,
     "awayTeam": "Tennessee",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Texas A&M",
@@ -1215,7 +1221,8 @@
     "week": 11
   },
   "401858294": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.11,
+    "actualHomeMargin": 34,
     "awayTeam": "Boston College",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Notre Dame",
@@ -1226,7 +1233,8 @@
     "week": 11
   },
   "401858295": {
-    "actualHomeMargin": null,
+    "absoluteError": 15.17,
+    "actualHomeMargin": 29,
     "awayTeam": "California",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Virginia",
@@ -1654,7 +1662,8 @@
     "week": 10
   },
   "401858518": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.64,
+    "actualHomeMargin": 14,
     "awayTeam": "USC",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Indiana",
@@ -1688,7 +1697,8 @@
     "week": 11
   },
   "401858521": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.98,
+    "actualHomeMargin": -7,
     "awayTeam": "Washington",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Michigan State",
@@ -1711,7 +1721,8 @@
     "week": 11
   },
   "401858523": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.32,
+    "actualHomeMargin": 24,
     "awayTeam": "Michigan",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Oregon",
@@ -1896,7 +1907,8 @@
     "week": 10
   },
   "401860914": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.58,
+    "actualHomeMargin": 5,
     "awayTeam": "Oregon State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Boise State",
@@ -1918,7 +1930,8 @@
     "week": 11
   },
   "401860916": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.89,
+    "actualHomeMargin": 2,
     "awayTeam": "Fresno State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Texas State",
@@ -2320,7 +2333,8 @@
     "week": 11
   },
   "401862828": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.38,
+    "actualHomeMargin": -3,
     "awayTeam": "Tulane",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Rice",
@@ -2526,7 +2540,8 @@
     "week": 10
   },
   "401864536": {
-    "actualHomeMargin": null,
+    "absoluteError": 15.91,
+    "actualHomeMargin": -21,
     "awayTeam": "Nevada",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Northern Illinois",
@@ -3518,7 +3533,8 @@
     "week": 10
   },
   "401867853": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.15,
+    "actualHomeMargin": -1,
     "awayTeam": "Illinois State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Youngstown State",
@@ -4650,7 +4666,8 @@
     "week": 9
   },
   "401868127": {
-    "actualHomeMargin": null,
+    "absoluteError": 13.49,
+    "actualHomeMargin": -4,
     "awayTeam": "Weber State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Northern Arizona",
@@ -4928,7 +4945,8 @@
     "week": 10
   },
   "401868185": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.52,
+    "actualHomeMargin": 1,
     "awayTeam": "Eastern Illinois",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Tennessee State",
@@ -5021,7 +5039,8 @@
     "week": 8
   },
   "401868202": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.13,
+    "actualHomeMargin": 7,
     "awayTeam": "Lindenwood",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UT Martin",
@@ -5206,7 +5225,8 @@
     "week": 8
   },
   "401868239": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.23,
+    "actualHomeMargin": -14,
     "awayTeam": "Tarleton State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "West Florida",
@@ -5379,7 +5399,8 @@
     "week": 8
   },
   "401868286": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.82,
+    "actualHomeMargin": -3,
     "awayTeam": "Valparaiso",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Stetson",
@@ -5401,7 +5422,8 @@
     "week": 7
   },
   "401868293": {
-    "actualHomeMargin": null,
+    "absoluteError": 38.43,
+    "actualHomeMargin": -48,
     "awayTeam": "Stephen F. Austin",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UT Rio Grande Valley",
@@ -5447,7 +5469,8 @@
     "week": 10
   },
   "401868303": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.42,
+    "actualHomeMargin": 29,
     "awayTeam": "Texas Southern",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Alabama A&M",
@@ -5714,7 +5737,8 @@
     "week": 10
   },
   "401868364": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.3,
+    "actualHomeMargin": 13,
     "awayTeam": "Alcorn State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Southern",
@@ -5807,7 +5831,8 @@
     "week": 9
   },
   "401868389": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.52,
+    "actualHomeMargin": -5,
     "awayTeam": "Western Carolina",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Samford",
@@ -5911,7 +5936,8 @@
     "week": 10
   },
   "401868940": {
-    "actualHomeMargin": null,
+    "absoluteError": 13.06,
+    "actualHomeMargin": -3,
     "awayTeam": "Prairie View A&M",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Arkansas-Pine Bluff",
@@ -5991,7 +6017,8 @@
     "week": 9
   },
   "401868951": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.96,
+    "actualHomeMargin": 3,
     "awayTeam": "Mississippi Valley State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Florida A&M",
@@ -6140,7 +6167,8 @@
     "week": 8
   },
   "401869146": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.18,
+    "actualHomeMargin": 19,
     "awayTeam": "East Texas A&M",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Lamar",
@@ -6151,7 +6179,8 @@
     "week": 11
   },
   "401869148": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.38,
+    "actualHomeMargin": 18,
     "awayTeam": "Nicholls",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Incarnate Word",
@@ -6255,7 +6284,8 @@
     "week": 10
   },
   "401869928": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.24,
+    "actualHomeMargin": -4,
     "awayTeam": "Appalachian State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Marshall",
@@ -6359,7 +6389,8 @@
     "week": 10
   },
   "401869952": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.72,
+    "actualHomeMargin": -17,
     "awayTeam": "Georgia Southern",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Georgia State",
@@ -6451,7 +6482,8 @@
     "week": 11
   },
   "401870752": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.49,
+    "actualHomeMargin": 10,
     "awayTeam": "Jacksonville State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Western Kentucky",
@@ -6486,7 +6518,8 @@
     "week": 10
   },
   "401870796": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.71,
+    "actualHomeMargin": 6,
     "awayTeam": "New Mexico State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Missouri State",
@@ -6612,7 +6645,8 @@
     "week": 11
   },
   "401871061": {
-    "actualHomeMargin": null,
+    "absoluteError": 18.75,
+    "actualHomeMargin": 5,
     "awayTeam": "Middle Tennessee",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Liberty",
@@ -6831,7 +6865,8 @@
     "week": 10
   },
   "401871099": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.97,
+    "actualHomeMargin": 32,
     "awayTeam": "Southern Miss",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Louisiana Tech",
@@ -7719,7 +7754,8 @@
     "week": 9
   },
   "401906565": {
-    "actualHomeMargin": null,
+    "absoluteError": 21.61,
+    "actualHomeMargin": 41,
     "awayTeam": "Northwestern (OK)",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Southwestern Oklahoma State",
@@ -8712,7 +8748,8 @@
     "week": 10
   },
   "401907108": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.38,
+    "actualHomeMargin": 1,
     "awayTeam": "Fort Lewis",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Adams State",
@@ -8920,7 +8957,8 @@
     "week": 10
   },
   "401907149": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.52,
+    "actualHomeMargin": 7,
     "awayTeam": "Western Colorado",
     "forecastEngine": "v7-baseline",
     "homeTeam": "CSU Pueblo",
@@ -9071,7 +9109,8 @@
     "week": 9
   },
   "401907218": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.32,
+    "actualHomeMargin": 14,
     "awayTeam": "McKendree",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Truman State",
@@ -9391,7 +9430,8 @@
     "week": 10
   },
   "401907314": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.45,
+    "actualHomeMargin": -6,
     "awayTeam": "Texas A&M-Kingsville",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UT Permian Basin",
@@ -9914,7 +9954,8 @@
     "week": 10
   },
   "401907411": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.7,
+    "actualHomeMargin": -7,
     "awayTeam": "Lenoir Rhyne",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Catawba",
@@ -12201,7 +12242,8 @@
     "week": 10
   },
   "401907962": {
-    "actualHomeMargin": null,
+    "absoluteError": 6.26,
+    "actualHomeMargin": -7,
     "awayTeam": "Wisconsin Stout",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Wisconsin Oshkosh",
@@ -12501,7 +12543,8 @@
     "week": 10
   },
   "401908084": {
-    "actualHomeMargin": null,
+    "absoluteError": 4.77,
+    "actualHomeMargin": -4,
     "awayTeam": "Brevard",
     "forecastEngine": "v7-baseline",
     "homeTeam": "North Carolina Wesleyan",
@@ -12548,7 +12591,8 @@
     "week": 10
   },
   "401908100": {
-    "actualHomeMargin": null,
+    "absoluteError": 38.18,
+    "actualHomeMargin": -49,
     "awayTeam": "Greensboro",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Methodist",
@@ -13889,7 +13933,8 @@
     "week": 10
   },
   "401908400": {
-    "actualHomeMargin": null,
+    "absoluteError": 20.67,
+    "actualHomeMargin": 37,
     "awayTeam": "Pacific Lutheran",
     "forecastEngine": "v7-baseline",
     "homeTeam": "George Fox",
@@ -13982,7 +14027,8 @@
     "week": 10
   },
   "401908411": {
-    "actualHomeMargin": null,
+    "absoluteError": 2.55,
+    "actualHomeMargin": 32,
     "awayTeam": "Pacific (OR)",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Lewis & Clark",
@@ -14027,7 +14073,8 @@
     "week": 8
   },
   "401908421": {
-    "actualHomeMargin": null,
+    "absoluteError": 29.76,
+    "actualHomeMargin": -64,
     "awayTeam": "Linfield",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Willamette",
@@ -16566,7 +16613,8 @@
     "week": 10
   },
   "401908886": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.47,
+    "actualHomeMargin": 28,
     "awayTeam": "Coast Guard",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Merchant Marine",
@@ -16682,7 +16730,8 @@
     "week": 10
   },
   "401908907": {
-    "actualHomeMargin": null,
+    "absoluteError": 17.01,
+    "actualHomeMargin": -49,
     "awayTeam": "Saint John's (MN)",
     "forecastEngine": "v7-baseline",
     "homeTeam": "St. Olaf",
@@ -17899,7 +17948,8 @@
     "week": 11
   },
   "401933696": {
-    "actualHomeMargin": null,
+    "absoluteError": 19.7,
+    "actualHomeMargin": -5,
     "awayTeam": "Claremont Mudd Scripps",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Chapman",
@@ -17910,7 +17960,8 @@
     "week": 11
   },
   "401933697": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.6,
+    "actualHomeMargin": -1,
     "awayTeam": "Cal Lutheran",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Pomona Pitzer",
@@ -17944,7 +17995,8 @@
     "week": 11
   },
   "401934185": {
-    "actualHomeMargin": null,
+    "absoluteError": 5.36,
+    "actualHomeMargin": 1,
     "awayTeam": "Johnson C. Smith",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Virginia Union",
@@ -17979,7 +18031,8 @@
     "week": 11
   },
   "401934267": {
-    "actualHomeMargin": null,
+    "absoluteError": 33.12,
+    "actualHomeMargin": -40,
     "awayTeam": "Texas Lutheran",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Hendrix",
@@ -17990,7 +18043,8 @@
     "week": 11
   },
   "401934268": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.54,
+    "actualHomeMargin": 35,
     "awayTeam": "Whittier",
     "forecastEngine": "v7-baseline",
     "homeTeam": "La Verne",
