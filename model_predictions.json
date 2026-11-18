@@ -3463,7 +3463,8 @@
     "week": 11
   },
   "401866464": {
-    "actualHomeMargin": null,
+    "absoluteError": 7.16,
+    "actualHomeMargin": 7,
     "awayTeam": "Ball State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Ohio",
@@ -3474,7 +3475,8 @@
     "week": 12
   },
   "401866465": {
-    "actualHomeMargin": null,
+    "absoluteError": 10.04,
+    "actualHomeMargin": 7,
     "awayTeam": "Eastern Michigan",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Western Michigan",
@@ -3485,7 +3487,8 @@
     "week": 12
   },
   "401866466": {
-    "actualHomeMargin": null,
+    "absoluteError": 11.59,
+    "actualHomeMargin": -17,
     "awayTeam": "Miami (OH)",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Kent State",
