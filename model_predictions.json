@@ -3499,7 +3499,8 @@
     "week": 12
   },
   "401866467": {
-    "actualHomeMargin": null,
+    "absoluteError": 14.3,
+    "actualHomeMargin": -1,
     "awayTeam": "Akron",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Massachusetts",
@@ -3521,7 +3522,8 @@
     "week": 12
   },
   "401866469": {
-    "actualHomeMargin": null,
+    "absoluteError": 12.38,
+    "actualHomeMargin": 19,
     "awayTeam": "Central Michigan",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Buffalo",
