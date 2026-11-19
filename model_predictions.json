@@ -19821,5 +19821,170 @@
     "recordedAt": "2026-11-16T11:40:10.265704+00:00",
     "startDate": "2026-11-21T19:00:00.000Z",
     "week": 12
+  },
+  "401935695": {
+    "actualHomeMargin": null,
+    "awayTeam": "Brockport",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Montclair State",
+    "id": 401935695,
+    "projectedHomeMargin": 3.841,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-20T23:30:00.000Z",
+    "week": 12
+  },
+  "401935696": {
+    "actualHomeMargin": null,
+    "awayTeam": "Misericordia",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Franklin & Marshall",
+    "id": 401935696,
+    "projectedHomeMargin": 13.931,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T17:00:00.000Z",
+    "week": 12
+  },
+  "401935697": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ursinus",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Delaware Valley",
+    "id": 401935697,
+    "projectedHomeMargin": 9.662,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T17:00:00.000Z",
+    "week": 12
+  },
+  "401935698": {
+    "actualHomeMargin": null,
+    "awayTeam": "Carnegie Mellon",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Stevenson",
+    "id": 401935698,
+    "projectedHomeMargin": -1.293,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T18:00:00.000Z",
+    "week": 12
+  },
+  "401935699": {
+    "actualHomeMargin": null,
+    "awayTeam": "St. John Fisher",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Allegheny",
+    "id": 401935699,
+    "projectedHomeMargin": -1.683,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T17:00:00.000Z",
+    "week": 12
+  },
+  "401935700": {
+    "actualHomeMargin": null,
+    "awayTeam": "Alfred",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Hobart",
+    "id": 401935700,
+    "projectedHomeMargin": 18.543,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T18:00:00.000Z",
+    "week": 12
+  },
+  "401935701": {
+    "actualHomeMargin": null,
+    "awayTeam": "St. Norbert",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Chicago",
+    "id": 401935701,
+    "projectedHomeMargin": 7.1,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T17:00:00.000Z",
+    "week": 12
+  },
+  "401935702": {
+    "actualHomeMargin": null,
+    "awayTeam": "Western New England",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "MIT",
+    "id": 401935702,
+    "projectedHomeMargin": 3.717,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T17:00:00.000Z",
+    "week": 12
+  },
+  "401935703": {
+    "actualHomeMargin": null,
+    "awayTeam": "Randolph Macon",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lycoming",
+    "id": 401935703,
+    "projectedHomeMargin": -2.193,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T17:00:00.000Z",
+    "week": 12
+  },
+  "401935704": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wilkes",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Washington and Lee",
+    "id": 401935704,
+    "projectedHomeMargin": 5.767,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T17:00:00.000Z",
+    "week": 12
+  },
+  "401935705": {
+    "actualHomeMargin": null,
+    "awayTeam": "Wisconsin River Falls",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Illinois Wesleyan",
+    "id": 401935705,
+    "projectedHomeMargin": -4.187,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T20:00:00.000Z",
+    "week": 12
+  },
+  "401935706": {
+    "actualHomeMargin": null,
+    "awayTeam": "Ohio Northern",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Mount St Joseph",
+    "id": 401935706,
+    "projectedHomeMargin": 1.713,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T18:00:00.000Z",
+    "week": 12
+  },
+  "401935707": {
+    "actualHomeMargin": null,
+    "awayTeam": "Grove City",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "John Carroll",
+    "id": 401935707,
+    "projectedHomeMargin": 5.081,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T23:00:00.000Z",
+    "week": 12
+  },
+  "401935708": {
+    "actualHomeMargin": null,
+    "awayTeam": "Lake Forest",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Coe",
+    "id": 401935708,
+    "projectedHomeMargin": -13.596,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T18:00:00.000Z",
+    "week": 12
+  },
+  "401935709": {
+    "actualHomeMargin": null,
+    "awayTeam": "Dubuque",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Aurora",
+    "id": 401935709,
+    "projectedHomeMargin": 3.499,
+    "recordedAt": "2026-11-19T13:26:24.952241+00:00",
+    "startDate": "2026-11-21T23:00:00.000Z",
+    "week": 12
   }
 }
