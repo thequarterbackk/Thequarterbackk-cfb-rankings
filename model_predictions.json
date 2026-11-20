@@ -6709,7 +6709,8 @@
     "week": 10
   },
   "401868314": {
-    "actualHomeMargin": null,
+    "absoluteError": 23.57,
+    "actualHomeMargin": 66,
     "awayTeam": "Northwestern State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Stephen F. Austin",
@@ -6767,7 +6768,8 @@
     "week": 11
   },
   "401868323": {
-    "actualHomeMargin": null,
+    "absoluteError": 22.09,
+    "actualHomeMargin": -28,
     "awayTeam": "SE Louisiana",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Nicholls",
