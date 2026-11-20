@@ -2822,7 +2822,8 @@
     "week": 11
   },
   "401862830": {
-    "actualHomeMargin": null,
+    "absoluteError": 9.17,
+    "actualHomeMargin": -4,
     "awayTeam": "Rice",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Temple",
