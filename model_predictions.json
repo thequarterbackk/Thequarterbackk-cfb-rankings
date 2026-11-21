@@ -905,7 +905,8 @@
     "week": 12
   },
   "401856869": {
-    "actualHomeMargin": null,
+    "absoluteError": 28.99,
+    "actualHomeMargin": 31,
     "awayTeam": "Iowa State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UCF",
