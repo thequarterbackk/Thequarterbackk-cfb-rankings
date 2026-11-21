@@ -1533,7 +1533,8 @@
     "week": 12
   },
   "401858303": {
-    "actualHomeMargin": null,
+    "absoluteError": 24.6,
+    "actualHomeMargin": -10,
     "awayTeam": "Clemson",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Duke",
@@ -2098,7 +2099,8 @@
     "week": 12
   },
   "401858529": {
-    "actualHomeMargin": null,
+    "absoluteError": 31.0,
+    "actualHomeMargin": -38,
     "awayTeam": "Oregon",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Michigan State",
@@ -3155,7 +3157,8 @@
     "week": 12
   },
   "401864542": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.53,
+    "actualHomeMargin": -7,
     "awayTeam": "New Mexico",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Wyoming",
@@ -3188,7 +3191,8 @@
     "week": 12
   },
   "401864545": {
-    "actualHomeMargin": null,
+    "absoluteError": 25.27,
+    "actualHomeMargin": 49,
     "awayTeam": "UTEP",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Air Force",
@@ -3513,7 +3517,8 @@
     "week": 12
   },
   "401866468": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.13,
+    "actualHomeMargin": 19,
     "awayTeam": "Bowling Green",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Toledo",
