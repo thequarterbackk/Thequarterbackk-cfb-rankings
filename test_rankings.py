@@ -43,6 +43,17 @@ class RankPenaltyTests(unittest.TestCase):
         self.assertEqual(before, compute(games[:2] + list(reversed(games[2:])), names)[0])
         self.assertEqual(before, compute(list(reversed(games)), names)[0])
 
+    def test_win_quality_uses_independent_opponent_results(self):
+        names = ['A', 'B', 'C', 'D']
+        wins = [game(1, 1, 'A', 'B', 21, 20)]
+        neutral = compute(wins, names)[0]
+        strong = compute(wins + [game(2, 2, 'B', 'C', 21, 20)], names)[0]
+        weak = compute(wins + [game(2, 2, 'B', 'C', 20, 21)], names)[0]
+        adjustment = lambda rows: next(r['Win Quality Adjustment'] for r in rows if r['Team'] == 'A')
+        self.assertEqual(adjustment(neutral), 0)
+        self.assertGreater(adjustment(strong), 0)
+        self.assertLess(adjustment(weak), 0)
+
     def test_hidden_fcs_loss(self):
         rows, _, _ = compute([game(1, 1, 'A', 'B', 30, 0), game(2, 2, 'A', 'FCS', 7, 14)], ['A', 'B'])
         self.assertEqual(len(rows), 2)

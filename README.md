@@ -3,21 +3,22 @@
 GitHub Pages dashboard with hourly final-score refreshes via CFBD + GitHub Actions.
 The API key stays in the repository secret `CFBD_API_KEY`.
 
-## Ranking model v8
+## Ranking model v9
 
 Only current-season completed scores and home/neutral status enter the model.
 No polls, preseason seeds, prior seasons, conference bonuses, budgets, recruiting or market lines.
 Conference metadata groups charts only.
 
-Final Rating = 1000 × Colley résumé + 10 × robust scoring power − frozen game-time loss penalties.
+Final Rating = 1000 × Colley résumé + win quality adjustment + 10 × robust scoring power − frozen game-time loss penalties.
 
 - Résumé: solve the Colley equations, `(2+n_i)r_i − sum(r_opponent) = 1+(wins−losses)/2`. Equal 0.5 priors; opponent strength is solved through the game network. No raw cumulative win-point banking. Source: https://www.colleyrankings.com/matrate.pdf
+- Win quality: multiply the sum of each defeated opponent’s Colley rating minus 0.5 by 500 and divide by games played. Recompute opponent ratings through the ranking week with all games involving the ranked team removed. An opponent with no remaining results contributes zero. The adjustment is included in Base Rating and reported separately as Win Quality Adjustment.
 - Scoring: regularized least squares with identical ridge 2 for all teams; transform margins with `35*tanh(margin/35)` to bound blowout influence. Jointly estimate home advantage, shrunk toward zero (100-game prior) and bounded to ±5. Source principles: https://masseyratings.com/theory/ls.htm
 - Loss penalty: `50 + 2*max(0, opponent rank − team rank) + 2*losing margin`. Ranks are the model’s ratings entering the game week, frozen before all games that week. Tied ratings receive shared entering ranks. No gap term when prior evidence is missing. Non-FBS opponents use FBS count+1.
 - The season is replayed under one version. Historical ranks may differ from older published versions. Loss Details exposes every frozen rank and deduction.
 - Only FBS teams are public. Non-FBS opponents are hidden and measured through direct FBS matchups, consistent with the previous model; FCS-vs-FCS games do not enter the résumé model.
-- `Base Rating` is now the Colley component. `Margin Adjustment` is the scoring component; `Dynamic Validation` is its compatibility alias. The old 60/40 and raw scoring formula are retired.
-- Weights 1000/10 and penalty coefficients are declared policy choices, not statistically fitted probabilities or proof of a correct résumé order.
+- `Base Rating` includes the Colley component and win quality adjustment. `Margin Adjustment` is the scoring component; `Dynamic Validation` is its compatibility alias. The old 60/40 and raw scoring formula are retired.
+- Weights 1000/500/10 and penalty coefficients are declared policy choices, not statistically fitted probabilities or proof of a correct résumé order.
 
 ## Forecast validation
 

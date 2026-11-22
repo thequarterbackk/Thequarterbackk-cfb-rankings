@@ -121,10 +121,13 @@ def legacy_power(games,names):
         if delta<0.0001:break
     return ratings,home
 
+WIN_QUALITY_WEIGHT = 500
+
+
 def resume_rankings(completed,names,penalty_fn):
     """Replay weeks under one universal rule, freezing rank evidence each week.
 
-    Final = 1000*Colley + 10*robust power - frozen loss penalties.
+    Final = 1000*Colley + win quality + 10*robust power - frozen loss penalties.
     Blend weights are explicit policy choices, not an accuracy claim.
     Only direct FBS games enter the hidden opponent graph, as in v7.
     """
@@ -152,20 +155,29 @@ def resume_rankings(completed,names,penalty_fn):
         rows=[]
         for t in sorted(names):
             gs=[g for g in through if t in (g['homeTeam'],g['awayTeam'])]
-            pf=pa=wins=losses=ties=0;opponents=[]
+            pf=pa=wins=losses=ties=0;opponents=[];beaten=[]
             for g in gs:
                 h=t==g['homeTeam'];a,b=(g['homePoints'],g['awayPoints']) if h else (g['awayPoints'],g['homePoints'])
                 pf+=a;pa+=b;wins+=a>b;losses+=a<b;ties+=a==b
-                opponents.append(g['awayTeam'] if h else g['homeTeam'])
-            base=1000*col[t];adjustment=10*power[t];cost=sum(d['penalty'] for d in penalties[t])
+                opponent = g['awayTeam'] if h else g['homeTeam']
+                opponents.append(opponent)
+                if a > b:
+                    beaten.append(opponent)
+            win_quality = 0.0
+            if beaten:
+                # Rate opponents without any result involving this team.
+                independent = colley([g for g in through if t not in (g['homeTeam'], g['awayTeam'])],
+                                     names | set(beaten))
+                win_quality = WIN_QUALITY_WEIGHT * sum(independent[o] - 0.5 for o in beaten) / len(gs)
+            base=1000*col[t]+win_quality;adjustment=10*power[t];cost=sum(d['penalty'] for d in penalties[t])
             score=base+adjustment-cost
             rows.append({'Team':t,'Record':f'{wins}-{losses}'+(f'-{ties}' if ties else ''),'Games':len(gs),
                          'Points For':pf,'Points Allowed':pa,'Point Diff':pf-pa,'Base Rating':round(base,4),
                          'Dynamic Validation':round(adjustment,4),'Margin Adjustment':round(adjustment,4),
-                         'Resume Rating':round(col[t],6),'Resume Power':round(power[t],4),
+                         'Win Quality Adjustment':round(win_quality,4),'Resume Rating':round(col[t],6),'Resume Power':round(power[t],4),
                          'Schedule Strength':round(100*sum(col[o] for o in opponents)/len(opponents),3) if opponents else None,
                          'Loss Penalty':cost,'Loss Details':list(penalties[t]),'Final Rating':round(score,4),
-                         'Model Logic':'1000 × schedule-adjusted résumé + 10 × robust power − frozen rank loss penalties'})
+                         'Model Logic':'1000 × Colley résumé + win quality + 10 × robust power − frozen rank loss penalties'})
         rows.sort(key=lambda r:(-r['Final Rating'],-int(r['Record'].split('-')[0]),r['Team']))
         for i,r in enumerate(rows,1):
             r['Rank']=i;r['Prior Rank']=previous.get(r['Team'],i);r['Rank Change']=r['Prior Rank']-i
@@ -174,6 +186,6 @@ def resume_rankings(completed,names,penalty_fn):
         for i,t in enumerate(sorted(names),1):
             rows.append({'Rank':i,'Team':t,'Record':'0-0','Games':0,'Points For':0,'Points Allowed':0,'Point Diff':0,
                          'Base Rating':500.0,'Dynamic Validation':0.0,'Margin Adjustment':0.0,'Resume Rating':0.5,
-                         'Resume Power':0.0,'Schedule Strength':None,'Loss Penalty':0,'Loss Details':[],
+                         'Win Quality Adjustment':0.0,'Resume Power':0.0,'Schedule Strength':None,'Loss Penalty':0,'Loss Details':[],
                          'Final Rating':500.0,'Prior Rank':i,'Rank Change':0,'Model Logic':'Awaiting results'})
     return rows,hidden,games
