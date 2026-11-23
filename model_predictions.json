@@ -20379,6 +20379,94 @@
     "startDate": "2026-11-14T21:05:00.000Z",
     "week": 11
   },
+  "401934095": {
+    "actualHomeMargin": null,
+    "awayTeam": "Harvard",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Monmouth",
+    "id": 401934095,
+    "projectedHomeMargin": -2.895,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-28T17:00:00.000Z",
+    "week": 13
+  },
+  "401934096": {
+    "actualHomeMargin": null,
+    "awayTeam": "Idaho State",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "North Dakota",
+    "id": 401934096,
+    "projectedHomeMargin": 9.203,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-28T18:00:00.000Z",
+    "week": 13
+  },
+  "401934097": {
+    "actualHomeMargin": null,
+    "awayTeam": "UAlbany",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Lehigh",
+    "id": 401934097,
+    "projectedHomeMargin": 5.814,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-28T17:00:00.000Z",
+    "week": 13
+  },
+  "401934098": {
+    "actualHomeMargin": null,
+    "awayTeam": "Austin Peay",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Illinois State",
+    "id": 401934098,
+    "projectedHomeMargin": 6.139,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-28T21:00:00.000Z",
+    "week": 13
+  },
+  "401934099": {
+    "actualHomeMargin": null,
+    "awayTeam": "Western Illinois",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Weber State",
+    "id": 401934099,
+    "projectedHomeMargin": -2.199,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-28T20:00:00.000Z",
+    "week": 13
+  },
+  "401934100": {
+    "actualHomeMargin": null,
+    "awayTeam": "Dayton",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Tennessee Tech",
+    "id": 401934100,
+    "projectedHomeMargin": 5.001,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-28T19:00:00.000Z",
+    "week": 13
+  },
+  "401934101": {
+    "actualHomeMargin": null,
+    "awayTeam": "Long Island University",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Northern Arizona",
+    "id": 401934101,
+    "projectedHomeMargin": 16.507,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-28T21:00:00.000Z",
+    "week": 13
+  },
+  "401934102": {
+    "actualHomeMargin": null,
+    "awayTeam": "Incarnate Word",
+    "forecastEngine": "v7-baseline",
+    "homeTeam": "Montana",
+    "id": 401934102,
+    "projectedHomeMargin": -1.648,
+    "recordedAt": "2026-11-23T14:52:40.684175+00:00",
+    "startDate": "2026-11-29T01:00:00.000Z",
+    "week": 13
+  },
   "401934184": {
     "absoluteError": 5.61,
     "actualHomeMargin": 2,
