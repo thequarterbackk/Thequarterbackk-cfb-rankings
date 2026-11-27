@@ -496,7 +496,8 @@
     "week": 13
   },
   "401856762": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.02,
+    "actualHomeMargin": 24,
     "awayTeam": "Mississippi State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Ole Miss",
@@ -2486,7 +2487,8 @@
     "week": 12
   },
   "401858536": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.88,
+    "actualHomeMargin": 24,
     "awayTeam": "Nebraska",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Iowa",
@@ -3410,7 +3412,8 @@
     "week": 13
   },
   "401862840": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.94,
+    "actualHomeMargin": 6,
     "awayTeam": "Tulsa",
     "forecastEngine": "v7-baseline",
     "homeTeam": "UTSA",
@@ -4174,7 +4177,8 @@
     "week": 13
   },
   "401866472": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.06,
+    "actualHomeMargin": -8,
     "awayTeam": "Buffalo",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Akron",
@@ -4185,7 +4189,8 @@
     "week": 13
   },
   "401866473": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.5,
+    "actualHomeMargin": -3,
     "awayTeam": "Toledo",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Ohio",
@@ -8376,7 +8381,8 @@
     "week": 12
   },
   "401869930": {
-    "actualHomeMargin": null,
+    "absoluteError": 0.37,
+    "actualHomeMargin": 7,
     "awayTeam": "Appalachian State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "South Alabama",
