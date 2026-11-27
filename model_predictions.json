@@ -1143,7 +1143,8 @@
     "week": 13
   },
   "401856879": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.13,
+    "actualHomeMargin": 21,
     "awayTeam": "TCU",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Texas Tech",
@@ -7662,7 +7663,8 @@
     "week": 12
   },
   "401868354": {
-    "actualHomeMargin": null,
+    "absoluteError": 37.65,
+    "actualHomeMargin": 45,
     "awayTeam": "Tuskegee",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Alabama State",
