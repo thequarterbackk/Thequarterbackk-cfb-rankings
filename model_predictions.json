@@ -430,7 +430,8 @@
     "week": 12
   },
   "401856756": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.44,
+    "actualHomeMargin": -10,
     "awayTeam": "Texas",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Texas A&M",
@@ -1157,7 +1158,8 @@
     "week": 13
   },
   "401856880": {
-    "actualHomeMargin": null,
+    "absoluteError": 3.73,
+    "actualHomeMargin": 24,
     "awayTeam": "West Virginia",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Utah",
@@ -2577,7 +2579,8 @@
     "week": 13
   },
   "401858544": {
-    "actualHomeMargin": null,
+    "absoluteError": 8.64,
+    "actualHomeMargin": 23,
     "awayTeam": "Minnesota",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Wisconsin",
