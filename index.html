@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 <title>Dynamic CFB Rankings</title>
 <meta name="description" content="A transparent college football ranking model driven by wins, scoring, defense, and dynamically validated opponent strength.">
-<link rel="stylesheet" href="styles.css?v=8.1">
+<link rel="stylesheet" href="styles.css?v=8.2">
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 </head>
@@ -22,6 +22,7 @@
 
 <nav class="tabs wrap" aria-label="Site sections">
   <button class="tab active" data-tab="rankings">Rankings</button>
+  <button class="tab" data-tab="cfp-comparison">CFP Comparison</button>
   <button class="tab" data-tab="picks">Upcoming Picks</button><button class="tab" data-tab="lines">Weekly Model Lines</button>
   <button class="tab" data-tab="forecast">Season & CFP Predictions</button>
   <button class="tab" data-tab="strength">Conference Strength</button>
@@ -35,6 +36,42 @@
   <section id="rankings" class="panel active">
     <div class="section-head"><div><h2>Current Rankings</h2><p>Current-season schedule-adjusted rankings. Search or sort the table.</p><div class="page-stamp" data-update-stamp></div></div><input id="rankSearch" class="search" placeholder="Search team…" aria-label="Search rankings"></div>
     <div class="table-wrap"><table id="rankTable"><thead><tr><th data-key="Rank">Rank</th><th data-key="Team">Team</th><th data-key="Record">Record</th><th data-key="Final Rating">Rating</th><th data-key="Power Rating">Power</th><th data-key="Base Rating">Résumé</th><th data-key="Margin Adjustment">Scoring</th><th data-key="Loss Penalty">Loss penalty</th><th data-key="Rank Change">Move</th><th data-key="Points For">PF</th><th data-key="Points Allowed">PA</th><th data-key="Point Diff">Diff</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="cfp-comparison" class="panel">
+    <div class="section-head"><div><h2>CFP Rankings &amp; Bias</h2><p>Compare the official CFP Top 25 with the model using the same game cutoff. See which teams and conferences the committee ranks higher or lower.</p></div></div>
+    <p id="cfpStatus" class="cfp-note" role="status">Loading CFP comparison…</p>
+    <div id="cfpContent" hidden>
+      <div class="cfp-controls">
+        <label>CFP release <select id="cfpPoll"></select></label>
+        <span id="cfpCutoff"></span>
+        <a id="cfpSource" target="_blank" rel="noopener">Official CFP rankings archive</a>
+      </div>
+      <dl id="cfpSummary" class="cfp-summary" aria-live="polite"></dl>
+      <h3>Team-by-team comparison</h3>
+      <p class="cfp-note">Rank gap = model rank − CFP rank. A positive gap means the CFP ranks the team higher. NR means outside the CFP Top 25.</p>
+      <div class="cfp-controls">
+        <label>Conference <select id="cfpConference"></select></label>
+        <label>Show <select id="cfpScope">
+          <option value="either">Either Top 25</option>
+          <option value="cfp">CFP Top 25</option>
+          <option value="model">Model Top 25</option>
+          <option value="cfp-only">CFP-only teams</option>
+          <option value="model-only">Model-only teams</option>
+        </select></label>
+        <label>Sort <select id="cfpSort">
+          <option value="cfp">CFP rank</option>
+          <option value="model">Model rank</option>
+          <option value="gap">Largest rank gap</option>
+          <option value="higher">CFP ranks higher</option>
+          <option value="lower">CFP ranks lower</option>
+        </select></label>
+      </div>
+      <div class="table-wrap"><table aria-label="Team ranking comparison"><thead><tr><th scope="col">Team</th><th scope="col">Conference</th><th scope="col">Record</th><th scope="col">Model</th><th scope="col">CFP</th><th scope="col">CFP rank gap</th></tr></thead><tbody id="cfpTeams"></tbody></table></div>
+      <h3>Conference representation</h3>
+      <p class="cfp-note">Slot difference = CFP Top 25 teams minus model Top 25 teams. The last column sums the difference across all releases through the one selected. Persistent differences show where the rankings diverge from the model baseline. They cannot establish committee bias on their own.</p>
+      <div class="table-wrap"><table aria-label="Conference representation comparison"><thead><tr><th scope="col">Conference</th><th scope="col">Model Top 25</th><th scope="col">CFP Top 25</th><th scope="col">Slot difference</th><th scope="col" id="cfpHistoryHeading">Cumulative difference</th></tr></thead><tbody id="cfpConferences"></tbody></table></div>
+    </div>
   </section>
 
   <section id="picks" class="panel">
@@ -98,7 +135,8 @@
 <script src="ladder.js?v=8.1"></script>
 <script src="heatmap_image.js?v=8.1"></script>
 <script src="forecast.js?v=1"></script>
-<script src="app.js?v=8.2"></script>
+<script src="cfp_comparison.js?v=1"></script>
+<script src="app.js?v=8.3"></script>
 <script src="chart_exports.js?v=8.1"></script>
 </body>
 </html>

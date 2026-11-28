@@ -6,6 +6,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 from model_core import WIN_QUALITY_WEIGHT, resume_rankings, walk_forward
 from season_forecast import build_forecast
+from cfp_comparison import refresh_comparison
 
 ROOT=Path(__file__).resolve().parent
 DATA_PATH=ROOT/'data.json'
@@ -431,6 +432,26 @@ def build_picks(all_games, rankings, fbs_names):
     for i,r in enumerate(out[:20],1):r['Pick Rank']=i
     return out[:20]
 
+def include_cfp_title_games(games, team_meta):
+    # CFBD may classify title games as postseason. Replay them together in the
+    # championship week, with the regular-season résumé frozen at entry.
+    eastern = ZoneInfo('America/New_York')
+    conferences = {team['team']: team['conference'] for team in team_meta}
+    def date_et(game):
+        return datetime.fromisoformat(game['startDate']).astimezone(eastern).date().isoformat()
+
+    regular = [game for game in games if game.get('startDate') and date_et(game) < '2026-12-04']
+    title_week = max((game['week'] for game in regular), default=0) + 1
+    postseason = api_get('/games', {'year': SEASON, 'seasonType': 'postseason', 'classification': 'fbs'})
+    by_id = {game['id']: game for game in games}
+    for game in [*games, *(normalize_game(row) for row in postseason)]:
+        conference = conferences.get(game['homeTeam'])
+        if (conference and conference == conferences.get(game['awayTeam'])
+                and is_final(game) and game.get('startDate')
+                and '2026-12-04' <= date_et(game) <= '2026-12-05'):
+            by_id[game['id']] = {**game, 'week': title_week}
+    return list(by_id.values())
+
 def main():
     global CURRENT_FORECAST_ENGINE
     state=read_json(STATE_PATH,{})
@@ -470,6 +491,12 @@ def main():
     data={'meta':{'season':SEASON,'lastUpdated':eastern,'updateMode':'Automatic final-score refresh via CFBD + GitHub Actions','modelVersion':'Schedule-adjusted résumé + win quality + robust power + frozen rank penalties v9'},'rankings':rankings,'modelBacktest':backtest,'modelInputs':{'completedGames':relevant,'rankingWeights':{'resume':1000,'winQuality':WIN_QUALITY_WEIGHT,'robustPower':10},'marginCap':35,'lossWeights':{'base':50,'rankGap':2,'margin':2}},'modelLines':lines,'marketStats':market_stats,'modelAccuracy':accuracy,'probabilityMeta':probability_meta,'homeFieldEstimate':round(home_edge,3),'picks':picks,'matrix':matrix,'teamMeta':team_meta,'ownershipGames':sorted([g for g in completed if g['homeTeam'] in set(fbs_names) and g['awayTeam'] in set(fbs_names)],key=lambda g:(g.get('startDate') or '',g.get('id') or 0))}
     data['seasonForecast']=build_forecast(all_games,completed,team_meta,power,home_edge,loss_penalty,probability_meta['sigma'])
     DATA_PATH.write_text(json.dumps(data,separators=(',',':')))
+    if SEASON == 2026:
+        try:
+            refresh_comparison(ROOT / 'cfp_comparison.json', relevant, team_meta, compute_rankings,
+                               include_cfp_title_games)
+        except (OSError, ValueError) as error:
+            print(f'CFP comparison could not refresh: {error}')
     state={'last_full_refresh':now.isoformat(),'seen_completed_ids':sorted({str(g['id']) for g in completed if g['id'] is not None}),'last_updated':eastern}
     STATE_PATH.write_text(json.dumps(state,indent=2))
     print(f'Updated: {len(completed)} completed games, {len(rankings)} FBS teams, {len(picks)} FBS-only picks, {len(hidden_non_fbs_strength)} hidden non-FBS opponent ratings.')

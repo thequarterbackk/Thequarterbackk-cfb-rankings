@@ -16,6 +16,8 @@ on:
 
       - "season_forecast.py"
 
+      - "cfp_comparison.py"
+
       - "test_*.py"
 
       - ".github/workflows/update-rankings.yml"
@@ -69,6 +71,7 @@ jobs:
           git config user.email "actions@github.com"
 
           git add data.json model_predictions.json market_closing_lines.json team_logos/
+          git add -A -- cfp_comparison.json
 
           if git diff --cached --quiet; then
 

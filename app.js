@@ -126,14 +126,22 @@ async function renderOwnershipMap(){
 function showCounty(fid){const owners=ownershipState.ownersByCounty?.[fid]||[];document.getElementById('ownerName').textContent=owners.length?owners.join(' / '):'Unassigned';const counts=owners.map(o=>({o,n:ownershipState.countyUnits.filter(u=>u.owner===o).length}));document.getElementById('ownerTerritory').textContent=counts.map(x=>`${x.o}: ${x.n} territory unit${x.n===1?'':'s'}`).join(' • ')||'No territory owner';document.getElementById('ownerSwatches').innerHTML=owners.map(o=>`<span class="swatch" title="${esc(o)}" style="background:${teamColor(o)}"></span>`).join('');}
 function findOwner(){const q=document.getElementById('ownerSearch').value.trim().toLowerCase();if(!q||!ownershipState.svg)return;const team=[...new Set(ownershipState.countyUnits.map(u=>u.owner))].find(x=>x.toLowerCase().includes(q));if(!team)return;const county=ownershipState.countyUnits.find(u=>u.owner===team)?.county;if(!county)return;showCounty(county);ownershipState.g.selectAll('path.county,path.county-logo').attr('opacity',d=>{const fid=String(d.id).padStart(5,'0');return (ownershipState.ownersByCounty[fid]||[]).includes(team)?1:.16;});setTimeout(()=>ownershipState.g.selectAll('path.county,path.county-logo').attr('opacity',1),1800);}
 
-function activateTab(id){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active',x.id===id));if(id==='matrixImage')setTimeout(()=>{drawHeatmapImage();resetHeatZoom();},30);if(id==='ownership'&&!ownershipState.svg)setTimeout(renderOwnershipMap,30);}
+function activateTab(id){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===id));document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active',x.id===id));if(id==='cfp-comparison')initCfpComparison();if(id==='matrixImage')setTimeout(()=>{drawHeatmapImage();resetHeatZoom();},30);if(id==='ownership'&&!ownershipState.svg)setTimeout(renderOwnershipMap,30);}
 
 document.addEventListener('click',e=>{
-  if(e.target.matches('.tab'))activateTab(e.target.dataset.tab);
+  if(e.target.matches('.tab')){
+    const id=e.target.dataset.tab;
+    if(id==='cfp-comparison'||location.hash==='#cfp-comparison'){
+      history.replaceState(null,'',id==='cfp-comparison'?'#cfp-comparison':location.pathname+location.search);
+    }
+    activateTab(id);
+  }
   if(e.target.matches('#rankTable th')){const k=e.target.dataset.key;if(!k)return;if(sortKey===k)sortAsc=!sortAsc;else{sortKey=k;sortAsc=true;}renderRankings();}
 });
 
 document.getElementById('heatZoomIn').addEventListener('click',()=>zoomHeat(1.35));document.getElementById('heatZoomOut').addEventListener('click',()=>zoomHeat(1/1.35));document.getElementById('heatZoomReset').addEventListener('click',resetHeatZoom);document.getElementById('mapReset').addEventListener('click',()=>{if(ownershipState.svg)ownershipState.svg.transition().duration(250).call(ownershipState.zoom.transform,d3.zoomIdentity);});document.getElementById('ownerSearch').addEventListener('change',findOwner);initHeatGestures();window.addEventListener('resize',()=>{if(document.getElementById('matrixImage').classList.contains('active'))resetHeatZoom();});
+
+if(location.hash==='#cfp-comparison')activateTab('cfp-comparison');
 
 fetch(`data.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.json()).then(d=>{DATA=d;updateStamp();renderRankings();renderPicks();renderModelLines();renderSeasonForecast();renderMatrix();renderStrengthLadder(DATA);initHeatImageControls();renderValidation();document.getElementById('rankSearch').addEventListener('input',renderRankings);document.getElementById('matrixSearch').addEventListener('input',renderMatrix);}).catch(err=>{document.getElementById('globalStamp').textContent='Could not load current data';console.error(err);});
 
