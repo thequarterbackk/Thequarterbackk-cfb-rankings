@@ -463,7 +463,8 @@
     "week": 13
   },
   "401856759": {
-    "actualHomeMargin": null,
+    "absoluteError": 16.78,
+    "actualHomeMargin": -16,
     "awayTeam": "Florida",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Florida State",
@@ -3390,7 +3391,8 @@
     "week": 13
   },
   "401862838": {
-    "actualHomeMargin": null,
+    "absoluteError": 23.95,
+    "actualHomeMargin": -4,
     "awayTeam": "Temple",
     "forecastEngine": "v7-baseline",
     "homeTeam": "Memphis",
@@ -3760,7 +3762,8 @@
     "week": 12
   },
   "401864546": {
-    "actualHomeMargin": null,
+    "absoluteError": 13.75,
+    "actualHomeMargin": 23,
     "awayTeam": "Air Force",
     "forecastEngine": "v7-baseline",
     "homeTeam": "New Mexico",
@@ -3793,7 +3796,8 @@
     "week": 13
   },
   "401864549": {
-    "actualHomeMargin": null,
+    "absoluteError": 1.38,
+    "actualHomeMargin": -7,
     "awayTeam": "North Dakota State",
     "forecastEngine": "v7-baseline",
     "homeTeam": "San Jos\u00e9 State",
