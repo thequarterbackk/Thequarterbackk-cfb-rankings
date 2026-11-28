@@ -34,3 +34,27 @@
 .cfp-summary dd{margin:4px 0 0;font-size:20px;font-weight:800}
 .cfp-gap{font-weight:800}
 #cfp-comparison th{cursor:default}
+
+.pick-results { margin: 0 0 24px; }
+.pick-results h3 { margin: 0; font-size: clamp(20px, 4vw, 28px); }
+.pick-results > p { color: var(--muted); margin: 8px 0 14px; }
+.pick-results thead th { cursor: default; }
+.pick-results tbody th { position: static; background: transparent; cursor: default; }
+.pick-week-toggle {
+  background: transparent;
+  border: 0;
+  color: var(--accent);
+  padding: 4px 0;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.pick-week-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.pick-week-detail { white-space: normal; line-height: 1.55; }
+.pick-week-detail p { margin: 4px 0; }
+.pick-week-detail strong { color: var(--accent); }
+@media (max-width: 460px) {
+  .pick-results th, .pick-results td { padding: 8px 6px; }
+}

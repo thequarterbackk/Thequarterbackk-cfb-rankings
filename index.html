@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 <title>Dynamic CFB Rankings</title>
 <meta name="description" content="A transparent college football ranking model driven by wins, scoring, defense, and dynamically validated opponent strength.">
-<link rel="stylesheet" href="styles.css?v=8.2">
+<link rel="stylesheet" href="styles.css?v=9">
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 </head>
@@ -76,6 +76,17 @@
 
   <section id="picks" class="panel">
     <div class="section-head"><div><h2>Upcoming Picks</h2><p>The model's 20 highest-confidence FBS-vs-FBS straight-up winners. These are model confidence rankings, not guarantees or sportsbook probabilities.</p><div class="page-stamp" data-update-stamp></div></div></div>
+    <section class="pick-results" aria-labelledby="pickOverallRecord">
+      <h3 id="pickOverallRecord">Overall record</h3>
+      <p>2026 parlay picks through Nov. 21, including Coastal Carolina’s bye week.</p>
+      <div class="table-wrap">
+        <table aria-label="Weekly pick results">
+          <thead><tr><th scope="col">Week</th><th scope="col">Date</th><th scope="col">Right</th><th scope="col">Wrong</th><th scope="col">Accuracy</th></tr></thead>
+          <tbody id="pickResultsBody"></tbody>
+        </table>
+      </div>
+    </section>
+    <h3>Upcoming model picks</h3>
     <div id="pickCards" class="cards"></div>
   </section>
 
@@ -137,6 +148,7 @@
 <script src="forecast.js?v=1"></script>
 <script src="cfp_comparison.js?v=1"></script>
 <script src="app.js?v=8.3"></script>
+<script src="pick_results.js?v=1"></script>
 <script src="chart_exports.js?v=8.1"></script>
 </body>
 </html>
